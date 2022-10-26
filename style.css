@@ -1,0 +1,196 @@
+html, body{
+    background-color: #000000;
+    display: table;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+}
+/* header */
+.arcade{
+    color: white;
+    font-family: "Proxima Nova Black";
+    src: local("/Fonts/Proxima Nova Black.otf") format("otf");
+    font-size: 20px;
+    text-decoration: none;
+    position: absolute;left: 13em;top: 2em;
+    letter-spacing: 1px;
+}
+.dot-fix{
+    font-family: "whyte_inktrapbold";
+}
+.logo{
+    position: absolute;left: 9em;top: 1.4em;
+    max-height: 60px;
+}
+.navbar .nav-links ul {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+}
+.navbar .nav-links ul li {
+    padding: 0 50px;
+}
+.navbar a {
+    color: white;
+     text-decoration: none;
+}
+.navbar { 
+   position: absolute;
+   padding: 0px 50px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   box-sizing: border-box;
+   align-items: center;
+   font-size: 20px;
+   font-family: "Proxima Nova Black";
+   src: local("/Fonts/Proxima Nova Black.otf") format("otf");
+}
+/* les 2 paragraphe */
+.section-explain{
+    z-index: 1;
+}
+.paragraphe-color-change{
+    color: #A4A4A4;
+}
+.paragraphe-1{
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+        font-family: "whyte_inktrapbold";
+        font-weight: normal;
+        font-style: normal;
+        line-height: 75px;
+    max-width: 800px;
+    list-style: none;
+}
+.paragraphe-2{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: "Proxima Nova Regular";
+    src: local("/Fonts/Proxima Nova Regular.otf") format("otf");
+    max-width: 440px;
+    list-style: none;
+    /* letter-spacing: -0.5px; */
+}
+.active {
+    background-color: rgb(0, 33, 249);
+    border-radius: 13px;
+}
+section {
+    position: absolute;left: 19.3em;top: 16em;
+}
+.button-links {
+    text-decoration: none;
+}
+.links {
+    text-decoration: none;
+    color: white;
+    border-radius: 3px;
+    padding: 10px 20px;
+    transition: background ease-in 300ms;
+}
+.links:hover {
+    background-color: #ffffff;
+    border-radius: 3px;
+    color: black;
+    /* text-decoration: underline; */
+}
+.discord {
+    text-decoration: none;
+    color: white;
+    border-radius: 3px;
+    padding: 10px 20px;
+    transition: background ease-in 300ms;
+}
+.discord:hover {
+    background-color: #ffffff;
+    border-radius: 3px;
+    color: black;
+    /* text-decoration: underline; */
+}
+.bookmarks {
+    text-decoration: none;
+    color: white;
+    border-radius: 3px;
+    padding: 10px 20px;
+    transition: background ease-in 300ms;
+}
+.bookmarks:hover {
+    background-color: #ffffff;
+    border-radius: 3px;
+    color: rgb(0, 0, 0);
+    /* text-decoration: underline; */
+}
+.contact {
+    text-decoration: none;
+    color: white;
+    border-radius: 3px;
+    padding: 10px 20px;
+    transition: background ease-in 300ms;
+}
+.contact:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 3px;
+    /* text-decoration: underline; */
+}
+.blueimg{
+    margin: none;
+    padding: none;
+    position: absolute;left: 75em; top: 20em;
+    z-index: 1;
+}
+.redimg{
+    position: absolute;left: 50em; top: 10em;
+    margin: none;
+    z-index: 0;
+}
+@font-face {
+    font-family: 'whyte_inktrapbold';
+    src: url('Fonts/whyteinktrap-bold-webfont.woff2') format('woff2'),
+         url('whyteinktrap-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.btn-explore{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: "whyte_inktrapbold";
+    font-size: 25px;
+    background-color: #0022FF;
+    border-radius: 3px;
+    padding: 10px 25px;
+    text-shadow: 3px 3px 6px black;
+    transition: background ease-in 300ms;
+}
+.btn-explore:hover{
+    text-shadow: 3px 3px 6px black;
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+/* footer */
+footer{
+    color: white;
+    display: table-row;
+    height: 1px;
+    text-align: center;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+/* ::-webkit-scrollbar-thumb{
+    background:linear-gradient(0deg, blue, red);
+    border-radius: 3px;
+} */
+@media screen and (max-width: 1100px) {
+    .nav-links (
+        display: none;
+    )
+}
+.menu-hamburger{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 35px;
+}
