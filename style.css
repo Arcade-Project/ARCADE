@@ -183,11 +183,11 @@ footer{
     background:linear-gradient(0deg, blue, red);
     border-radius: 3px;
 } */
-@media screen and (max-width: 1100px) {
+/* @media screen and (max-width: 1100px) {
     .nav-links (
         display: none;
     )
-}
+} */
 .menu-hamburger{
     position: absolute;
     top: 50px;
