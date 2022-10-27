@@ -54,7 +54,7 @@ html, body{
 }
 .paragraphe-1{
     color: rgb(255, 255, 255);
-    font-family: "whyte_inktrapbold";
+    font-family: "whyte_inktrapbold", "Kanit";
     font-size: 70px;
     font-weight: normal;
     font-style: normal;
@@ -210,3 +210,4 @@ footer{
     font-weight: normal;
     font-style: normal;
 }
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
