@@ -15,7 +15,7 @@ html, body{
     letter-spacing: 1px;
 }
 .dot-fix{
-    font-family: "whyte_inktrapbold";
+    font-family: 'whyte_inktrapbold';
 }
 .logo{
     position: absolute;left: 9em;top: 1.4em;
@@ -54,11 +54,11 @@ html, body{
 }
 .paragraphe-1{
     color: rgb(255, 255, 255);
+    font-family: 'whyte_inktrapbold';
     font-size: 70px;
-        font-family: "whyte_inktrapbold";
-        font-weight: normal;
-        font-style: normal;
-        line-height: 75px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 75px;
     max-width: 800px;
     list-style: none;
 }
@@ -146,7 +146,7 @@ section {
 .btn-explore{
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-family: "whyte_inktrapbold";
+    font-family: 'whyte_inktrapbold';
     font-size: 25px;
     background-color: #0022FF;
     border-radius: 3px;
@@ -191,22 +191,22 @@ footer{
 
 @font-face {
     font-family: 'proxima_novablack';
-    src: url('proxima_nova_black-webfont.woff2') format('woff2'),
-         url('proxima_nova_black-webfont.woff') format('woff');
+    src: url('Fonts/proxima_nova_black-webfont.woff2') format('woff2'),
+         url('Fonts/proxima_nova_black-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'proxima_novaregular';
-    src: url('proximanova-regular-webfont.woff2') format('woff2'),
-         url('proximanova-regular-webfont.woff') format('woff');
+    src: url('Fonts/proximanova-regular-webfont.woff2') format('woff2'),
+         url('Fonts/proximanova-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'whyte_inktrapbold';
     src: url('Fonts/whyteinktrap-bold-webfont.woff2') format('woff2'),
-         url('whyteinktrap-bold-webfont.woff') format('woff');
+         url('Fonts/whyteinktrap-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
