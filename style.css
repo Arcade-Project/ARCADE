@@ -8,8 +8,7 @@ html, body{
 /* header */
 .arcade{
     color: white;
-    font-family: "Proxima Nova Black";
-    src: local("/Fonts/Proxima Nova Black.otf") format("otf");
+    font-family: 'proxima_novablack';
     font-size: 20px;
     text-decoration: none;
     position: absolute;left: 13em;top: 2em;
@@ -44,8 +43,7 @@ html, body{
    box-sizing: border-box;
    align-items: center;
    font-size: 20px;
-   font-family: "Proxima Nova Black";
-   src: local("/Fonts/Proxima Nova Black.otf") format("otf");
+   font-family: 'proxima_novablack';
 }
 /* les 2 paragraphe */
 .section-explain{
@@ -67,8 +65,7 @@ html, body{
 .paragraphe-2{
     color: rgb(255, 255, 255);
     font-size: 16px;
-    font-family: "Proxima Nova Regular";
-    src: local("/Fonts/Proxima Nova Regular.otf") format("otf");
+    font-family: 'proxima_novaregular';
     max-width: 440px;
     list-style: none;
     /* letter-spacing: -0.5px; */
@@ -146,13 +143,6 @@ section {
     margin: none;
     z-index: 0;
 }
-@font-face {
-    font-family: 'whyte_inktrapbold';
-    src: url('Fonts/whyteinktrap-bold-webfont.woff2') format('woff2'),
-         url('whyteinktrap-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 .btn-explore{
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -193,4 +183,30 @@ footer{
     top: 50px;
     right: 50px;
     width: 35px;
+}
+
+
+/* FONT FACE */
+
+
+@font-face {
+    font-family: 'proxima_novablack';
+    src: url('proxima_nova_black-webfont.woff2') format('woff2'),
+         url('proxima_nova_black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proxima_novaregular';
+    src: url('proximanova-regular-webfont.woff2') format('woff2'),
+         url('proximanova-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'whyte_inktrapbold';
+    src: url('Fonts/whyteinktrap-bold-webfont.woff2') format('woff2'),
+         url('whyteinktrap-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
