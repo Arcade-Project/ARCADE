@@ -15,7 +15,7 @@ html, body{
     font-family: "proxima_novablack";
     font-size: 20px;
     text-decoration: none;
-    position: absolute;left: 13em;top: 14.5px;
+    position: absolute;left: 13em;top: 0.76em;
     letter-spacing: 1px;
 }
 .dot-fix{
