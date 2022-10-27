@@ -5,20 +5,24 @@ html, body{
     width: 100%;
     z-index: -2;
 }
-/* header */
+
+
+/* HEADER */
+
+
 .arcade{
     color: white;
     font-family: "proxima_novablack";
     font-size: 20px;
     text-decoration: none;
-    position: absolute;left: 13em;top: 2em;
+    position: absolute;left: 13em;top: 14.5px;
     letter-spacing: 1px;
 }
 .dot-fix{
     font-family: "whyte_inktrapbold";
 }
 .logo{
-    position: absolute;left: 9em;top: 1.4em;
+    position: absolute;left: 9em;top: 0.1em;
     max-height: 60px;
 }
 .navbar .nav-links ul {
@@ -30,12 +34,10 @@ html, body{
     padding: 0 50px;
 }
 .navbar a {
-    color: white;
      text-decoration: none;
 }
-.navbar { 
+.navbar {
    position: absolute;
-   padding: 0px 50px;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -54,7 +56,7 @@ html, body{
 }
 .paragraphe-1{
     color: rgb(255, 255, 255);
-    font-family: "whyte_inktrapbold", "Kanit";
+    font-family: "whyte_inktrapbold";
     font-size: 70px;
     font-weight: normal;
     font-style: normal;
@@ -210,4 +212,3 @@ footer{
     font-weight: normal;
     font-style: normal;
 }
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
