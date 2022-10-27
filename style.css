@@ -191,22 +191,22 @@ footer{
 
 @font-face {
     font-family: "proxima_novablack";
-    src: url("proxima_nova_black-webfont.woff2") format("woff2"),
-         url("proxima_nova_black-webfont.woff") format("woff");
+    src: url("fonts/proxima_nova_black-webfont.woff2") format("woff2"),
+         url("fonts/proxima_nova_black-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: "proxima_novaregular";
-    src: url("proximanova-regular-webfont.woff2") format("woff2"),
-         url("proximanova-regular-webfont.woff") format("woff");
+    src: url("fonts/proximanova-regular-webfont.woff2") format("woff2"),
+         url("fonts/proximanova-regular-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: "whyte_inktrapbold";
-    src: url("whyteinktrap-bold-webfont.woff2") format("woff2"),
-         url("whyteinktrap-bold-webfont.woff") format("woff");
+    src: url("fonts/whyteinktrap-bold-webfont.woff2") format("woff2"),
+         url("fonts/whyteinktrap-bold-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
