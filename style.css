@@ -1,28 +1,15 @@
 body {
-    background-color: #000000;
-    display: table;
-    height: 100%;
-    width: 100%;
+    background-image: url(https://cdn.discordapp.com/attachments/908043726117556294/1036408866046476409/ARCADE_2.png);
 }
 
 
 /* HEADER */
 
 
-.arcade a {
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-    position: absolute;
-    left: 13em;
-    top: 0.76em;
-    letter-spacing: 1px;
-}
-.dot-fix {
-    font-family: "whyte_inktrapbold";
-}
 .logo {
-    position: absolute;left: 9em;top: 0.1em;
+    position: relative;
+    left: 3.5em;
+    bottom: 0.2em;
     max-height: 60px;
 }
 .navbar .nav-links ul {
@@ -32,6 +19,9 @@ body {
 }
 .navbar .nav-links ul li {
     padding: 0 30px;
+    position: relative;
+    right: 2.4em;
+    bottom: 0.2em;
 }
 .navbar {
     position: absolute;
@@ -39,8 +29,9 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    font-size: 20px;
-    font-family: "proxima_novablack";
+    font-size: 33px;
+    font-weight: 660;
+    font-family: 'Whitney';
 }
 .menu-hamburger {
     display: none;
@@ -52,33 +43,9 @@ body {
 }
 
 
-/* 2 paragraphe */
+/* HOVER  */
 
 
-.paragraphe-color-change{
-    color: #A4A4A4;
-}
-.paragraphe-1{
-    color: rgb(255, 255, 255);
-    font-family: "whyte_inktrapbold";
-    font-size: 70px;
-    font-weight: normal;
-    font-style: normal;
-    line-height: 75px;
-    max-width: 800px;
-    list-style: none;
-}
-.paragraphe-2{
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    font-family: "proxima_novaregular";
-    max-width: 440px;
-    list-style: none;
-}
-.section-explain {
-    position: absolute;left: 19.3em;top: 16em;
-    z-index: 2;
-}
 .button-links {
     text-decoration: none;
 }
@@ -87,76 +54,114 @@ body {
     color: white;
     border-radius: 3px;
     padding: 10px 20px;
-    transition: background ease-in 300ms;
+    text-shadow: 0px 4px 4px #000000;
+    /* transition: background ease-in 300ms; */
+    transition: text-shadow ease-in 200ms;
 }
 .links:hover {
-    background-color: #ffffff;
+    /* background-color: #ffffff;
     border-radius: 3px;
-    color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0); */
     /* textrgb(0, 0, 0)line; */
+    /* text-decoration: underline; */
+    text-shadow: 0px 1px 4px rgb(0, 0, 0);
 }
 .discord {
     text-decoration: none;
     color: white;
     border-radius: 3px;
     padding: 10px 20px;
-    transition: background ease-in 300ms;
+    text-shadow: 0px 4px 4px #000000;
+    transition: text-shadow ease-in 200ms;
+    /* transition: background ease-in 300ms; */
 }
 .discord:hover {
-    background-color: #ffffff;
+    /* background-color: #ffffff;
     border-radius: 3px;
-    color: black;
+    color: black; */
+    /* text-decoration: underline; */
+    text-shadow: 0px 1px 4px rgb(0, 0, 0);
 }
 .bookmarks {
     text-decoration: none;
     color: white;
     border-radius: 3px;
     padding: 10px 20px;
-    transition: background ease-in 300ms;
+    text-shadow: 0px 4px 4px #000000;
+    transition: text-shadow ease-in 200ms;
+    /* transition: background ease-in 300ms; */
 }
 .bookmarks:hover {
-    background-color: #ffffff;
+    /* background-color: #ffffff;
     border-radius: 3px;
-    color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0); */
+    /* text-decoration: underline; */
+    text-shadow: 0px 1px 4px rgb(0, 0, 0);
 }
 .contact {
     text-decoration: none;
     color: white;
     border-radius: 3px;
     padding: 10px 20px;
-    transition: background ease-in 300ms;
+    text-shadow: 0px 4px 4px #000000;
+    transition: text-shadow ease-in 200ms;
+    /* transition: background ease-in 300ms; */
 }
 .contact:hover {
-    background-color: #ffffff;
+    /* background-color: #ffffff;
     color: #000000;
-    border-radius: 3px;
+    border-radius: 3px; */
+    /* text-decoration: underline; */
+    text-shadow: 0px 1px 4px rgb(0, 0, 0);
 }
-.blueimg{
-    margin: none;
-    padding: none;
-    position: absolute;left: 75em; top: 20em;
-    z-index: 0;
+
+
+/* 2 paragraphe */
+
+
+.paragraphe-color-change{
+    color: #A4A4A4;
 }
-.redimg{
-    position: absolute;left: 50em; top: 10em;
-    z-index: -1;
+.paragraphe-1{
+    color: rgb(255, 255, 255);
+    font-family: 'Whitney';
+    font-size: 85px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 75px;
+    max-width: 800px;
+    list-style: none;
+}
+.paragraphe-2{
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-family: 'Whitney';
+    max-width: 640px;
+    list-style: none;
+    line-height: 25px;
+}
+.section-explain {
+    position: absolute;left: 7.5em;top: 19em;
+    z-index: 2;
 }
 .btn-explore{
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-family: "whyte_inktrapbold";
-    font-size: 25px;
-    background-color: #0022FF;
-    border-radius: 3px;
-    padding: 10px 25px;
-    text-shadow: 3px 3px 6px black;
-    transition: background ease-in 300ms;
+    font-family: 'Whitney';
+    font-size: 35px;
+    font-weight: 620;
+    background-color: #F30049;
+    border-radius: 5px;
+    padding: 15px 40px;
+    text-shadow: -4px 3px 4px black;
+    transition: background ease-in 250ms;
 }
 .btn-explore:hover{
-    text-shadow: 3px 3px 6px black;
-    color: black;
-    background-color: rgb(255, 255, 255);
+    text-shadow: -4px 3px 4px black;
+    color: rgb(255, 255, 255);
+    background-color: #2A2A2A;
 }
+
 
 
 /* FOOTER */
@@ -173,7 +178,7 @@ footer{
 /* FONT FACE */
 
 
-@font-face {
+/* @font-face {
     font-family: "proxima_novablack";
     src: url("fonts/proxima_nova_black-webfont.woff2") format("woff2"),
          url("fonts/proxima_nova_black-webfont.woff") format("woff");
@@ -193,6 +198,28 @@ footer{
          url("fonts/whyteinktrap-bold-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
+}
+@font-face {
+    font-family: 'monument_extendedregular';
+    src: url('fonts/monumentextended-regular-webfont.woff2') format('woff2'),
+         url('fonts/monumentextended-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'monument_extendedultrabold';
+    src: url('fonts/monumentextended-ultrabold-webfont.woff2') format('woff2'),
+         url('fonts/monumentextended-ultrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+@font-face {
+    font-family: 'Whitney';
+    src: url('Whitney-Bold.woff2') format('woff2'),
+        url('Whitney-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
 
