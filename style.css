@@ -1,5 +1,5 @@
 body {
-    background-image: url(https://cdn.discordapp.com/attachments/908043726117556294/1036408866046476409/ARCADE_2.png);
+    background-image: url(https://cdn.discordapp.com/attachments/908043726117556294/1036751306171355227/ARCADE.png);
 }
 ::-webkit-scrollbar { display: none; }
 
@@ -125,7 +125,9 @@ body {
     line-height: 25px;
 }
 .section-explain {
-    position: absolute;left: 7.5em;top: 19em;
+    position: absolute;
+    left: 7.5em;
+    top: 19em;
     z-index: 2;
 }
 .btn-explore{
@@ -134,30 +136,161 @@ body {
     font-family: 'Whitney';
     font-size: 35px;
     font-weight: 620;
-    background-color: #F30049;
+    background-color: #3D00A6;
     border-radius: 5px;
-    padding: 15px 40px;
+    padding: 13px 40px 20px;
     text-shadow: -4px 3px 4px black;
     /* transition: background ease-in 250ms; */
 }
 .btn-explore:active{
     text-shadow: -4px 3px 4px black;
     color: rgb(255, 255, 255);
-    background-color: #F30049;
+    background-color: #32008a;
     padding: 16px 45px;
 }
 
 
-/* FOOTER */
+/* QUICK ACCESS */
 
 
-footer{
+.quick-title{
+    font-family: 'Whitney';
+    font-weight: 600;
     color: white;
-    display: table-row;
-    height: 1px;
+    font-size: 40px;
+    position: relative;
+    left: 28.5em;
+    bottom: 13.3em;
+    z-index: 2;
+}
+.quick-background{
+    position: relative;
+    left: 56em;
+    top: 10em;
+}
+.quick-category a {
+    text-decoration: none;
+    color: #ADADAD;
+}
+.quick-category {
+    z-index: 1;
+    list-style: none;
+    font-size: 25px;
+    font-family: 'Whitney';
+    position: absolute;
+    top: 8.3em;
+    left: 43.3em;
+    margin: 30px;
     text-align: center;
 }
-
+.alternative-to {
+    background-color: #bababa20;
+    padding: 8px 23px;
+    border-radius: 13px;
+    margin: 0 0 10px;
+}
+.alternative-to a:hover {
+    color: white;
+}
+.android-app{
+    background-color: #bababa20;
+    padding: 8px 23px;
+    border-radius: 13px;
+    margin: 0 0 10px;
+}
+.android-app a:hover{
+    color: white;
+}
+.code{
+    background-color: #bababa20;
+    padding: 8px 23px;
+    border-radius: 13px;
+    margin: 0 0 10px;
+}
+.code a:hover{
+    color: white;
+}
+.computer{
+    background-color: #bababa20;
+    padding: 8px 23px;
+    border-radius: 13px;
+    margin: 0 0 10px;
+}
+.computer a:hover{
+    color: white;
+}
+.design{
+    background-color: #bababa20;
+    padding: 8px 23px;
+    border-radius: 13px;
+    margin: 0 0 10px;
+}
+.design a:hover{
+    color: white;
+}
+.downloader{
+    background-color: #bababa20;
+    padding: 8px 23px;
+    border-radius: 13px;
+    margin: 0 0 10px;
+}
+.downloader a:hover{
+    color: white;
+}
+.ebook{
+    background-color: #bababa20;
+    padding: 8px 23px;
+    border-radius: 13px;
+    margin: 0 0 10px;
+}
+.ebook a:hover{
+    color: white;
+}
+.game{
+    background-color: #bababa20;
+    padding: 8px 23px;
+    border-radius: 13px;
+    margin: 0 0 10px;
+}
+.game a:hover{
+    color: white;
+}
+.learn{
+    background-color: #bababa20;
+    padding: 8px 23px;
+    border-radius: 13px;
+    margin: 0 0 10px;
+}
+.learn a:hover{
+    color: white;
+}
+.movie{
+    background-color: #bababa20;
+    padding: 8px 23px;
+    border-radius: 13px;
+    margin: 0 0 10px;
+}
+.movie a:hover{
+    color: white;
+}
+.music{
+    background-color: #bababa20;
+    padding: 8px 23px;
+    border-radius: 13px;
+    margin: 0 0 10px;
+}
+.music a:hover{
+    color: white;
+}
+.osint{
+    background-color: #bababa20;
+    padding: 8px 23px;
+    border-radius: 13px;
+    margin: 0 0 10px;
+}
+.osint a:hover{
+    color: white;
+}
 
 /* FONT FACE */
 
@@ -213,7 +346,7 @@ footer{
 @media screen and (max-width: 1840px) {
     .logo {
         position: relative;
-        left: 4.6em;
+        left: 3.5em;
         top: 1.5em;
     }
     .navbar {
@@ -231,38 +364,61 @@ footer{
         width: 100%;
         height: 100vh;
         top: 0;
-        left: 0;
         display: flex;
+        margin-left: -100%;
         justify-content: center;
         align-items: center;
-        margin-left: -100%;
     }
     .nav-links.mobile-menu {
         margin-left: 0;
     }
     .navbar .nav-links ul li {
         margin: 40px 0;
-        font-size: 1.8em;
+        font-size: 60px;
     }
     .nav-links ul {
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
-    .section-explain {
-        position: absolute;left: 10em;top: 16em;
+    .section-explain li span br{
+        position: absolute;
+        left: 5em;
+        top: 19em;
     }
     .paragraphe-1{
-        font-size: 65px;
+        font-size: 80px;
         font-weight: 600;
         font-style: normal;
         line-height: 60px;
-        max-width: 600px;
+        max-width: 800px;
+        line-height: 70px;
         list-style: none;
     }
     .paragraphe-2{
-        font-size: 20px;
+        font-size: 30px;
+        line-height: 30px;
         max-width: 530px;
         list-style: none;
+    }
+    .btn-explore{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-family: 'Whitney';
+        font-size: 40px;
+        font-weight: 620;
+        background-color: #3D00A6;
+        border-radius: 5px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 40px;
+        padding-left: 40px;
+        text-shadow: -4px 3px 4px black;
+        /* transition: background ease-in 250ms; */
+    }
+    .btn-explore:active{
+        text-shadow: -4px 3px 4px black;
+        color: rgb(255, 255, 255);
+        background-color: #32008a;
+        padding: 16px 45px;
     }
 }
