@@ -1,7 +1,5 @@
 body {
     background-image: url(https://cdn.discordapp.com/attachments/908043726117556294/1036408866046476409/ARCADE_2.png);
-    height: 955px;
-    width: 1920px;
 }
 ::-webkit-scrollbar { display: none; }
 
@@ -21,7 +19,7 @@ body {
     display: flex;
 }
 .navbar .nav-links ul li {
-    padding: 0 30px;
+    padding: 0 50px;
     position: relative;
     right: 2.4em;
     bottom: 0.2em;
