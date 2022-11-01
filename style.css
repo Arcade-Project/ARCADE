@@ -2,6 +2,9 @@ body {
     background-image: url(https://cdn.discordapp.com/attachments/908043726117556294/1036751306171355227/ARCADE.png);
 }
 ::-webkit-scrollbar { display: none; }
+::selection {
+    background-color: #5d00ff;
+  }
 
 
 /* HEADER */
@@ -146,7 +149,7 @@ body {
     text-shadow: -4px 3px 4px black;
     color: rgb(255, 255, 255);
     background-color: #32008a;
-    padding: 16px 45px;
+    padding: 16px 43px 23px;
 }
 
 
@@ -161,7 +164,7 @@ body {
     position: relative;
     left: 28.5em;
     bottom: 13.3em;
-    z-index: 2;
+    z-index: 1;
 }
 .quick-background{
     position: relative;
@@ -179,8 +182,7 @@ body {
     font-family: 'Whitney';
     position: absolute;
     top: 8.3em;
-    left: 43.3em;
-    margin: 30px;
+    left: 44.3em;
     text-align: center;
 }
 .alternative-to {
@@ -188,6 +190,9 @@ body {
     padding: 8px 23px;
     border-radius: 13px;
     margin: 0 0 10px;
+}
+.alternative-to a{
+    transition: all ease-in 70ms;
 }
 .alternative-to a:hover {
     color: white;
@@ -198,6 +203,9 @@ body {
     border-radius: 13px;
     margin: 0 0 10px;
 }
+.android-app a{
+    transition: all ease-in 70ms;
+}
 .android-app a:hover{
     color: white;
 }
@@ -206,6 +214,9 @@ body {
     padding: 8px 23px;
     border-radius: 13px;
     margin: 0 0 10px;
+}
+.code a{
+    transition: all ease-in 70ms;
 }
 .code a:hover{
     color: white;
@@ -216,6 +227,9 @@ body {
     border-radius: 13px;
     margin: 0 0 10px;
 }
+.computer a{
+    transition: all ease-in 70ms;
+}
 .computer a:hover{
     color: white;
 }
@@ -224,6 +238,9 @@ body {
     padding: 8px 23px;
     border-radius: 13px;
     margin: 0 0 10px;
+}
+.design a{
+    transition: all ease-in 70ms;
 }
 .design a:hover{
     color: white;
@@ -234,6 +251,9 @@ body {
     border-radius: 13px;
     margin: 0 0 10px;
 }
+.downloader a{
+    transition: all ease-in 70ms;
+}
 .downloader a:hover{
     color: white;
 }
@@ -242,6 +262,9 @@ body {
     padding: 8px 23px;
     border-radius: 13px;
     margin: 0 0 10px;
+}
+.ebook a{
+    transition: all ease-in 70ms;
 }
 .ebook a:hover{
     color: white;
@@ -252,6 +275,9 @@ body {
     border-radius: 13px;
     margin: 0 0 10px;
 }
+.game a{
+    transition: all ease-in 70ms;
+}
 .game a:hover{
     color: white;
 }
@@ -260,6 +286,9 @@ body {
     padding: 8px 23px;
     border-radius: 13px;
     margin: 0 0 10px;
+}
+.learn a{
+    transition: all ease-in 70ms;
 }
 .learn a:hover{
     color: white;
@@ -270,6 +299,9 @@ body {
     border-radius: 13px;
     margin: 0 0 10px;
 }
+.movie a{
+    transition: all ease-in 70ms;
+}
 .movie a:hover{
     color: white;
 }
@@ -278,6 +310,10 @@ body {
     padding: 8px 23px;
     border-radius: 13px;
     margin: 0 0 10px;
+
+}
+.music a{
+    transition: all ease-in 70ms;
 }
 .music a:hover{
     color: white;
@@ -288,7 +324,113 @@ body {
     border-radius: 13px;
     margin: 0 0 10px;
 }
+.osint a{
+    transition: all ease-in 70ms;
+}
 .osint a:hover{
+    color: white;
+}
+
+
+/* QUICKACCESS COLUMN 2 */
+
+
+.quick-category2 a {
+    text-decoration: none;
+    color: #ADADAD;
+}
+.quick-category2 {
+    z-index: 1;
+    list-style: none;
+    font-size: 25px;
+    font-family: 'Whitney';
+    position: absolute;
+    top: 8.3em;
+    left: 52.2em;
+    text-align: center;
+}
+.password{
+    background-color: #bababa20;
+    padding: 8px 40px;
+    border-radius: 13px;
+    margin: 0 0 10px;
+}
+.password a{
+    transition: all ease-in 70ms;
+}
+.password a:hover{
+    color: white;
+}
+.software{
+    background-color: #bababa20;
+    padding: 8px 23px;
+    border-radius: 13px;
+    margin: 0 0 10px;
+}
+.software a{
+    transition: all ease-in 70ms;
+}
+.software a:hover{
+    color: white;
+}
+.steam{
+    background-color: #bababa20;
+    padding: 8px 23px;
+    border-radius: 13px;
+    margin: 0 0 10px;
+}
+.steam a{
+    transition: all ease-in 70ms;
+}
+.steam a:hover{
+    color: white;
+}
+.tips{
+    background-color: #bababa20;
+    padding: 8px 23px;
+    border-radius: 13px;
+    margin: 0 0 10px;
+}
+.tips a{
+    transition: all ease-in 70ms;
+}
+.tips a:hover{
+    color: white;
+}
+.upload{
+    background-color: #bababa20;
+    padding: 8px 23px;
+    border-radius: 13px;
+    margin: 0 0 10px;
+}
+.upload a{
+    transition: all ease-in 70ms;
+}
+.upload a:hover{
+    color: white;
+}
+.wallpaper{
+    background-color: #bababa20;
+    padding: 8px 23px;
+    border-radius: 13px;
+    margin: 0 0 10px;
+}
+.wallpaper a{
+    transition: all ease-in 70ms;
+}
+.wallpaper a:hover{
+    color: white;
+}
+.ddd{
+    background-color: #bababa20;
+    padding: 8px 23px;
+    border-radius: 13px;
+    margin: 0 0 10px;
+}
+.ddd a{
+    transition: all ease-in 70ms;
+}
+.ddd a:hover{
     color: white;
 }
 
