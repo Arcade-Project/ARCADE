@@ -121,15 +121,15 @@ body {
     font-weight: 600;
     color: white;
     font-size: 40px;
-    position: relative;
-    left: 28.5em;
-    bottom: 13.3em;
+    position: absolute;
+    left: 28.7em;
+    top: 4.2em;
     z-index: 1;
 }
 .quick-background{
     position: relative;
-    left: 56em;
-    top: 10em;
+    left:70.4em;
+    top: 9.8em;
 }
 .quick-category a {
     text-decoration: none;
@@ -145,13 +145,13 @@ body {
     left: 44.3em;
     text-align: center;
 }
-.cat{
+.category-button{
     background-color: #bababa20;
     padding: 8px 23px;
     border-radius: 13px;
     margin: 0 0 10px;
 }
-.cat a:hover{
+.category-button a:hover{
     color: white;
 }
 
@@ -173,15 +173,30 @@ body {
     left: 52.2em;
     text-align: center;
 }
-.cat2{
+.category-button2{
     background-color: #bababa20;
-    padding: 8px 40px;
+    padding: 8px 41px;
     border-radius: 13px;
     margin: 0 0 10px;
 }
-.cat2 a:hover{
+.category-button2 a:hover{
     color: white;
 }
+
+
+/* UPDATE */
+
+
+.update{
+    color: white;
+    font-family: 'Whitney';
+    font-size: 15px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
 
 /* FONT FACE */
 
