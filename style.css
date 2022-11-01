@@ -64,7 +64,7 @@ body {
 }
 
 
-/* 2 paragraphe */
+/* 2 PARAGRAPHES */
 
 
 .paragraphe-color-change{
@@ -104,7 +104,6 @@ body {
     border-radius: 5px;
     padding: 13px 40px 20px;
     text-shadow: -4px 3px 4px black;
-    /* transition: background ease-in 250ms; */
 }
 .btn-explore:active{
     text-shadow: -4px 3px 4px black;
@@ -187,41 +186,6 @@ body {
 /* FONT FACE */
 
 
-/* @font-face {
-    font-family: "proxima_novablack";
-    src: url("fonts/proxima_nova_black-webfont.woff2") format("woff2"),
-         url("fonts/proxima_nova_black-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: "proxima_novaregular";
-    src: url("fonts/proximanova-regular-webfont.woff2") format("woff2"),
-         url("fonts/proximanova-regular-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: "whyte_inktrapbold";
-    src: url("fonts/whyteinktrap-bold-webfont.woff2") format("woff2"),
-         url("fonts/whyteinktrap-bold-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'monument_extendedregular';
-    src: url('fonts/monumentextended-regular-webfont.woff2') format('woff2'),
-         url('fonts/monumentextended-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'monument_extendedultrabold';
-    src: url('fonts/monumentextended-ultrabold-webfont.woff2') format('woff2'),
-         url('fonts/monumentextended-ultrabold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-} */
 @font-face {
     font-family: 'Whitney';
     src: url('Whitney-Bold.woff2') format('woff2'),
@@ -305,7 +269,6 @@ body {
         padding-right: 40px;
         padding-left: 40px;
         text-shadow: -4px 3px 4px black;
-        /* transition: background ease-in 250ms; */
     }
     .btn-explore:active{
         text-shadow: -4px 3px 4px black;
