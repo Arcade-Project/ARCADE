@@ -52,52 +52,13 @@ body {
 .button-links {
     text-decoration: none;
 }
-.links {
+.nav1 a{
     text-decoration: none;
     color: white;
     text-shadow: 0px 4px 4px #000000;
-    /* transition: background ease-in 300ms; */
-    /* transition: text-shadow ease-in 200ms; */
     transition: all ease-in 80ms;
 }
-.links:hover {
-    border-bottom: solid 3px rgb(240, 240, 240);
-    text-shadow: 0px 4px 6px #000000;
-
-}
-.discord {
-    text-decoration: none;
-    color: white;
-    text-shadow: 0px 4px 4px #000000;
-    /* transition: text-shadow ease-in 200ms; */
-    /* transition: background ease-in 300ms; */
-    transition: all ease-in 80ms;
-}
-.discord:hover {
-    border-bottom: solid 3px rgb(240, 240, 240);
-    text-shadow: 0px 4px 6px #000000;
-}
-.bookmarks {
-    text-decoration: none;
-    color: white;
-    text-shadow: 0px 4px 4px #000000;
-    /* transition: text-shadow ease-in 200ms; */
-    /* transition: background ease-in 300ms; */
-    transition: all ease-in 80ms;
-}
-.bookmarks:hover {
-    border-bottom: solid 3px rgb(240, 240, 240);
-    text-shadow: 0px 4px 6px #000000;
-}
-.contact {
-    text-decoration: none;
-    color: white;
-    text-shadow: 0px 4px 4px #000000;
-    /* transition: text-shadow ease-in 200ms; */
-    /* transition: background ease-in 300ms; */
-    transition: all ease-in 80ms;
-}
-.contact:hover {
+.nav1 a:hover{
     border-bottom: solid 3px rgb(240, 240, 240);
     text-shadow: 0px 4px 6px #000000;
 }
@@ -185,149 +146,13 @@ body {
     left: 44.3em;
     text-align: center;
 }
-.alternative-to {
+.cat{
     background-color: #bababa20;
     padding: 8px 23px;
     border-radius: 13px;
     margin: 0 0 10px;
 }
-.alternative-to a{
-    transition: all ease-in 70ms;
-}
-.alternative-to a:hover {
-    color: white;
-}
-.android-app{
-    background-color: #bababa20;
-    padding: 8px 23px;
-    border-radius: 13px;
-    margin: 0 0 10px;
-}
-.android-app a{
-    transition: all ease-in 70ms;
-}
-.android-app a:hover{
-    color: white;
-}
-.code{
-    background-color: #bababa20;
-    padding: 8px 23px;
-    border-radius: 13px;
-    margin: 0 0 10px;
-}
-.code a{
-    transition: all ease-in 70ms;
-}
-.code a:hover{
-    color: white;
-}
-.computer{
-    background-color: #bababa20;
-    padding: 8px 23px;
-    border-radius: 13px;
-    margin: 0 0 10px;
-}
-.computer a{
-    transition: all ease-in 70ms;
-}
-.computer a:hover{
-    color: white;
-}
-.design{
-    background-color: #bababa20;
-    padding: 8px 23px;
-    border-radius: 13px;
-    margin: 0 0 10px;
-}
-.design a{
-    transition: all ease-in 70ms;
-}
-.design a:hover{
-    color: white;
-}
-.downloader{
-    background-color: #bababa20;
-    padding: 8px 23px;
-    border-radius: 13px;
-    margin: 0 0 10px;
-}
-.downloader a{
-    transition: all ease-in 70ms;
-}
-.downloader a:hover{
-    color: white;
-}
-.ebook{
-    background-color: #bababa20;
-    padding: 8px 23px;
-    border-radius: 13px;
-    margin: 0 0 10px;
-}
-.ebook a{
-    transition: all ease-in 70ms;
-}
-.ebook a:hover{
-    color: white;
-}
-.game{
-    background-color: #bababa20;
-    padding: 8px 23px;
-    border-radius: 13px;
-    margin: 0 0 10px;
-}
-.game a{
-    transition: all ease-in 70ms;
-}
-.game a:hover{
-    color: white;
-}
-.learn{
-    background-color: #bababa20;
-    padding: 8px 23px;
-    border-radius: 13px;
-    margin: 0 0 10px;
-}
-.learn a{
-    transition: all ease-in 70ms;
-}
-.learn a:hover{
-    color: white;
-}
-.movie{
-    background-color: #bababa20;
-    padding: 8px 23px;
-    border-radius: 13px;
-    margin: 0 0 10px;
-}
-.movie a{
-    transition: all ease-in 70ms;
-}
-.movie a:hover{
-    color: white;
-}
-.music{
-    background-color: #bababa20;
-    padding: 8px 23px;
-    border-radius: 13px;
-    margin: 0 0 10px;
-
-}
-.music a{
-    transition: all ease-in 70ms;
-}
-.music a:hover{
-    color: white;
-}
-.osint{
-    background-color: #bababa20;
-    padding: 8px 23px;
-    border-radius: 13px;
-    margin: 0 0 10px;
-}
-.osint a{
-    transition: all ease-in 70ms;
-}
-.osint a:hover{
+.cat a:hover{
     color: white;
 }
 
@@ -349,88 +174,13 @@ body {
     left: 52.2em;
     text-align: center;
 }
-.password{
+.cat2{
     background-color: #bababa20;
     padding: 8px 40px;
     border-radius: 13px;
     margin: 0 0 10px;
 }
-.password a{
-    transition: all ease-in 70ms;
-}
-.password a:hover{
-    color: white;
-}
-.software{
-    background-color: #bababa20;
-    padding: 8px 23px;
-    border-radius: 13px;
-    margin: 0 0 10px;
-}
-.software a{
-    transition: all ease-in 70ms;
-}
-.software a:hover{
-    color: white;
-}
-.steam{
-    background-color: #bababa20;
-    padding: 8px 23px;
-    border-radius: 13px;
-    margin: 0 0 10px;
-}
-.steam a{
-    transition: all ease-in 70ms;
-}
-.steam a:hover{
-    color: white;
-}
-.tips{
-    background-color: #bababa20;
-    padding: 8px 23px;
-    border-radius: 13px;
-    margin: 0 0 10px;
-}
-.tips a{
-    transition: all ease-in 70ms;
-}
-.tips a:hover{
-    color: white;
-}
-.upload{
-    background-color: #bababa20;
-    padding: 8px 23px;
-    border-radius: 13px;
-    margin: 0 0 10px;
-}
-.upload a{
-    transition: all ease-in 70ms;
-}
-.upload a:hover{
-    color: white;
-}
-.wallpaper{
-    background-color: #bababa20;
-    padding: 8px 23px;
-    border-radius: 13px;
-    margin: 0 0 10px;
-}
-.wallpaper a{
-    transition: all ease-in 70ms;
-}
-.wallpaper a:hover{
-    color: white;
-}
-.ddd{
-    background-color: #bababa20;
-    padding: 8px 23px;
-    border-radius: 13px;
-    margin: 0 0 10px;
-}
-.ddd a{
-    transition: all ease-in 70ms;
-}
-.ddd a:hover{
+.cat2 a:hover{
     color: white;
 }
 
