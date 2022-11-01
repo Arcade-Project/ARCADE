@@ -188,6 +188,7 @@ body {
 
 
 .update{
+    display: block;
     color: white;
     font-family: 'Whitney';
     font-size: 15px;
@@ -290,5 +291,16 @@ body {
         color: rgb(255, 255, 255);
         background-color: #32008a;
         padding: 16px 45px;
+    }
+    .update{
+        display: none;
+    }
+
+    /* QUICK ACCESS */
+   
+    .quick-background{
+        position: relative;
+        left: 30em;
+        top: 9.8em;
     }
 }
