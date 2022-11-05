@@ -10,26 +10,21 @@ body {
 
 
 .logo {
-    position: relative;
-    left: 3.5em;
-    bottom: 0.2em;
+    margin: 1em 3.4em;
 }
 .navbar .nav-links ul {
-    text-decoration: none;
-    list-style: none;
     display: flex;
 }
 .navbar .nav-links ul li {
     padding: 0 50px;
-    position: relative;
-    left: 23.9em;
-    bottom: 0.2em;
+    list-style: none;
+
 }
 .navbar {
     position: absolute;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    width: 99%;
     font-size: 33px;
     font-weight: 660;
     font-family: 'Whitney';
@@ -47,9 +42,6 @@ body {
 /* HOVER  */
 
 
-.button-links {
-    text-decoration: none;
-}
 .nav1 a{
     text-decoration: none;
     color: white;
@@ -57,6 +49,7 @@ body {
     transition: all ease-in 80ms;
 }
 .nav1 a:hover{
+    text-decoration: none;
     border-bottom: solid 3px rgb(240, 240, 240);
     text-shadow: 0px 4px 6px #000000;
 }
@@ -125,7 +118,7 @@ body {
     z-index: 1;
 }
 .quick-background{
-    position: relative;
+    position: absolute;
     left:70.4em;
     top: 9.8em;
 }
@@ -213,12 +206,7 @@ body {
 /* MOBILE VERSION */
 
 
-@media screen and (max-width: 1840px) {
-    .logo {
-        position: relative;
-        left: 3.5em;
-        top: 1.5em;
-    }
+/* @media screen and (max-width: 1840px) {
     .navbar {
         position: relative;
         padding: 0;
@@ -232,7 +220,7 @@ body {
         position: absolute;
         backdrop-filter: blur(8px);
         width: 100%;
-        height: 100vh;
+        height: 200vh;
         top: 0;
         display: flex;
         margin-left: -100%;
@@ -250,55 +238,4 @@ body {
         display: flex;
         flex-direction: column;
     }
-    .section-explain li span br{
-        position: absolute;
-        left: 5em;
-        top: 19em;
-    }
-    .paragraphe-1{
-        font-size: 80px;
-        font-weight: 600;
-        font-style: normal;
-        line-height: 60px;
-        max-width: 800px;
-        line-height: 70px;
-        list-style: none;
-    }
-    .paragraphe-2{
-        font-size: 30px;
-        line-height: 30px;
-        max-width: 530px;
-        list-style: none;
-    }
-    .btn-explore{
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-        font-family: 'Whitney';
-        font-size: 40px;
-        font-weight: 620;
-        background-color: #3D00A6;
-        border-radius: 5px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-right: 40px;
-        padding-left: 40px;
-        text-shadow: -4px 3px 4px black;
-    }
-    .btn-explore:active{
-        text-shadow: -4px 3px 4px black;
-        color: rgb(255, 255, 255);
-        background-color: #32008a;
-        padding: 16px 45px;
-    }
-    .update{
-        display: none;
-    }
-
-    /* QUICK ACCESS */
-   
-    .quick-background{
-        position: relative;
-        left: 30em;
-        top: 9.8em;
-    }
-}
+} */
