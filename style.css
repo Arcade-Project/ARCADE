@@ -1,5 +1,6 @@
 body {
     background-image: url(https://cdn.discordapp.com/attachments/908043726117556294/1036751306171355227/ARCADE.png);
+    background-repeat: no-repeat;
 }
 ::selection {
     background-color: #5d00ff;
@@ -10,15 +11,14 @@ body {
 
 
 .logo {
-    margin: 1em 3.4em;
+    margin: 1em 3.5em;
 }
 .navbar .nav-links ul {
     display: flex;
 }
 .navbar .nav-links ul li {
-    padding: 0 50px;
+    margin: 0 60px;
     list-style: none;
-
 }
 .navbar {
     position: absolute;
@@ -112,33 +112,39 @@ body {
     font-weight: 600;
     color: white;
     font-size: 40px;
-    position: absolute;
-    left: 28.7em;
-    top: 4.2em;
     z-index: 1;
+    background-color: rgba(0, 0, 0, 0.329);
+    height: 733px;
+    width: 570px;
+    border-radius: 13px;
 }
-.quick-background{
+.back-2 {
+    background-color: #0000004f;
+    height: 50px;
+    border-radius: 13px;
+}
+.sec-quick{
     position: absolute;
-    left:70.4em;
-    top: 9.8em;
+    right: 0;
+    margin: 7% 8%;
 }
 .quick-category a {
     text-decoration: none;
     color: #ADADAD;
 }
 .quick-category {
+    position: absolute;
+    top: 40px;
+    left: -20px;
     z-index: 1;
     list-style: none;
     font-size: 25px;
     font-family: 'Whitney';
-    position: absolute;
-    top: 8.3em;
-    left: 44.3em;
     text-align: center;
 }
 .category-button{
     background-color: #bababa20;
-    padding: 8px 23px;
+    padding: 8px 60px;
     border-radius: 13px;
     margin: 0 0 10px;
 }
@@ -155,18 +161,18 @@ body {
     color: #ADADAD;
 }
 .quick-category2 {
+    position: absolute;
+    top: 40px;
+    right: 20px;
     z-index: 1;
     list-style: none;
     font-size: 25px;
     font-family: 'Whitney';
-    position: absolute;
-    top: 8.3em;
-    left: 52.2em;
     text-align: center;
 }
 .category-button2{
     background-color: #bababa20;
-    padding: 8px 41px;
+    padding: 8px 75px;
     border-radius: 13px;
     margin: 0 0 10px;
 }
@@ -203,10 +209,10 @@ body {
 }
 
 
-/* MOBILE VERSION */
+/* media screen */
 
 
-/* @media screen and (max-width: 1840px) {
+@media screen and (max-width: 980px) {
     .navbar {
         position: relative;
         padding: 0;
@@ -238,4 +244,53 @@ body {
         display: flex;
         flex-direction: column;
     }
-} */
+}
+@media screen and (max-width: 1900px) {
+    .navbar .nav-links ul li {
+        margin: 0 40px;
+        list-style: none;
+        transition: 0.3s;
+    }
+}
+
+
+@media screen and (max-width: 1740px) {
+    .navbar .nav-links ul li {
+        margin: 0 20px;
+        list-style: none;
+        transition: 0.3s;
+    }
+    .quick-title{
+        font-family: 'Whitney';
+        font-weight: 600;
+        color: white;
+        font-size: 40px;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.329);
+        height: 733px;
+        width: 500px;
+        border-radius: 13px;
+        transition: 0.3s;
+    }
+    .sec-quick{
+        position: absolute;
+        right: 0;
+        margin: 7% 6%;
+        transition: 0.3s;
+    }
+    .category-button{
+        background-color: #bababa20;
+        padding: 8px 45px;
+        border-radius: 13px;
+        margin: 0 0 10px;
+        transition: 0.3s;
+    }
+    .category-button2{
+        background-color: #bababa20;
+        padding: 8px 55px;
+        border-radius: 13px;
+        margin: 0 0 10px;
+        transition: 0.3s;
+    }
+}
+
