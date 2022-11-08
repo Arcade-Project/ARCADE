@@ -1,2 +1,2 @@
 # ARCADE
-https://arcade-xyz.ml
+<h1><a href="https://arcade-xyz.ml">arcade-xyz.ml</a></h1>
