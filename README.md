@@ -1,2 +1,2 @@
 # ARCADE
-https://itsoon-xyz.github.io/ARCADE/
+https://arcade-xyz.ml
