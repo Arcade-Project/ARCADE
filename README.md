@@ -1,3 +1,8 @@
-# <a href="https://arcade-xyz.ml">ARCADE</a>
-<h1><a href="https://arcade-xyz.ml">ARCADE</a> is a free information and data bank.</h1> 
-All the data and information are scattered on different platforms. ARCADE is then an index that collects all data and classes.
+# <a href="https://www.arcade-xyz.ml">Arcade</a>
+
+Desktop browsers only
+If you encounter any problem while using Arcade, please let me know on the issues page.
+
+To propose other features, please see:
+* Test - [href](link)
+* Test - [href](link)
