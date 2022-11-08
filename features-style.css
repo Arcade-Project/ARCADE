@@ -27,6 +27,22 @@
 }
 
 
+/* HOVER  */
+
+
+.nav1 a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 4px 4px #000000;
+    transition: all ease-in 80ms;
+}
+.nav1 a:hover{
+    text-decoration: none;
+    border-bottom: solid 3px rgb(240, 240, 240);
+    text-shadow: 0px 4px 6px #000000;
+}
+
+
 /* HELLO */
 
 
