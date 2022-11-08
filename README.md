@@ -6,4 +6,4 @@ If you encounter any problem while using Arcade, please see:
 * Github - [Issues](https://github.com/Itsoon-xyz/ARCADE/issues)
 
 To propose other features, please see:
-* Github - [Issues](https://github.com/Itsoon-xyz/ARCADE/issues)
+* Arcade - [Features](https://www.arcade-xyz.ml/issues.html)
