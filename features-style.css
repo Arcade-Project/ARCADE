@@ -1,3 +1,35 @@
-div{
+::selection {
+    background-color: #5d00ff;
+  }
+
+
+/* HEADER */
+
+
+.logo {
+    margin: 1em 3.5em;
+}
+.navbar .nav-links ul {
+    display: flex;
+}
+.navbar .nav-links ul li {
+    margin: 0 60px;
+    list-style: none;
+}
+.navbar {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 99%;
+    font-size: 33px;
+    font-weight: 660;
+    font-family: 'Whitney';
+}
+
+
+/* HELLO */
+
+
+.hello {
    color: white;
 }
