@@ -11,5 +11,5 @@ To propose other features, please see:
 To follow the news, please see:
 * Itsoon - [Twitter](https://twitter.com/itsoon_off)
 
-To follow the evolution of the project, please see:
+To follow the evolution of the prototype, please see:
 * Arcade v2 - [Figma](https://www.figma.com/file/Rqh1uc6KawOI6Zo1ungAM0/ARCADE-v2?node-id=0%3A1&t=fOVIeF9EY4hoakGO-1)
