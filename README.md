@@ -9,7 +9,7 @@ To propose other features, please see:
 * Arcade - [Features](https://www.arcade-project.ml//features.html)
 
 To follow the news, please see:
-*Itsoon - [Twitter](https://twitter.com/itsoon-off)
+* Itsoon - [Twitter](https://twitter.com/itsoon_off)
 
 To follow the evolution of the project, please see:
 * Model - [Figma](https://www.figma.com/file/Rqh1uc6KawOI6Zo1ungAM0/ARCADE-v2?node-id=0%3A1&t=gqLUAxUtT38JednV-1)
