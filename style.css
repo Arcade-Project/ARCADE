@@ -128,27 +128,28 @@ body {
     right: 0;
     margin: 7% 8%;
 }
-.quick-category a {
+.quick-category button {
     text-decoration: none;
     color: #ADADAD;
 }
-.quick-category {
-    position: absolute;
-    top: 40px;
-    left: -20px;
-    z-index: 1;
-    list-style: none;
+.quick-category button {
+    position: relative;
+    left: 0px;
     font-size: 25px;
     font-family: 'Whitney';
-    text-align: center;
 }
-.category-button{
+.quick-category li {
+    list-style: none;
+}
+.category-button button{
     background-color: #bababa20;
-    padding: 8px 60px;
+    border-color: #00000000;
+    height: 45px;
+    width: 200px;
     border-radius: 13px;
     margin: 0 0 10px;
 }
-.category-button a:hover{
+.category-button button:hover{
     color: white;
 }
 
@@ -156,27 +157,28 @@ body {
 /* QUICKACCESS COLUMN 2 */
 
 
-.quick-category2 a {
+.quick-category2 button {
     text-decoration: none;
     color: #ADADAD;
 }
-.quick-category2 {
-    position: absolute;
-    top: 40px;
-    right: 20px;
-    z-index: 1;
-    list-style: none;
+.quick-category2 button {
+    position: relative;
     font-size: 25px;
     font-family: 'Whitney';
-    text-align: center;
+
 }
-.category-button2{
+.quick-category2 li {
+    list-style: none;
+}
+.category-button2 button{
     background-color: #bababa20;
-    padding: 8px 75px;
+    border-color: #00000000;
+    height: 45px;
+    width: 200px;
     border-radius: 13px;
     margin: 0 0 10px;
 }
-.category-button2 a:hover{
+.category-button2 button:hover{
     color: white;
 }
 
