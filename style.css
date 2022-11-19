@@ -1,34 +1,61 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
 body {
-    background-image: url(https://cdn.discordapp.com/attachments/908043726117556294/1036751306171355227/ARCADE.png);
-    background-repeat: no-repeat;
+    background-color: #000000;
 }
 ::selection {
-    background-color: #5d00ff;
+    background-color: #ff62f7;
   }
-
 
 /* HEADER */
 
-
 .logo {
-    margin: 1em 3.5em;
+    width: 150px;
+    margin: 35px 15%;
+    position: absolute;
+    left: 0;
 }
-.navbar .nav-links ul {
-    display: flex;
+.sign {
+    position: absolute;
+    right: 15%;
+    list-style: none;
+    font-size: 23px;
+    font-weight: 600;
+    font-family: 'Whitney';
+    border-radius: 10px;
+    transition: all 0.4s;
+}
+.sign a {
+    text-decoration: none;
+    color: white;
+}
+.sign a:hover {
+    color: black;
+}
+.sign:hover {
+    background-color: white;
+    border-radius: 10px;
+    padding: 3px 10px;
+    transition: all 0.18s;
 }
 .navbar .nav-links ul li {
-    margin: 0 60px;
+    margin: 40px 1%;
+}
+.navbar .nav-links ul {
     list-style: none;
-}
-.navbar {
-    position: absolute;
+    justify-content: center;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    width: 99%;
-    font-size: 33px;
-    font-weight: 660;
+    font-size: 23px;
+    font-weight: 600;
     font-family: 'Whitney';
+    top: 0% ;
 }
+
+/* MENU HAMBURGER */
+
 .menu-hamburger {
     display: none;
     position: absolute;
@@ -49,248 +76,184 @@ body {
     transition: all ease-in 80ms;
 }
 .nav1 a:hover{
-    text-decoration: none;
-    border-bottom: solid 3px rgb(240, 240, 240);
+    border-bottom: solid 3px #ffffff;
     text-shadow: 0px 4px 6px #000000;
 }
 
-
 /* 2 PARAGRAPHES */
 
-
-.paragraphe-color-change{
-    color: #A4A4A4;
+.title-p {
+    color: #ffffff;
+    font-family: 'alliance_no.2extrabold';
+    font-size: 100px;
+    font-weight: 800;
+    line-height: 95.5px;
+    list-style: none;
 }
-.paragraphe-1{
-    color: rgb(255, 255, 255);
-    font-family: 'Whitney';
-    font-size: 85px;
-    font-weight: 600;
+.p{
+    color: #8B8B8B;
+    font-family: 'Alliance No.1';
     font-style: normal;
-    line-height: 75px;
-    max-width: 800px;
-    list-style: none;
-}
-.paragraphe-2{
-    color: rgb(255, 255, 255);
-    font-size: 24px;
-    font-family: 'Whitney';
-    max-width: 640px;
-    list-style: none;
-    line-height: 25px;
-}
-.section-explain {
-    position: absolute;
-    left: 7.5em;
-    top: 19em;
-    z-index: 2;
-}
-.btn-explore{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-family: 'Whitney';
     font-size: 35px;
-    font-weight: 620;
-    background-color: #3D00A6;
-    border-radius: 5px;
-    padding: 13px 40px 20px;
-    text-shadow: -4px 3px 4px black;
-}
-.btn-explore:active{
-    text-shadow: -4px 3px 4px black;
-    color: rgb(255, 255, 255);
-    background-color: #32008a;
-    padding: 16px 43px 23px;
-}
-
-
-/* QUICK ACCESS */
-
-
-.quick-title{
-    font-family: 'Whitney';
-    font-weight: 600;
-    color: white;
-    font-size: 40px;
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.329);
-    height: 733px;
-    width: 570px;
-    border-radius: 13px;
-}
-.back-2 {
-    background-color: #0000004f;
-    height: 50px;
-    border-radius: 13px;
-}
-.sec-quick{
-    position: absolute;
-    right: 0;
-    margin: 7% 8%;
-}
-.quick-category a {
-    text-decoration: none;
-    color: #ADADAD;
-}
-.quick-category {
-    position: absolute;
-    top: 40px;
-    left: -20px;
-    z-index: 1;
+    font-weight: 500;
+    line-height: 40px;
+    max-width: 750px;
     list-style: none;
-    font-size: 25px;
-    font-family: 'Whitney';
-    text-align: center;
 }
-.category-button{
-    background-color: #bababa20;
-    padding: 8px 60px;
-    border-radius: 13px;
-    margin: 0 0 10px;
-}
-.category-button a:hover{
-    color: white;
-}
-
-
-/* QUICKACCESS COLUMN 2 */
-
-
-.quick-category2 a {
-    text-decoration: none;
-    color: #ADADAD;
-}
-.quick-category2 {
+.section-ex {
     position: absolute;
-    top: 40px;
-    right: 20px;
-    z-index: 1;
-    list-style: none;
-    font-size: 25px;
-    font-family: 'Whitney';
-    text-align: center;
-}
-.category-button2{
-    background-color: #bababa20;
-    padding: 8px 75px;
-    border-radius: 13px;
-    margin: 0 0 10px;
-}
-.category-button2 a:hover{
-    color: white;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
+/* SHORTCUT */
+
+.shortcut-container {
+    position: absolute;
+    left: 12px;
+    top: 40vh;
+}
+.shortcut {
+    margin: -10px;
+}
+.shortcut img {
+    width: 40px;
+    transition: 0.1s;
+}
+.shortcut img:hover {
+    width: 50px;
+    transition: all 0.1s;
+}
 
 /* UPDATE */
 
-
 .update{
-    display: block;
     color: white;
     font-family: 'Whitney';
     font-size: 15px;
     font-weight: 500;
     position: absolute;
-    bottom: 10px;
-    right: 10px;
+    bottom: 0;
+    right: 0;
 }
-
 
 /* FONT FACE */
 
-
 @font-face {
     font-family: 'Whitney';
-    src: url('Whitney-Bold.woff2') format('woff2'),
-        url('Whitney-Bold.woff') format('woff');
+    src: url('fonts/Whitney-Bold.woff2') format('woff2'),
+        url('fonts/Whitney-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
-
+@font-face {
+    font-family: 'alliance_no.1medium';
+    src: url('fonts/alliance_no.1_medium-webfont.woff2') format('woff2'),
+         url('fonts/alliance_no.1_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'alliance_no.2extrabold';
+    src: url('fonts/alliance_no.2_extrabold-webfont.woff2') format('woff2'),
+         url('fonts/alliance_no.2_extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* media screen */
 
+@media screen and (max-width: 1460px) {
 
-@media screen and (max-width: 980px) {
-    .navbar {
-        position: relative;
-        padding: 0;
-        margin: 0;
-        z-index: 3;
+    .title-p {
+        font-size: 90px;
+        font-weight: 800;
+        line-height: 95.5px;
+        transition: all 0.3s;
     }
-    .navbar .menu-hamburger {
+    .p{
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 30px;
+        max-width: 750px;
+        transition: all 0.3s;
+    }
+}
+@media screen and (max-width: 1310px) {
+
+    .title-p {
+        font-size: 70px;
+        font-weight: 800;
+        line-height: 60px;
+        padding-bottom: 10px;
+    }
+    .p{
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 30px;
+        max-width: 600px;
+    }
+}
+@media screen and (max-width: 1120px) {
+
+    .title-p {
+        font-size: 60px;
+        font-weight: 800;
+        line-height: 50px;
+        padding-bottom: 10px;
+    }
+    .p{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 20px;
+        max-width: 500px;
+    }
+}
+@media screen and (max-width: 980px) {
+    .menu-hamburger {
         display: block;
+        margin: 30px;
     }
     .nav-links {
-        position: absolute;
-        backdrop-filter: blur(8px);
-        width: 100%;
-        height: 200vh;
-        top: 0;
-        display: flex;
         margin-left: -100%;
-        justify-content: center;
-        align-items: center;
     }
     .nav-links.mobile-menu {
-        margin-left: 0;
+
+        margin: 0;
     }
     .navbar .nav-links ul li {
-        margin: 40px 0;
+        margin:30px 0;
         font-size: 60px;
     }
     .nav-links ul {
         display: flex;
         flex-direction: column;
     }
-}
-@media screen and (max-width: 1900px) {
-    .navbar .nav-links ul li {
-        margin: 0 40px;
-        list-style: none;
-        transition: 0.3s;
+    .title-p {
+        font-size: 100px;
+        font-weight:    800;
+        line-height: 95.5px;
+        transition: all 0.3s;
     }
-}
-
-
-@media screen and (max-width: 1740px) {
-    .navbar .nav-links ul li {
-        margin: 0 20px;
-        list-style: none;
-        transition: 0.3s;
+    .p{
+        font-size: 60px;
+        font-weight: 500;
+        line-height: 55px;
+        transition: all 0.3s;
+        background-color: blue;
     }
-    .quick-title{
-        font-family: 'Whitney';
-        font-weight: 600;
-        color: white;
-        font-size: 40px;
-        z-index: 1;
-        background-color: rgba(0, 0, 0, 0.329);
-        height: 733px;
-        width: 500px;
-        border-radius: 13px;
-        transition: 0.3s;
-    }
-    .sec-quick{
+    .section-ex {
         position: absolute;
-        right: 0;
-        margin: 7% 6%;
-        transition: 0.3s;
+        width: 100%;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: red;
     }
-    .category-button{
-        background-color: #bababa20;
-        padding: 8px 45px;
-        border-radius: 13px;
-        margin: 0 0 10px;
-        transition: 0.3s;
-    }
-    .category-button2{
-        background-color: #bababa20;
-        padding: 8px 55px;
-        border-radius: 13px;
-        margin: 0 0 10px;
-        transition: 0.3s;
+    .logo {
+        width: 350px;
     }
 }
-

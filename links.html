@@ -3,19 +3,42 @@
   <head>
      <title>ARCADE</title>
      <link rel="stylesheet" href="links-style.css">
-     <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/908043726117556294/1034107882762928208/itsoon_black_and_white.png?size=4096" type="image/x-icon" />
+     <link rel="shortcut icon" href="https://media.discordapp.net/attachments/908043726117556294/1039618112997298176/2.png?width=456&height=456" type="image/x-icon" />
   </head>
 <body> 
+   <div>
+   </div>
      <nav class="navbar">
-      <a href="index.html"><img class="logo" src="https://cdn.discordapp.com/attachments/908043726117556294/1036385340790931546/Logo.png" alt=""></a>
-         <div class="nav-links">
-          <ul>
-            <li class="nav1"> <a class="links" href="links.html">Links</a></li>
-            <li class="nav1"> <a class="discord" target="_blank" href="https://discord.gg/ejJmR5Y9YC">Discord</a></li>
-            <li class="nav1"> <a class="bookmarks" target="_blank" href="https://cdn-107.anonfiles.com/Q0Mb5aE5yf/07ed6764-1667391059/Useful%20Links%20Bookmarks.html">Bookmarks</a></li>
-            <li class="nav1"> <a class="contact" target="_blank" href="contact.html">Contact</a></li>
-          </ul>
-         </div>
-     </nav>
-</body>
+        <div class="nav-links">
+            <ul class="nav-btn">
+             <li class="sign"><a href="https://youtu.be/dQw4w9WgXcQ">Sign up</a></li>
+               <a href="index.html"><img class="logo" src="/img/arcade.svg" alt=""></a>
+             <li class="nav1"> <a class="links" href="index.html">Home</a></li>
+             <li class="nav1"> <a class="discord" target="_blank" href="">Explore</a></li>
+             <li class="nav1"> <a class="bookmarks" target="_blank" href="https://cdn-107.anonfiles.com/Q0Mb5aE5yf/07ed6764-1667391059/Useful%20Links%20Bookmarks.html">About</a></li>
+             <li class="nav1"> <a class="contact"href="contact.html">Contact</a></li>
+            </ul>
+       </div>
+    </nav>
+     <div class="shortcut-container">
+      <ul>
+         <li class="shortcut"><a target="_blank" href="https://github.com/Itsoon-xyz/ARCADE/wiki"><img class="wiki" src="img/1 vector.svg" alt=""></a></li>
+         <li class="shortcut"><a target="_blank" href="https://github.com/Itsoon-xyz/Useful-Links"><img class="bookmarks" src="img/2 vector.svg" alt=""></a></li>
+         <li class="shortcut"><a target="_blank" href="https://github.com/Itsoon-xyz/ARCADE"><img class="github" src="img/3 vector.svg" alt=""></a></li>
+         <li class="shortcut"><a target="_blank" href="https://github.com/Itsoon-xyz/ARCADE/issues"><img class="issues" src="img/4 vector.svg" alt=""></a></li>
+         <li class="shortcut"><a target="_blank" href="https://github.com/Itsoon-xyz/ARCADE/pulls"><img class="features" src="img/5 vector.svg" alt=""></a></li>
+     </ul>
+     </div>
+ </body>
+     <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+     </script>
+     <div class="update">
+      v2
+     </div>
 </html>

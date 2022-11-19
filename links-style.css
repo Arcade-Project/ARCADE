@@ -1,40 +1,61 @@
-body {
-    background-image: url(https://cdn.discordapp.com/attachments/908043726117556294/1037033290701492286/ARCADE.png);
+* {
+    margin: 0px;
+    padding: 0px;
 }
-/* ::-webkit-scrollbar { display: none; } */
+body {
+    background-color: #000000;
+}
 ::selection {
-    background-color: #5d00ff;
+    background-color: #ff62f7;
   }
-
 
 /* HEADER */
 
-
 .logo {
-    position: relative;
-    left: 3.5em;
-    bottom: 0.2em;
+    width: 150px;
+    margin: 35px 15%;
+    position: absolute;
+    left: 0;
 }
-.navbar .nav-links ul {
-    text-decoration: none;
+.sign {
+    position: absolute;
+    right: 15%;
     list-style: none;
-    display: flex;
+    font-size: 23px;
+    font-weight: 600;
+    font-family: 'Whitney';
+    border-radius: 10px;
+    transition: all 0.4s;
+}
+.sign a {
+    text-decoration: none;
+    color: white;
+}
+.sign a:hover {
+    color: black;
+}
+.sign:hover {
+    background-color: white;
+    border-radius: 10px;
+    padding: 3px 10px;
+    transition: all 0.18s;
 }
 .navbar .nav-links ul li {
-    padding: 0 50px;
-    position: relative;
-    left: 23.9em;
-    bottom: 0.2em;
+    margin: 40px 1%;
 }
-.navbar {
-    position: absolute;
+.navbar .nav-links ul {
+    list-style: none;
+    justify-content: center;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 33px;
-    font-weight: 660;
+    font-size: 23px;
+    font-weight: 600;
     font-family: 'Whitney';
+    top: 0% ;
 }
+
+/* MENU HAMBURGER */
+
 .menu-hamburger {
     display: none;
     position: absolute;
@@ -48,9 +69,6 @@ body {
 /* HOVER  */
 
 
-.button-links {
-    text-decoration: none;
-}
 .nav1 a{
     text-decoration: none;
     color: white;
@@ -58,6 +76,156 @@ body {
     transition: all ease-in 80ms;
 }
 .nav1 a:hover{
-    border-bottom: solid 3px rgb(240, 240, 240);
+    border-bottom: solid 3px #ffffff;
     text-shadow: 0px 4px 6px #000000;
+}
+
+/* SHORTCUT */
+
+.shortcut-container {
+    position: absolute;
+    left: 12px;
+    top: 40vh;
+}
+.shortcut {
+    margin: -10px;
+}
+.shortcut img {
+    width: 40px;
+    transition: 0.1s;
+}
+.shortcut img:hover {
+    width: 50px;
+    transition: all 0.1s;
+}
+
+/* UPDATE */
+
+.update{
+    color: white;
+    font-family: 'Whitney';
+    font-size: 15px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* FONT FACE */
+
+@font-face {
+    font-family: 'Whitney';
+    src: url('fonts/Whitney-Bold.woff2') format('woff2'),
+        url('fonts/Whitney-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'alliance_no.1medium';
+    src: url('fonts/alliance_no.1_medium-webfont.woff2') format('woff2'),
+         url('fonts/alliance_no.1_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'alliance_no.2extrabold';
+    src: url('fonts/alliance_no.2_extrabold-webfont.woff2') format('woff2'),
+         url('fonts/alliance_no.2_extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* media screen */
+
+@media screen and (max-width: 1460px) {
+
+    .title-p {
+        font-size: 90px;
+        font-weight: 800;
+        line-height: 95.5px;
+        transition: all 0.3s;
+    }
+    .p{
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 30px;
+        max-width: 750px;
+        transition: all 0.3s;
+    }
+}
+@media screen and (max-width: 1310px) {
+
+    .title-p {
+        font-size: 70px;
+        font-weight: 800;
+        line-height: 60px;
+        padding-bottom: 10px;
+    }
+    .p{
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 30px;
+        max-width: 600px;
+    }
+}
+@media screen and (max-width: 1120px) {
+
+    .title-p {
+        font-size: 60px;
+        font-weight: 800;
+        line-height: 50px;
+        padding-bottom: 10px;
+    }
+    .p{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 20px;
+        max-width: 500px;
+    }
+}
+@media screen and (max-width: 980px) {
+    .menu-hamburger {
+        display: block;
+        margin: 30px;
+    }
+    .nav-links {
+        margin-left: -100%;
+    }
+    .nav-links.mobile-menu {
+
+        margin: 0;
+    }
+    .navbar .nav-links ul li {
+        margin:30px 0;
+        font-size: 60px;
+    }
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .title-p {
+        font-size: 100px;
+        font-weight:    800;
+        line-height: 95.5px;
+        transition: all 0.3s;
+    }
+    .p{
+        font-size: 60px;
+        font-weight: 500;
+        line-height: 55px;
+        transition: all 0.3s;
+        background-color: blue;
+    }
+    .section-ex {
+        position: absolute;
+        width: 100%;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: red;
+    }
+    .logo {
+        width: 350px;
+    }
 }
