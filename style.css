@@ -85,20 +85,19 @@ body {
 .title-p {
     color: #ffffff;
     font-family: 'alliance_no.2extrabold';
-    font-size: 100px;
+    font-size: 105px;
     font-weight: 800;
-    line-height: 95.5px;
+    line-height: 100px;
     list-style: none;
 }
 .p{
     color: #8B8B8B;
     font-family: 'Alliance No.1';
-    font-style: normal;
     font-size: 35px;
     font-weight: 500;
     line-height: 40px;
-    max-width: 750px;
     list-style: none;
+    max-width: 760px;
 }
 .section-ex {
     position: absolute;
@@ -113,7 +112,7 @@ body {
 .shortcut-container {
     position: absolute;
     left: 12px;
-    top: 40vh;
+    top: 42vh;
 }
 .shortcut {
     margin: -10px;
@@ -166,7 +165,7 @@ body {
 
 /* media screen */
 
-@media screen and (max-width: 1460px) {
+@media screen and (max-width: 1530px) {
 
     .title-p {
         font-size: 90px;
@@ -200,6 +199,30 @@ body {
 @media screen and (max-width: 1120px) {
 
     .title-p {
+        font-size: 68px;
+        font-weight: 800;
+        line-height: 50px;
+        padding-bottom: 10px;
+    }
+    .p{
+        font-size: 23px;
+        font-weight: 500;
+        line-height: 25px;
+        max-width: 500px;
+    }
+}
+@media screen and (max-width: 1000px) {
+
+    .logo {
+        margin: 35px 5%;
+    }
+    .sign {
+        right: 5%;
+    }
+}
+@media screen and (max-width: 1120px) {
+
+    .title-p {
         font-size: 60px;
         font-weight: 800;
         line-height: 50px;
@@ -208,52 +231,114 @@ body {
     .p{
         font-size: 20px;
         font-weight: 500;
-        line-height: 20px;
+        line-height: 25px;
         max-width: 500px;
     }
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 875px) {
+
+    .title-p {
+        font-size: 50px;
+        font-weight: 800;
+        line-height: 50px;
+        padding-bottom: 10px;
+    }
+    .p{
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 25px;
+        max-width: 500px;
+    }
+}
+@media screen and (max-width:730px) {
+
+    .title-p {
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 50px;
+        padding-bottom: 10px;
+    }
+    .p{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 25px;
+        max-width: 500px;
+    }
+}
+@media screen and (max-width: 680px) {
+    .sign {
+        display: none;
+    }
     .menu-hamburger {
         display: block;
         margin: 30px;
     }
     .nav-links {
-        margin-left: -100%;
+        margin-left: -200%;
     }
     .nav-links.mobile-menu {
-
-        margin: 0;
+        width: 400px;
+        margin: 0 auto;
     }
     .navbar .nav-links ul li {
-        margin:30px 0;
-        font-size: 60px;
+        font-size: 4rem;
+        margin: 0 auto;
     }
     .nav-links ul {
         display: flex;
         flex-direction: column;
     }
+    .navbar .nav-links ul {
+        font-size: 80px;
+    }
     .title-p {
-        font-size: 100px;
+        font-size: 5rem;
         font-weight:    800;
         line-height: 95.5px;
         transition: all 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .p{
-        font-size: 60px;
+        font-size: 2rem;
         font-weight: 500;
-        line-height: 55px;
+        line-height: 2rem;
         transition: all 0.3s;
-        background-color: blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .section-ex {
+        width: auto;
         position: absolute;
-        width: 100%;
-        top: 30%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        background-color: red;
+        left: 5%;
+        right: 5%;
+        top: 35%;
+        transform: none;
     }
     .logo {
         width: 350px;
+    }
+    /* SHORTCUT */
+
+    .shortcut {
+    margin: -10px;
+    }
+    .shortcut img {
+    width: 40px;
+    transition: 0.1s;
+    }
+    .abc {
+    position: absolute;
+    bottom: 0;
+    }
+    .shortcut img:active {
+    display: flex;
+    width: 50px;
+    transition: all 0.1s;
+    }
+    .shortcut-container {
+        position: absolute;
     }
 }
