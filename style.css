@@ -54,7 +54,7 @@ body {
     top: 0% ;
 }
 
-/* MENU HAMBURGER */
+/* HEADER MENU HAMBURGER */
 
 .menu-hamburger {
     display: none;
@@ -65,9 +65,7 @@ body {
     cursor: pointer;
 }
 
-
-/* HOVER  */
-
+/* HEADER HOVER  */
 
 .nav1 a{
     text-decoration: none;
@@ -80,7 +78,7 @@ body {
     text-shadow: 0px 4px 6px #000000;
 }
 
-/* 2 PARAGRAPHES */
+/* SECTION EXPLAIN */
 
 .title-p {
     color: #ffffff;
@@ -163,7 +161,7 @@ body {
     font-style: normal;
 }
 
-/* media screen */
+/* MEDIA SCREEN */
 
 @media screen and (max-width: 1530px) {
 
@@ -274,7 +272,7 @@ body {
         margin: 30px;
     }
     .nav-links {
-        margin-left: -200%;
+        margin: -200% 0;
     }
     .nav-links.mobile-menu {
         width: 400px;
@@ -283,6 +281,12 @@ body {
     .navbar .nav-links ul li {
         font-size: 4rem;
         margin: 0 auto;
+        background-color: red;
+    }
+    .cont-nav1 {
+        margin-top: 40%;
+        width: auto;
+        background-color: blue;
     }
     .nav-links ul {
         display: flex;
@@ -320,6 +324,7 @@ body {
     .logo {
         width: 350px;
     }
+
     /* SHORTCUT */
 
     .shortcut {
@@ -329,12 +334,7 @@ body {
     width: 40px;
     transition: 0.1s;
     }
-    .abc {
-    position: absolute;
-    bottom: 0;
-    }
     .shortcut img:active {
-    display: flex;
     width: 50px;
     transition: all 0.1s;
     }
