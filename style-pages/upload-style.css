@@ -68,17 +68,26 @@ body {
 
 /* HEADER HOVER  */
 
+<<<<<<< HEAD
 .nav1 a {
+=======
+.nav1 a{
+>>>>>>> 30653f345dfca93c367648f0798d31d376eb804e
     text-decoration: none;
     color: white;
     text-shadow: 0px 4px 4px #000000;
     transition: all ease-in 80ms;
 }
+<<<<<<< HEAD
 .nav1 a:hover {
+=======
+.nav1 a:hover{
+>>>>>>> 30653f345dfca93c367648f0798d31d376eb804e
     border-bottom: solid 3px #ffffff;
     text-shadow: 0px 4px 6px #000000;
 }
 
+<<<<<<< HEAD
 /* SECTION UPLOAD */
 
 #upload {
@@ -121,6 +130,10 @@ body {
 }
 .up-desc {
 }
+=======
+/* SECTION EXPLAIN */
+
+>>>>>>> 30653f345dfca93c367648f0798d31d376eb804e
 
 /* SHORTCUT */
 
@@ -164,7 +177,11 @@ body {
     font-display: swap;
 } */
 @font-face {
+<<<<<<< HEAD
     font-family: 'Alliance No.1';
+=======
+    font-family: 'alliance_no.1medium';
+>>>>>>> 30653f345dfca93c367648f0798d31d376eb804e
     src: url('assets/fonts/alliance_no.1_medium-webfont.woff2') format('woff2'),
          url('assets/fonts/alliance_no.1_medium-webfont.woff') format('woff');
     font-weight: normal;
@@ -172,7 +189,11 @@ body {
     font-display: swap;
 }
 @font-face {
+<<<<<<< HEAD
     font-family: 'Alliance No.2';
+=======
+    font-family: 'alliance_no.2extrabold';
+>>>>>>> 30653f345dfca93c367648f0798d31d376eb804e
     src: url('assets/fonts/alliance_no.2_extrabold-webfont.woff2') format('woff2'),
          url('assets/fonts/alliance_no.2_extrabold-webfont.woff') format('woff');
     font-weight: normal;
