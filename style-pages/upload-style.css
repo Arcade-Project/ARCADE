@@ -85,41 +85,43 @@ body {
     position: absolute;
     left: 30%;
     width: 40%;
+    background-color: #161515;
+    border-radius: 20px;
 }
 #upload ul {
     color: white;
     list-style: none;
 }
-#upload li {
+#upload div {
     font-family: 'Alliance No.1';
 }
 #upload h1 {
     font-family: 'Alliance No.1';
-}
-.file li a {
-    color: #000000;
-    text-decoration: none;
-}
-.file {
-    background-color: #161515;
-    border-radius: 20px;
-}
-.file-h1 {
-    color: #000000;
     background-color: #ffffff;
-    border-radius: 20px;
     text-align: center;
+    border-radius: 20px;
 }
 .up-file {
-    padding: 10px 20px;
-    background-color: #ffffff;
-    border-radius: 20px;
+    margin-bottom: 30px;
 }
-.up-file1 {
-    margin-top: 20px;
-    padding-bottom: 20px;
+.up-file a {
+    font-weight: 550;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #000000;
+    background-color: white;
 }
 .up-desc {
+    color: white;
+    margin-left: 10px;
+}
+.up-file1 {
+    margin: 20px 0;
+}
+.up-file a:hover {
+    box-shadow: 0px 5px 0px #ff62f7;
+    color: #ff62f7;
 }
 
 /* SHORTCUT */
