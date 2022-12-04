@@ -151,12 +151,6 @@ body {
 
     /* ALLIANCE */
 
-    font-family: 'alliance_no.1medium';
-    src: url('alliance_no.1_medium-webfont.woff2') format('woff2'),
-         url('alliance_no.1_medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
     font-family: 'Alliance No.2';
     src: url('assets/fonts/AllianceNo2-ExtraBold.ttf') format('truetype');
     font-weight: bold;
