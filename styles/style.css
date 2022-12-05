@@ -148,7 +148,7 @@ body {
     font-display: swap;
 }
 @font-face {
-    font-family: 'Alliance No.2';
+    font-family: "Alliance No.2";
     src: url('..assets/fonts/AllianceNo2-ExtraBold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
