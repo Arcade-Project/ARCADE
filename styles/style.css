@@ -142,20 +142,19 @@ body {
 
 @font-face {
     font-family: 'Whitney';
-    src: url('assets/fonts/Whitney-Bold.woff2') format('woff2'),
-        url('assets/fonts/Whitney-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-
-    /* ALLIANCE */
-
-    font-family: 'Alliance No.2';
-    src: url('assets/fonts/AllianceNo2-ExtraBold.ttf') format('truetype');
+    src: url('..assets/fonts/Whitney-Bold.woff2') format('woff2'),
+        url('..assets/fonts/Whitney-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: "Alliance No.2";
+    src: local("Alliance No.2"), local("AllianceNo2-ExtraBold"),
+      url("..assets/fonts/AllianceNo2-ExtraBold.ttf");
+    font-weight: bold;
+  }
+
 
 /* MEDIA SCREEN */
 
