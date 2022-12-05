@@ -158,33 +158,22 @@ body {
 /* FONT FACE */
 
 @font-face {
-    font-family: 'Whitney';
-    src: url('assets/fonts/Whitney-Bold.woff2') format('woff2'),
-        url('assets/fonts/Whitney-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-} */
-@font-face {
-    font-family: 'Alliance No.1';
-    src: url('assets/fonts/alliance_no.1_medium-webfont.woff2') format('woff2'),
-         url('assets/fonts/alliance_no.1_medium-webfont.woff') format('woff');
-    font-weight: normal;
+    font-family: "Alliance No.1";
+    src: url('../assets/fonts/AllianceNo1-Medium.ttf') format('truetype');
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
-    font-family: 'Alliance No.2';
-    src: url('assets/fonts/alliance_no.2_extrabold-webfont.woff2') format('woff2'),
-         url('assets/fonts/alliance_no.2_extrabold-webfont.woff') format('woff');
+    font-family: "clashDisplay";
+    src: url("../assets/fonts/ClashDisplay-Variable.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
-}
+  }
 
 /* MEDIA SCREEN */
 
-@media screen and (max-width: 1530px) {
+/* @media screen and (max-width: 1530px) {
 
     .title-p {
         font-size: 90px;
@@ -345,21 +334,4 @@ body {
     .logo {
         width: 350px;
     }
-
-    /* SHORTCUT */
-
-    .shortcut {
-    margin: -10px;
-    }
-    .shortcut img {
-    width: 40px;
-    transition: 0.1s;
-    }
-    .shortcut img:active {
-    width: 50px;
-    transition: all 0.1s;
-    }
-    .shortcut-container {
-        position: absolute;
-    }
-}
+} */
