@@ -83,7 +83,7 @@ body {
 
 .title-p {
     color: #ffffff;
-    font-family: 'Alliance No.2';
+    font-family: "Alliance No.2";
     font-size: 105px;
     font-weight: 800;
     line-height: 100px;
@@ -149,7 +149,7 @@ body {
 }
 @font-face {
     font-family: "Alliance No.2";
-    src: url('..assets/fonts/AllianceNo2-ExtraBold.ttf') format('truetype');
+    src: url('../assets/fonts/AllianceNo2-ExtraBold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
