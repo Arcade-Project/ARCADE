@@ -22,9 +22,11 @@ body {
     right: 15%;
     list-style: none;
     font-size: 23px;
-    font-weight: 600;
+    font-weight: 650;
     font-family: 'Whitney';
     border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    padding: 3px 10px;
     transition: all 0.4s;
 }
 .sign a {

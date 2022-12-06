@@ -23,8 +23,10 @@ body {
     list-style: none;
     font-size: 23px;
     font-weight: 650;
-    font-family: "Whitney";
+    font-family: 'Whitney';
     border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    padding: 3px 10px;
     transition: all 0.4s;
 }
 .sign a {
@@ -235,36 +237,6 @@ body {
     }
 }
 @media screen and (max-width: 875px) {
-
-    .title-p {
-        font-size: 50px;
-        font-weight: 800;
-        line-height: 50px;
-        padding-bottom: 10px;
-    }
-    .p{
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 25px;
-        max-width: 500px;
-    }
-}
-@media screen and (max-width:730px) {
-
-    .title-p {
-        font-size: 40px;
-        font-weight: 800;
-        line-height: 50px;
-        padding-bottom: 10px;
-    }
-    .p{
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 25px;
-        max-width: 500px;
-    }
-}
-@media screen and (max-width: 680px) {
     .sign {
         display: none;
     }
@@ -272,10 +244,11 @@ body {
         display: block;
         margin: 30px;
     }
-    .nav-links {
-        margin: -200% 0;
+    .cont-nav1 { 
+        margin: 0 -200%;
+        display: none;
     }
-    .nav-links.mobile-menu {
+    .cont-nav1.mobile-menu {
         width: 400px;
         margin: 0 auto;
     }
@@ -284,10 +257,8 @@ body {
         margin: 0 auto;
         background-color: red;
     }
-    .cont-nav1 {
-        margin-top: 40%;
-        width: auto;
-        background-color: blue;
+    .logo {
+        display: block;
     }
     .nav-links ul {
         display: flex;

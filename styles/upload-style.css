@@ -25,6 +25,8 @@ body {
     font-weight: 650;
     font-family: 'Whitney';
     border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    padding: 3px 10px;
     transition: all 0.4s;
 }
 .sign a {
@@ -122,6 +124,21 @@ body {
 .up-file a:hover {
     box-shadow: 0px 5px 0px #ff62f7;
     color: #ff62f7;
+}
+.acc {
+    font-family: "Alliance No.1";
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 20px;
+}
+.noacc {
+    font-family: "Alliance No.1";
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 20px;
+}
+.account {
+    position: absolute;
 }
 
 /* SHORTCUT */
