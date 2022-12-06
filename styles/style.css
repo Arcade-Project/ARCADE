@@ -142,7 +142,7 @@ body {
 
 @font-face {
     font-family: "Whitney";
-    src: url('..assets/fonts/Whitney-Bold.ttf') format('truetype');
+    src: url('../assets/fonts/Whitney-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
