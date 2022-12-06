@@ -83,11 +83,23 @@ body {
 
 /* FONT FACE */
 
-
 @font-face {
-    font-family: 'Whitney';
-    src: url('Whitney-Bold.woff2') format('woff2'),
-        url('Whitney-Bold.woff') format('woff');
+    font-family: "Whitney";
+    src: url('..assets/fonts/Whitney-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Alliance No.1";
+    src: url('../assets/fonts/AllianceNo1-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Alliance No.2";
+    src: url('../assets/fonts/AllianceNo2-ExtraBold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;

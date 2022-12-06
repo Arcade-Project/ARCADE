@@ -148,34 +148,23 @@ body {
 /* FONT FACE */
 
 @font-face {
-    font-family: 'Whitney';
-    src: url('assets/fonts/Whitney-Bold.woff2') format('woff2'),
-        url('assets/fonts/Whitney-Bold.woff') format('woff');
+    font-family: "Whitney";
+    src: url('..assets/fonts/Whitney-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
-<<<<<<< HEAD
-    font-family: 'Alliance No.1';
-=======
-    font-family: 'alliance_no.1medium';
->>>>>>> 30653f345dfca93c367648f0798d31d376eb804e
-    src: url('assets/fonts/alliance_no.1_medium-webfont.woff2') format('woff2'),
-         url('assets/fonts/alliance_no.1_medium-webfont.woff') format('woff');
-    font-weight: normal;
+    font-family: "Alliance No.1";
+    src: url('../assets/fonts/AllianceNo1-Medium.ttf') format('truetype');
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
-<<<<<<< HEAD
-    font-family: 'Alliance No.2';
-=======
-    font-family: 'alliance_no.2extrabold';
->>>>>>> 30653f345dfca93c367648f0798d31d376eb804e
-    src: url('assets/fonts/alliance_no.2_extrabold-webfont.woff2') format('woff2'),
-         url('assets/fonts/alliance_no.2_extrabold-webfont.woff') format('woff');
-    font-weight: normal;
+    font-family: "Alliance No.2";
+    src: url('../assets/fonts/AllianceNo2-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
