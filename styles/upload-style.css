@@ -93,7 +93,7 @@ body {
     list-style: none;
 }
 #upload div {
-    font-family: 'Alliance No.1';
+    font-family: "Alliance No.1";
 }
 #upload h1 {
     font-family: "Alliance No.1";
@@ -112,6 +112,7 @@ body {
     background-color: white;
 }
 .up-desc {
+    font-weight: 550;
     color: white;
     margin-left: 10px;
 }
