@@ -85,10 +85,12 @@ body {
 
 #upload {
     position: absolute;
-    left: 30%;
-    width: 40%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
     background-color: #161515;
     border-radius: 20px;
+    width: 70%;
 }
 #upload ul {
     color: white;
@@ -130,15 +132,24 @@ body {
     background-color: #ffffff;
     text-align: center;
     border-radius: 20px;
+    font-size: 20px;
+    width: 100%;
+    margin-right: 10px;
 }
 .noacc {
     font-family: "Alliance No.1";
     background-color: #ffffff;
     text-align: center;
     border-radius: 20px;
+    font-size: 20px;
+    width: 100%;
 }
 .account {
     position: absolute;
+}
+.cat-acc {
+    display: flex;
+    margin: 10px 0;
 }
 
 /* SHORTCUT */
