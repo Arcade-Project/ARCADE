@@ -236,7 +236,7 @@ body {
         max-width: 500px;
     }
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 720px) {
     .sign {
         display: none;
     }
