@@ -83,37 +83,36 @@ body {
 
 /* SECTION CAT */
 
-.cat {
+.c {
+    text-align: center;
+    margin: 30px 0;
     position: absolute;
-    width: auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    /* width: 200px;
-    background-color: blue; */
+    display: flex;
+    flex-direction: column;
 }
-.cat li:hover {
-    text-align: center;
+.c li:hover {
     padding: 6px 10px;
     background-color: white;
     border-radius: 13px;
     transition: all 0.18s;
 }
-.cat a:hover {
-    color: black;
+.c1 a:hover {
+    color: #ff62f7;
 }
-.cat li {
-    border-radius: 20%;
-    text-align: center;
-    margin: 10px;
+.c li {
+    border-radius: 13px;
+    padding: 3px 0px;
+    background-color: #16151500;
     font-weight: 600;
-    list-style: none;
     font-family: 'Whitney';
     transition: all 0.18s;
 }
-.cat a {
+.c a {
     font-size: 25px;
-    color: white;
+    color: #ffffff;
     text-decoration: none;
 }
 /* SHORTCUT */
