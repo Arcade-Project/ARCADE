@@ -90,7 +90,7 @@ body {
     transform: translate(-50%,-50%);
     background-color: #161515;
     border-radius: 20px;
-    width: 70%;
+    width: 75%;
 }
 #upload ul {
     color: white;
@@ -218,7 +218,7 @@ body {
 
 /* MEDIA SCREEN */
 
-/* @media screen and (max-width: 1530px) {
+@media screen and (max-width: 1530px) {
 
     .title-p {
         font-size: 90px;
@@ -264,15 +264,6 @@ body {
         max-width: 500px;
     }
 }
-@media screen and (max-width: 1000px) {
-
-    .logo {
-        margin: 35px 5%;
-    }
-    .sign {
-        right: 5%;
-    }
-}
 @media screen and (max-width: 1120px) {
 
     .title-p {
@@ -288,6 +279,18 @@ body {
         max-width: 500px;
     }
 }
+@media screen and (max-width: 1050px) {
+
+    .logo {
+        margin: 35px 5%;
+    }
+    .sign {
+        right: 5%;
+    }
+    #upload {
+        width: 90%;
+    }
+}
 @media screen and (max-width: 875px) {
 
     .title-p {
@@ -301,6 +304,22 @@ body {
         font-weight: 500;
         line-height: 25px;
         max-width: 500px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .up-desc {
+        display: flex;
+        flex-direction: column;
+        margin: 15px 0;
+    }
+    #upload {
+        position: absolute;
+        left: 5%;
+        top: 20%;
+        transform: none;
+    }
+    .up-file {
+        margin: 15px;
     }
 }
 @media screen and (max-width:730px) {
@@ -379,4 +398,4 @@ body {
     .logo {
         width: 350px;
     }
-} */
+}
