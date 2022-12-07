@@ -100,7 +100,11 @@ body {
     transition: all 0.18s;
 }
 .c1 a:hover {
+    list-style: none;
     color: #ff62f7;
+}
+.c1 {
+    list-style: none;
 }
 .c li {
     border-radius: 13px;
