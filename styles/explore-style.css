@@ -24,23 +24,23 @@ body {
     font-size: 23px;
     font-weight: 650;
     font-family: 'Whitney';
-    border-radius: 10px;
-    background-color: rgb(0, 0, 0);
-    padding: 3px 10px;
-    transition: all 0.4s;
 }
 .sign a {
+    padding: 3px 10px;
+    border-radius: 10px;
     text-decoration: none;
     color: white;
+    transition: all 0.3s;
 }
 .sign a:hover {
     color: black;
+    padding: 3px 10px;
+    border-radius: 10px;
+    background-color: white;
+    transition: all 0.3s;
 }
 .sign:hover {
-    background-color: white;
-    border-radius: 10px;
-    padding: 3px 10px;
-    transition: all 0.18s;
+    font-weight: 650;
 }
 .navbar .nav-links ul li {
     margin: 40px 1%;
