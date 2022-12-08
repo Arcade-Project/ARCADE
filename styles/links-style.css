@@ -83,6 +83,7 @@ body {
 /* SECTION CAT */
 
 .c {
+    width: 240px;
     text-align: center;
     margin: 30px 0;
     position: absolute;
@@ -92,13 +93,10 @@ body {
     display: flex;
     flex-direction: column;
 }
-.c li:hover {
-    padding: 6px 10px;
+.c1 a:hover {
+    padding: 6px 40px;
     background-color: white;
     border-radius: 13px;
-    transition: all 0.18s;
-}
-.c1 a:hover {
     list-style: none;
     color: #ff62f7;
 }
@@ -106,14 +104,15 @@ body {
     list-style: none;
 }
 .c li {
-    border-radius: 13px;
-    padding: 3px 0px;
-    background-color: #16151500;
+    margin: 5px 0;
+    text-align: center;
     font-weight: 600;
     font-family: 'Whitney';
     transition: all 0.18s;
 }
 .c a {
+    width: 100%;
+    border-radius: 13px;
     font-size: 25px;
     color: #ffffff;
     text-decoration: none;
