@@ -7,7 +7,7 @@ body {
 }
 ::selection {
     background-color: #5900ff;
-  }
+}
   body::-webkit-scrollbar {
     width: 10px; /* width of the entire scrollbar */
   }
@@ -169,6 +169,9 @@ body {
 }
 .canbe {
     font-size: 15px;
+}
+.mcont h1 {
+    font-size: 20px;
 }
 
 /* SHORTCUT */
