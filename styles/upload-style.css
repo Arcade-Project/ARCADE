@@ -84,6 +84,7 @@ body {
 /* SECTION UPLOAD */
 
 #upload {
+    margin-top: 40px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -159,6 +160,9 @@ body {
     color: rgb(0, 0, 0);
     border-radius: 20px;
     background-color: white;
+}
+.canbe {
+    font-size: 15px;
 }
 
 /* SHORTCUT */
