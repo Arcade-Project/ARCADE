@@ -87,9 +87,6 @@ body {
     color: white;
     text-decoration: none;
 }
-.tt:hover {
-    
-}
 
 /* SHORTCUT */
 
@@ -114,12 +111,12 @@ body {
 
 .update{
     color: white;
-    font-family: "Whitney";
+    font-family: 'Whitney';
     font-size: 15px;
     font-weight: 500;
-    position: absolute;
-    bottom: 0;
+    position: fixed;
     right: 0;
+    bottom: 0;
 }
 
 /* FONT FACE */
