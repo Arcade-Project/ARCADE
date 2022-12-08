@@ -85,19 +85,36 @@ body {
 .contact {
     font-family: "Alliance No.1";
     color: white;
+    font-size: 18px;
     text-decoration: none;
-    margin-top: 8em;
     position: absolute;
     left: 50%;
     top: 50%;
     width: 400px;
-    text-align: center;
     transform: translate(-50%,-50%);
     background-color: #161515;
     border-radius: 20px;
 }
 .cont1 {
     list-style: none;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    transition: all 0.2s;
+}
+.contact h1 {
+    color: black;
+    font-size: 25px;    
+    font-weight: 600;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+}
+.contact ul:hover {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: all 0.2s;
 }
 
 /* SHORTCUT */
