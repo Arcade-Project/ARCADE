@@ -1,0 +1,405 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: #000000;
+}
+::selection {
+    background-color: #ff62f7;
+  }
+
+/* HEADER */
+
+.logo {
+    width: 150px;
+    margin: 35px 15%;
+    position: absolute;
+    left: 0;
+}
+.sign {
+    position: absolute;
+    right: 15%;
+    list-style: none;
+    font-size: 23px;
+    font-weight: 650;
+    font-family: 'Whitney';
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    padding: 3px 10px;
+    transition: all 0.4s;
+}
+.sign a {
+    text-decoration: none;
+    color: white;
+}
+.sign a:hover {
+    color: black;
+}
+.sign:hover {
+    font-weight: 650;
+    background-color: white;
+    border-radius: 10px;
+    padding: 3px 10px;
+    transition: all 0.18s;
+}
+.navbar .nav-links ul li {
+    margin: 40px 1%;
+}
+.navbar .nav-links ul {
+    list-style: none;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    font-size: 23px;
+    font-weight: 650;
+    font-family: 'Whitney';
+    top: 0% ;
+}
+
+/* HEADER MENU HAMBURGER */
+
+.menu-hamburger {
+    display: none;
+    position: absolute;
+    top: 0.8em;
+    right: 2em;
+    width: 90px;
+    cursor: pointer;
+}
+
+/* HEADER HOVER  */
+
+.nav1 a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 4px 4px #000000;
+    transition: all ease-in 80ms;
+}
+.nav1 a:hover {
+    border-bottom: solid 3px #ffffff;
+    text-shadow: 0px 4px 6px #000000;
+}
+
+/* SECTION UPLOAD */
+
+#upload {
+    margin-top: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #161515;
+    border-radius: 20px;
+    width: 75%;
+}
+#upload ul {
+    color: white;
+    list-style: none;
+}
+#upload div {
+    font-family: "Alliance No.1";
+}
+#upload h1 {
+    font-family: "Alliance No.1";
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 20px;
+}
+.mlink1 {
+    margin: 25px 0;
+    text-align: left;
+}
+.mlink {
+    margin-left: 10px;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+.mlink a {
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #000000;
+    background-color: white;
+}
+.desc {
+    font-weight: 550;
+    color: white;
+    margin-left: 10px;
+}
+.mlink a:hover {
+    box-shadow: 0px 5px 0px #ff62f7;
+    color: #ff62f7;
+}
+.acc {
+    font-family: "Alliance No.1";
+    background-color: #000000;
+    border-radius: 20px;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    margin-right: 10px;
+}
+.noacc {
+    font-family: "Alliance No.1";
+    background-color: #000000;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 20px;
+    width: 100%;
+}
+.cat-acc {
+    display: flex;
+    margin: 10px 10px;
+}
+.title-acc {
+    font-size: 20px;    
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    background-color: white;
+}
+.canbe {
+    font-size: 15px;
+}
+
+/* SHORTCUT */
+
+.shortcut-container {
+    position: absolute;
+    left: 12px;
+    top: 42vh;
+}
+.shortcut {
+    margin: -10px;
+}
+.shortcut img {
+    width: 40px;
+    transition: 0.1s;
+}
+.shortcut img:hover {
+    width: 50px;
+    transition: all 0.1s;
+}
+
+/* UPDATE */
+
+.update{
+    color: white;
+    font-family: 'Whitney';
+    font-size: 15px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* FONT FACE */
+
+@font-face {
+    font-family: "Whitney";
+    src: url('../assets/fonts/Whitney-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Alliance No.1";
+    src: url('../assets/fonts/AllianceNo1-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Alliance No.2";
+    src: url('../assets/fonts/AllianceNo2-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* MEDIA SCREEN */
+
+@media screen and (max-width: 1530px) {
+
+    .title-p {
+        font-size: 90px;
+        font-weight: 800;
+        line-height: 95.5px;
+        transition: all 0.3s;
+    }
+    .p{
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 30px;
+        max-width: 750px;
+        transition: all 0.3s;
+    }
+}
+@media screen and (max-width: 1310px) {
+
+    .title-p {
+        font-size: 70px;
+        font-weight: 800;
+        line-height: 60px;
+        padding-bottom: 10px;
+    }
+    .p{
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 30px;
+        max-width: 600px;
+    }
+}
+@media screen and (max-width: 1120px) {
+
+    .title-p {
+        font-size: 68px;
+        font-weight: 800;
+        line-height: 50px;
+        padding-bottom: 10px;
+    }
+    .p{
+        font-size: 23px;
+        font-weight: 500;
+        line-height: 25px;
+        max-width: 500px;
+    }
+}
+@media screen and (max-width: 1120px) {
+
+    .title-p {
+        font-size: 60px;
+        font-weight: 800;
+        line-height: 50px;
+        padding-bottom: 10px;
+    }
+    .p{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 25px;
+        max-width: 500px;
+    }
+}
+@media screen and (max-width: 1050px) {
+
+    .logo {
+        margin: 35px 5%;
+    }
+    .sign {
+        right: 5%;
+    }
+    #upload {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 875px) {
+
+    .title-p {
+        font-size: 50px;
+        font-weight: 800;
+        line-height: 50px;
+        padding-bottom: 10px;
+    }
+    .p{
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 25px;
+        max-width: 500px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .up-desc {
+        display: flex;
+        flex-direction: column;
+        margin: 15px 0;
+    }
+    #upload {
+        position: absolute;
+        left: 5%;
+        top: 15%;
+        transform: none;
+    }
+    .up-file {
+        margin: 15px;
+    }
+}
+@media screen and (max-width:730px) {
+
+    .title-p {
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 50px;
+        padding-bottom: 10px;
+    }
+    .p{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 25px;
+        max-width: 500px;
+    }
+}
+@media screen and (max-width: 680px) {
+    .sign {
+        display: none;
+    }
+    .menu-hamburger {
+        display: block;
+        margin: 30px;
+    }
+    .nav-links {
+        margin: -200% 0;
+    }
+    .nav-links.mobile-menu {
+        width: 400px;
+        margin: 0 auto;
+    }
+    .navbar .nav-links ul li {
+        font-size: 4rem;
+        margin: 0 auto;
+        background-color: red;
+    }
+    .cont-nav1 {
+        margin-top: 40%;
+        width: auto;
+        background-color: blue;
+    }
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar .nav-links ul {
+        font-size: 80px;
+    }
+    .title-p {
+        font-size: 5rem;
+        font-weight:    800;
+        line-height: 95.5px;
+        transition: all 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .p{
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 2rem;
+        transition: all 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .section-ex {
+        width: auto;
+        position: absolute;
+        left: 5%;
+        right: 5%;
+        top: 35%;
+        transform: none;
+    }
+    .logo {
+        width: 350px;
+    }
+}
