@@ -293,6 +293,18 @@ body {
         line-height: 25px;
         max-width: 500px;
     }
+    .up-desc {
+        display: flex;
+        flex-direction: column;
+        margin: 15px 0;
+        transition: all 0.3s;
+    }
+    #upload {
+        margin-top: 15em;
+    }
+    .up-file {
+        margin: 15px;
+    }
 }
 @media screen and (max-width: 1050px) {
 
@@ -319,22 +331,6 @@ body {
         font-weight: 500;
         line-height: 25px;
         max-width: 500px;
-    }
-}
-@media screen and (max-width: 850px) {
-    .up-desc {
-        display: flex;
-        flex-direction: column;
-        margin: 15px 0;
-    }
-    #upload {
-        position: absolute;
-        left: 5%;
-        top: 15%;
-        transform: none;
-    }
-    .up-file {
-        margin: 15px;
     }
 }
 @media screen and (max-width:730px) {
