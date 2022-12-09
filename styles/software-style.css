@@ -134,7 +134,7 @@ body {
     color: #000000;
     background-color: white;
 }
-desc {
+.desc {
     font-weight: 550;
     color: white;
     margin-left: 10px;
