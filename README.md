@@ -1,6 +1,4 @@
-# <a href="https://www.arcade-project.ml/">Arcade</a>
-
-Desktop browsers only
+<a href="https://www.arcade-project.ml/"><img src="https://raw.githubusercontent.com/Itsoon-xyz/ARCADE/main/assets/img/arcade.svg" alt="" width="500px"></a>
 
 If you encounter any problem while using Arcade, please see:
 - Github - [Issues](https://github.com/Itsoon-xyz/ARCADE/issues)
