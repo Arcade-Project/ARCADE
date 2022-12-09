@@ -94,7 +94,7 @@ body {
 
 /* SECTION SOFTWARE */
 
-#soft {
+#ebook {
     margin-top: 40px;
     position: absolute;
     left: 50%;
@@ -104,29 +104,29 @@ body {
     border-radius: 20px;
     width: 75%;
 }
-#soft ul {
+#ebook ul {
     color: white;
     list-style: none;
 }
-#soft div {
+#ebook div {
     font-family: "Alliance No.1";
 }
-#soft h1 {
+#ebook h1 {
     font-family: "Alliance No.1";
     background-color: #ffffff;
     text-align: center;
     border-radius: 20px;
 }
-.soft1 {
+.book1 {
     margin: 10px 0;
     text-align: left;
 }
-.soft {
+.book {
     margin-left: 10px;
     margin-bottom: 30px;
     font-size: 18px;
 }
-.soft a {
+.book a {
     font-weight: 600;
     padding: 10px 20px;
     border-radius: 20px;
@@ -139,7 +139,7 @@ body {
     color: white;
     margin-left: 10px;
 }
-.soft a:hover {
+.book a:hover {
     box-shadow: 0px 5px 0px #ff62f7;
     color: #ff62f7;
 }
