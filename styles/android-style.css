@@ -96,8 +96,7 @@ body {
 
 /* SECTION MOVIE */
 
-#movie {
-    margin-top: 8em;
+#an {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -106,29 +105,29 @@ body {
     border-radius: 20px;
     width: 75%;
 }
-#movie ul {
+#an ul {
     color: white;
     list-style: none;
 }
-#movie div {
+#an div {
     font-family: "Alliance No.1";
 }
-#movie h1 {
+#an h1 {
     font-family: "Alliance No.1";
     background-color: #ffffff;
     text-align: center;
     border-radius: 20px;
 }
-.mlink1 {
+.alink1 {
     margin: 25px 0;
     text-align: left;
 }
-.mlink {
+.alink {
     margin-left: 10px;
     margin-bottom: 30px;
     font-size: 18px;
 }
-.mlink a {
+.alink a {
     font-weight: 600;
     padding: 10px 20px;
     border-radius: 20px;
@@ -141,11 +140,11 @@ body {
     color: white;
     margin-left: 10px;
 }
-.mlink a:hover {
+.alink a:hover {
     box-shadow: 0px 5px 0px #ff62f7;
     color: #ff62f7;
 }
-.m {
+.a {
     font-family: "Alliance No.1";
     background-color: #000000;
     border-radius: 20px;
@@ -154,7 +153,7 @@ body {
     width: 100%;
     margin-right: 10px;
 }
-.m1 {
+.a1 {
     font-family: "Alliance No.1";
     background-color: #000000;
     border-radius: 20px;
@@ -163,14 +162,14 @@ body {
     width: 100%;
     margin-right: 10px;
 }
-.mcont {
+.acont {
     display: flex;
     margin: 10px 10px;
 }
 .canbe {
     font-size: 15px;
 }
-.mcont h1 {
+.acont h1 {
     font-size: 20px;
 }
 
