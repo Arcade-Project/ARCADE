@@ -101,6 +101,13 @@ body::-webkit-scrollbar {
     transform: translate(-50%,-50%);
     display: flex;
 }
+#lc2 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
 
 /* SECTION CAT */
 
@@ -147,7 +154,6 @@ body::-webkit-scrollbar {
     font-family: "Alliance No.1";
     border-radius: 20px;
     width: 240px;
-    margin-right: 20px;
 }
 #computer h1 {
     color: #000000;
