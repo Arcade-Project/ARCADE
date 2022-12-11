@@ -116,22 +116,22 @@ body::-webkit-scrollbar {
     background-color: white;
     border-radius: 20px;  
 }
-.o {
+#other ul {
     margin-top: 15px;
 }
-.o a:hover {
+#other a:hover {
     padding: 6px 40px;
     background-color: white;
     border-radius: 13px;
     color: #ff62f7;
     font-weight: 600;
 }
-.o li {
+#other li {
     list-style: none;
     margin: 5px 0;
     margin-bottom: 10px;
 }
-.o a {
+#other a {
     width: 100%;
     border-radius: 13px;
     font-size: 20px;
@@ -147,27 +147,61 @@ body::-webkit-scrollbar {
     font-family: "Alliance No.1";
     border-radius: 20px;
     width: 240px;
+    margin-right: 20px;
 }
 #computer h1 {
     color: #000000;
     background-color: white;
     border-radius: 20px;
 }
-.compul {
-    margin-top: 20px;
+#computer ul {
+    margin-top: 15px;
 }
-.compul li {
+#computer li {
     list-style: none;
     margin-bottom: 10px;
 }
-.compul a {
+#computer a {
     font-size: 20px;
     color: #ffffff;
     text-decoration: none;
     background-color: #ffffff00;
     border-radius: 20px;
 }
-.compul a:hover {
+#computer a:hover {
+    font-weight: 600;
+    padding: 6px 25px;
+    background-color: white;
+    border-radius: 13px;
+    list-style: none;
+    color: #ff62f7;
+}
+
+/* ANDROID */
+
+#android {
+    color: white;
+    font-family: "Alliance No.1";
+    text-align: center;
+    width: 240px;
+    border-radius: 20px;
+}
+#android h1 {
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #000000;
+}
+#android ul {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    list-style: none;
+}
+#android a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+#android a:hover {
     font-weight: 600;
     padding: 6px 25px;
     background-color: white;
