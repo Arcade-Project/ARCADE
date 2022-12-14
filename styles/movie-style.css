@@ -97,7 +97,7 @@ body {
 /* SECTION MOVIE */
 
 #movie {
-    margin-top: 8em;
+    margin-top: 4em;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -119,16 +119,16 @@ body {
     text-align: center;
     border-radius: 20px;
 }
-.mlink1 {
+#movie ul {
     margin: 25px 0;
     text-align: left;
 }
-.mlink {
+#movie li {
     margin-left: 10px;
     margin-bottom: 30px;
     font-size: 18px;
 }
-.mlink a {
+#movie a {
     font-weight: 600;
     padding: 10px 20px;
     border-radius: 20px;
@@ -141,7 +141,7 @@ body {
     color: white;
     margin-left: 10px;
 }
-.mlink a:hover {
+#movie a:hover {
     box-shadow: 0px 5px 0px #ff62f7;
     color: #ff62f7;
 }
@@ -170,7 +170,7 @@ body {
 .canbe {
     font-size: 15px;
 }
-.mcont h1 {
+.title {
     font-size: 20px;
 }
 
@@ -232,65 +232,12 @@ body {
 /* MEDIA SCREEN */
 
 @media screen and (max-width: 1530px) {
-
-    .title-p {
-        font-size: 90px;
-        font-weight: 800;
-        line-height: 95.5px;
-        transition: all 0.3s;
-    }
-    .p{
-        font-size: 30px;
-        font-weight: 500;
-        line-height: 30px;
-        max-width: 750px;
-        transition: all 0.3s;
-    }
 }
 @media screen and (max-width: 1310px) {
-
-    .title-p {
-        font-size: 70px;
-        font-weight: 800;
-        line-height: 60px;
-        padding-bottom: 10px;
-    }
-    .p{
-        font-size: 25px;
-        font-weight: 500;
-        line-height: 30px;
-        max-width: 600px;
-    }
 }
 @media screen and (max-width: 1120px) {
-
-    .title-p {
-        font-size: 68px;
-        font-weight: 800;
-        line-height: 50px;
-        padding-bottom: 10px;
-    }
-    .p{
-        font-size: 23px;
-        font-weight: 500;
-        line-height: 25px;
-        max-width: 500px;
-    }
 }
 @media screen and (max-width: 1120px) {
-
-    .title-p {
-        font-size: 60px;
-        font-weight: 800;
-        line-height: 50px;
-        padding-bottom: 10px;
-    }
-    .p{
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 25px;
-        max-width: 500px;
-    }
 }
 @media screen and (max-width: 1050px) {
 
@@ -300,55 +247,26 @@ body {
     .sign {
         right: 5%;
     }
-    #upload {
-        width: 90%;
+    .desc {
+        display: flex;
+        margin-top: 10px;
     }
+    #movie {
+        margin-top: 12em;
+    }
+
 }
 @media screen and (max-width: 875px) {
 
-    .title-p {
-        font-size: 50px;
-        font-weight: 800;
-        line-height: 50px;
-        padding-bottom: 10px;
-    }
-    .p{
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 25px;
-        max-width: 500px;
-    }
 }
 @media screen and (max-width: 850px) {
-    .up-desc {
-        display: flex;
-        flex-direction: column;
-        margin: 15px 0;
-    }
-    #upload {
-        position: absolute;
-        left: 5%;
-        top: 15%;
-        transform: none;
-    }
-    .up-file {
-        margin: 15px;
-    }
+
 }
 @media screen and (max-width:730px) {
-
-    .title-p {
-        font-size: 40px;
-        font-weight: 800;
-        line-height: 50px;
-        padding-bottom: 10px;
+    #movie {
+        width: 90%;
     }
-    .p{
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 25px;
-        max-width: 500px;
-    }
+    
 }
 @media screen and (max-width: 680px) {
     .sign {

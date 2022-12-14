@@ -3,46 +3,33 @@
   <head>
      <title>ARCADE</title>
      <link rel="stylesheet" href="styles/style.css">
-     <link rel="shortcut icon" href="https://media.discordapp.net/attachments/908043726117556294/1039618112997298176/2.png?width=456&height=456" type="image/x-icon" />
+     <link rel="shortcut icon" href="/assets/img/ar.png" type="image/x-icon" />
   </head>
 <body> 
-     <nav class="navbar">
-        <div class="nav-links">
-            <ul class="nav-btn">
-                  <li class="sign"><a href="https://youtu.be/dQw4w9WgXcQ">Sign up</a></li>
-                  <a href="index.html"><img class="logo" src="assets/img/arcade.svg" alt=""></a>
-               <ul class="cont-nav1">
-                  <li class="nav1"> <a href="links.html">Links</a></li>
-                  <li class="nav1"> <a href="explore.html">Explore</a></li>
-                  <li class="nav1"> <a href="">About</a></li>
-                  <li class="nav1"> <a href="contact.html">Contact</a></li>
-              </ul>
-           </ul>
-       </div>
-      <img src="assets/img/Hamburger.svg" alt="menuhamburger" class="menu-hamburger">
-    </nav>
-     <section class="section-ex">
-                <h1 class="title-p">Arcade Project</h1>
-                <li class="p">Arcade is a free information and data bank.</li>
-                <li class="p">It is also an index that collects all the data and classes, it is in the project stage.</li>
+   <nav id="navbar">
+      <ul>
+         <div class="logo"><a href="index.html"><img src="assets/img/arcade.svg" alt=""></a></div>
+         <li class="links"><a href="links.html">Links</a></li>
+         <li class="links"><a href="explore.html">Explore</a></li>
+         <li class="links"><a href="">About</a></li>
+         <li class="links"><a href="contact.html">Contact</a></li>
+         <div class="sign"><a href="https://youtu.be/dQw4w9WgXcQ">Sign up</a></div>
+     </ul>
+   </nav>
+
+     <section id="mid">
+             <h1>Arcade Project</h1>
+             <li>Arcade is a free information and data bank.</li>
+             <li>It is also an index that collects all the data and classes, it is in the project stage.</li>
      </section>
      <div class="shortcut-container">
-         <ul>
-          <li class="shortcut"><a target="_blank" href="https://github.com/Itsoon-xyz/ARCADE/wiki"><img class="wiki" src="assets/img/1 vector.svg" alt=""></a></li>
-          <li class="shortcut"><a target="_blank" href="https://github.com/Itsoon-xyz/Useful-Links"><img class="bookmarks" src="assets/img/2 vector.svg" alt=""></a></li>
-          <li class="shortcut"><a target="_blank" href="https://github.com/Itsoon-xyz/ARCADE"><img class="github" src="assets/img/3 vector.svg" alt=""></a></li>
-          <li class="shortcut"><a target="_blank" href="https://github.com/Itsoon-xyz/ARCADE/issues"><img class="issues" src="assets/img/4 vector.svg" alt=""></a></li>
-          <li class="shortcut"><a target="_blank" href="https://github.com/Itsoon-xyz/ARCADE/pulls"><img class="features" src="assets/img/5 vector.svg" alt=""></a></li>
+         <ul class="shortcut">
+            <li><a target="_blank" href="https://github.com/Itsoon-xyz/ARCADE/wiki"><img src="assets/img/1 vector.svg"></a></li>
+            <li><a target="_blank" href="https://github.com/Itsoon-xyz/Useful-Links"><img src="assets/img/2 vector.svg"></a></li>
+            <li><a target="_blank" href="https://github.com/Itsoon-xyz/ARCADE"><img src="assets/img/3 vector.svg"></a></li>
+            <li><a target="_blank" href="https://github.com/Itsoon-xyz/ARCADE/issues"><img src="assets/img/4 vector.svg"></a></li>
+            <li><a target="_blank" href="https://github.com/Itsoon-xyz/ARCADE/pulls"><img src="assets/img/5 vector.svg"></a></li>
          </ul>
      </div>
      <span class="update">v2</span>
-</body>
-     <script>
-        const menuHamburger = document.querySelector(".menu-hamburger")
-        const navLinks = document.querySelector(".cont-nav1")
- 
-        menuHamburger.addEventListener('click',()=>{
-        navLinks.classList.toggle('mobile-menu')
-        })
-     </script>
 </html>

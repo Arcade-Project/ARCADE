@@ -9,101 +9,92 @@ body {
     background-color: #5900ff;
 }
   body::-webkit-scrollbar {
-    width: 10px; /* width of the entire scrollbar */
+    width: 10px;
   }
   
   body::-webkit-scrollbar-track {
-    background: #202324; /* color of the tracking area */
+    background: #202324;
   }
   
   body::-webkit-scrollbar-thumb {
-    background-color: #575e62; /* color of the scroll thumb */
-    border-radius: 20px; /* roundness of the scroll thumb */
+    background-color: #575e62;
+    border-radius: 20px;
   }
 
 /* HEADER */
 
 .logo {
+    margin-right: 18%;
+}
+.logo img {
     width: 150px;
-    margin: 35px 15%;
-    position: absolute;
-    left: 0;
 }
 .sign {
-    position: absolute;
-    right: 15%;
+    margin-left: 18%;
     list-style: none;
-    font-size: 23px;
+    font-size: 25px;
     font-weight: 650;
     font-family: 'Whitney';
 }
 .sign a {
+    color: #ffffff;
+    border-radius: 50%;
     padding: 3px 10px;
-    border-radius: 10px;
     text-decoration: none;
-    color: white;
     transition: all 0.3s;
 }
 .sign a:hover {
     color: black;
     padding: 3px 10px;
-    border-radius: 10px;
-    background-color: white;
+    border-radius: 20px;
+    background-color: #ffffff;
     transition: all 0.3s;
 }
-.sign:hover {
-    font-weight: 650;
-}
-.navbar .nav-links ul li {
-    margin: 40px 1%;
-}
-.navbar .nav-links ul {
-    list-style: none;
-    justify-content: center;
-    width: 100%;
+
+/* NAVBAR */
+
+#navbar ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+#navbar li {
+    margin-inline: 20px;
+    list-style: none;
+}
+.links a {
+    font-family: 'Whitney';
     font-size: 23px;
     font-weight: 650;
-    font-family: "Whitney";
-    top: 0% ;
-}
-
-/* HEADER MENU HAMBURGER */
-
-.menu-hamburger {
-    display: none;
-    position: absolute;
-    top: 0.8em;
-    right: 2em;
-    width: 90px;
-    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
 }
 
 /* HEADER HOVER  */
 
-.nav1 a{
+.links a {
     text-decoration: none;
-    color: white;
     text-shadow: 0px 4px 4px #000000;
     transition: all ease-in 80ms;
 }
-.nav1 a:hover{
+.links a:hover{
     border-bottom: solid 3px #ffffff;
     text-shadow: 0px 4px 6px #000000;
 }
 
-/* SECTION EXPLAIN */
+/* SECTION MID */
 
-.title-p {
+#mid h1 {
     color: #ffffff;
     font-family: "Alliance No.2";
     font-size: 105px;
     font-weight: 800;
-    line-height: 100px;
+    line-height: 110px;
     list-style: none;
     margin-bottom: 8px;
 }
-.p{
+#mid li {
     color: #8B8B8B;
     font-family: "Alliance No.1";
     font-size: 35px;
@@ -112,9 +103,8 @@ body {
     list-style: none;
     max-width: 760px;
 }
-.section-ex {
+#mid {
     position: absolute;
-    width: auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -127,7 +117,7 @@ body {
     left: 12px;
     top: 42vh;
 }
-.shortcut {
+.shortcut li {
     margin: -10px;
 }
 .shortcut img {
@@ -178,150 +168,261 @@ body {
 /* MEDIA SCREEN */
 
 @media screen and (max-width: 1530px) {
-
-    .title-p {
+    .links a {
+        font-size: 22px;
+        font-weight: 650;
+    }
+    #mid h1 {
         font-size: 90px;
-        font-weight: 800;
-        line-height: 95.5px;
         transition: all 0.3s;
     }
-    .p{
-        font-size: 30px;
-        font-weight: 500;
+    #mid li {
         line-height: 30px;
-        max-width: 750px;
+        font-size: 30px;
+        max-width: 650px;
+        transition: all 0.3s;
+    }
+}
+@media screen and (max-width: 1380px) {
+    #mid h1 {
+        font-size: 90px;
+        transition: all 0.3s;
+    }
+    #mid li {
+        font-size: 30px;
+        max-width: 650px;
         transition: all 0.3s;
     }
 }
 @media screen and (max-width: 1310px) {
-
-    .title-p {
-        font-size: 70px;
-        font-weight: 800;
-        line-height: 60px;
-        padding-bottom: 10px;
+    #mid h1 {
+        font-size: 85px;
+        transition: all 0.3s;
     }
-    .p{
+    #mid li {
+        font-size: 30px;
+        max-width: 640px;
+        transition: all 0.3s;
+    }
+}
+@media screen and (max-width: 1235px) {
+    #mid h1 {
+        font-size: 75px;
+        transition: all 0.3s;
+        margin-bottom: none;
+        line-height: 80px;
+    }
+    #mid li {
         font-size: 25px;
-        font-weight: 500;
-        line-height: 30px;
-        max-width: 600px;
+        max-width: 620px;
+        transition: all 0.3s;
+    }
+    .logo {
+        margin-right: 10%;
+    }
+    .sign {
+        margin-left: 10%;
     }
 }
-@media screen and (max-width: 1120px) {
-
-    .title-p {
-        font-size: 68px;
-        font-weight: 800;
-        line-height: 50px;
-        padding-bottom: 10px;
+@media screen and (max-width: 1100px) {
+    #mid h1 {
+        font-size: 70px;
+        margin-bottom: 0;
+        transition: all 0.3s;
+        line-height: 90px;
     }
-    .p{
+    #mid li {
         font-size: 23px;
-        font-weight: 500;
-        line-height: 25px;
-        max-width: 500px;
+        max-width: 610px;
+        transition: all 0.3s;
     }
 }
-@media screen and (max-width: 1000px) {
-
-    .logo {
-        margin: 35px 5%;
-    }
-    .sign {
-        right: 5%;
-    }
-}
-@media screen and (max-width: 1120px) {
-
-    .title-p {
-        font-size: 60px;
-        font-weight: 800;
-        line-height: 50px;
-        padding-bottom: 10px;
-    }
-    .p{
+@media screen and (max-width: 1020px) {
+    #mid h1 {
+        font-size: 65px;
+        transition: all 0.3s;
+    }    
+    #mid li {
         font-size: 20px;
-        font-weight: 500;
-        line-height: 25px;
-        max-width: 500px;
+        max-width: 600px;
+        transition: all 0.3s;
     }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 975px) {
+    #mid h1 {
+        font-size: 60px;
+        transition: all 0.3s;
+    }
+    #mid li {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+@media screen and (max-width: 950px) {
+    #mid h1 {
+        font-size: 60px;
+        transition: all 0.3s;
+    }
+    .logo {
+        margin-right: 8%;
+    }
     .sign {
-        display: none;
+        margin-left: 8%;
     }
-    .menu-hamburger {
-        display: block;
-        margin: 30px;
-    }
-    .cont-nav1 { 
-        margin: 0 -200%;
-        display: none;
-    }
-    .cont-nav1.mobile-menu {
-        width: 400px;
-        margin: 0 auto;
-    }
-    .navbar .nav-links ul li {
-        font-size: 4rem;
-        margin: 0 auto;
-        background-color: red;
+    
+}
+@media screen and (max-width: 880px) {
+    #mid h1 {
+        font-size: 55px;
+        transition: all 0.3s;
+        margin-bottom: 0px;
+        line-height: 70px;
+    } 
+    #mid li {
+        font-size: 18px;
+        max-width: 450px;
+        line-height: 20px;
+        transition: all 0.3s;
     }
     .logo {
-        display: block;
+        margin-right: 5%;
     }
-    .nav-links ul {
-        display: flex;
-        flex-direction: column;
+    .sign {
+        margin-left: 5%;
     }
-    .navbar .nav-links ul {
-        font-size: 80px;
+    #navbar li {
+        margin-inline: 15px;
     }
-    .title-p {
-        font-size: 5rem;
-        font-weight:    800;
-        line-height: 95.5px;
+}
+@media screen and (max-width: 820px) {
+    #mid h1 {
+        line-height: 30px;
+        margin-bottom: 18px;
+    }
+    #mid li {
+        font-size: 15.5px;
+        max-width: 400px;
+        line-height: 20px;
         transition: all 0.3s;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
-    .p{
-        font-size: 2rem;
-        font-weight: 500;
-        line-height: 2rem;
+}
+@media screen and (max-width: 800px) {
+    #mid h1 {
+        font-size: 50px;
         transition: all 0.3s;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    }  
+    #mid li {
+        font-size: 16px;
+        max-width: 390px;
     }
-    .section-ex {
-        width: auto;
+    .logo {
+        margin-right: 5%;
+    }
+    .sign {
+        margin-left: 5%;
+    }
+    #navbar li {
+        margin-inline: 10px;
+    }
+}
+@media screen and (max-width: 740px) {
+    #mid h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    #mid li {
+        font-size: 16.5px;
+        line-height: 20px;
+        max-width: 380px;
+    }
+    #mid {
         position: absolute;
-        left: 5%;
-        right: 5%;
-        top: 35%;
-        transform: none;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 55%;
+    }
+}
+@media screen and (max-width: 710px) {
+    .sign {
+        margin-left: 0%;
     }
     .logo {
-        width: 350px;
+        margin-right: 0%;
     }
-
-    /* SHORTCUT */
-
-    .shortcut {
-    margin: -10px;
+}
+@media screen and (max-width: 675px) {
+    .sign {
+        margin-left: 20%;
+        list-style: none;
+        font-size: 25px;
+        font-weight: 650;
+        font-family: 'Whitney';
     }
-    .shortcut img {
-    width: 40px;
-    transition: 0.1s;
+    .logo {
+        margin-right: 20%;
     }
-    .shortcut img:active {
-    width: 50px;
-    transition: all 0.1s;
+    #navbar li {
+        display: none;
+    }
+    #mid h1 {
+        font-size: 50px;
+    }
+    #mid li {
+        font-size: 18px;
+        max-width: 430px;
+    }
+    #mid {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 70%;
+    }
+}
+@media screen and (max-width: 625px) {
+    #mid h1 {
+        font-size: 55px;
+    }
+    #mid li {
+        font-size: 20px;
+        max-width: 420px;
+    }
+    #mid {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 80%;
+    }
+}
+@media screen and (max-width: 510px) {
+    #mid h1 {
+        font-size: 55px;
+    }
+    #mid li {
+        font-size: 18px;
+        max-width: 420px;
+    }
+    #mid {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 80%;
     }
     .shortcut-container {
-        position: absolute;
+        position: fixed;
+        top: 96%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .shortcut li {
+        list-style: none;
+        margin: -3px;
+    }
+    .shortcut {
+        display: flex;
     }
 }
+
