@@ -1,13 +1,18 @@
-<a href="https://www.arcade-project.ml/"><img src="https://raw.githubusercontent.com/Itsoon-xyz/ARCADE/main/assets/img/arcade.svg" alt="" width="500px"></a>
+<div align="center"><a href="https://www.arcade-project.ml/"><img src="https://raw.githubusercontent.com/Itsoon-xyz/ARCADE/main/assets/img/arcade.svg" alt="" width="500px"></a></div>
 
-If you encounter any problem while using Arcade, please see:
-- Github - [Issues](https://github.com/Itsoon-xyz/ARCADE/issues)
+<div align="center">
 
-To propose other features, please see:
-- Arcade - [Features](https://www.arcade-project.ml//features.html)
+If you encounter any problem while using Arcade, please see :
+ [Issues](https://github.com/Itsoon-xyz/ARCADE/issues)
 
-To follow the news, please see:
-- Itsoon - [Twitter](https://twitter.com/itsoon_xyz)
+To propose other features, please see :
+ [Features](https://www.arcade-project.ml//features.html)
 
-To follow the evolution of the prototype, please see:
-- Arcade v2 - [Figma](https://www.figma.com/file/Rqh1uc6KawOI6Zo1ungAM0/ARCADE-v2?node-id=0%3A1&t=fOVIeF9EY4hoakGO-1)
+To follow the news, please see :
+ [Twitter](https://twitter.com/itsoon_xyz)
+
+To follow the evolution of the prototype, please see :
+ [Figma](https://www.figma.com/file/Rqh1uc6KawOI6Zo1ungAM0/ARCADE-v2?node-id=0%3A1&t=fOVIeF9EY4hoakGO-1)
+</div>
+
+<div align="center"><img width="550px" src="assets/img/default.png"></div>
