@@ -53,6 +53,9 @@ body::-webkit-scrollbar-thumb {
   background-color: #ffffff;
   transition: all 0.3s;
 }
+.sign-icon {
+  display: none;
+}
 /* HEADER MENU HAMBURGER */
 
 .menu-hamburger {
@@ -103,7 +106,6 @@ body::-webkit-scrollbar-thumb {
   font-size: 105px;
   font-weight: 800;
   line-height: 110px;
-  list-style: none;
   margin-bottom: 8px;
 }
 #mid li {
@@ -112,7 +114,6 @@ body::-webkit-scrollbar-thumb {
   font-size: 35px;
   font-weight: 500;
   line-height: 40px;
-  list-style: none;
   max-width: 760px;
 }
 #mid {
@@ -120,17 +121,20 @@ body::-webkit-scrollbar-thumb {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  height: 35%;
 }
 
 /* SHORTCUT */
 
 .shortcut-container {
+  width: 80px;
   position: absolute;
-  left: 12px;
-  top: 42vh;
+  top: 50%;
+  left: 10px;
+  transform: translate(-50%, -50%);
 }
 .shortcut li {
-  margin: -10px;
+  margin: -5px 0;
 }
 .shortcut img {
   width: 40px;
@@ -318,35 +322,45 @@ body::-webkit-scrollbar-thumb {
     transition: all 0.3s;
   }
 }
-@media screen and (max-width: 800px) {
-  #mid h1 {
-    font-size: 50px;
-    transition: all 0.3s;
-  }
-  #mid li {
-    font-size: 16px;
-    max-width: 390px;
-  }
+@media screen and (max-width: 840px) {
+  /* Logo and Sign */
+
   .logo {
-    margin-right: 5%;
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translate(-50%, -50%);
+  }
+  .logo img {
+    width: auto;
+    height: 70px;
   }
   .sign {
-    margin-left: 5%;
+    visibility: hidden;
   }
-  #navbar li {
-    margin-inline: 10px;
+  .sign-icon {
+    display: block;
   }
-}
-@media screen and (max-width: 770px) {
+  .sign-icon img {
+    height: 70px;
+  }
+
+  /* Icon Hamburger */
+
   .menu-hamburger {
     visibility: visible;
+    z-index: 2;
   }
+
+  /* Nav-Links */
+
   .nav-links {
     display: block;
     position: absolute;
     top: 50%;
     left: 150%;
     transform: translate(-50%, -50%);
+    transition: 0.2s ease-in;
   }
   .nav-links-active {
     display: block;
@@ -354,109 +368,172 @@ body::-webkit-scrollbar-thumb {
     top: 50%;
     left: 70%;
     transform: translate(-50%, -50%);
-    background-color: red;
+    background-color: #353535;
+    border-radius: 20px;
     z-index: 1;
     width: auto;
-    transition: 0.8s ease-in;
+    height: 50vh;
+    width: 75%;
+    transition: 0.2s ease-in;
   }
-}
-@media screen and (max-width: 740px) {
-  #mid h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
-  }
-  #mid li {
-    font-size: 16.5px;
-    line-height: 20px;
-    max-width: 380px;
-  }
-  #mid {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 55%;
-  }
-}
-@media screen and (max-width: 710px) {
-  .sign {
-    margin-left: 0%;
-  }
-  .logo {
-    margin-right: 0%;
-  }
-}
-@media screen and (max-width: 675px) {
-  .sign {
-    margin-left: 20%;
-    list-style: none;
-    font-size: 25px;
-    font-weight: 650;
-    font-family: "Whitney";
-  }
-  .logo {
-    margin-right: 20%;
-  }
-  #mid h1 {
-    font-size: 50px;
-  }
-  #mid li {
-    font-size: 18px;
-    max-width: 430px;
-  }
-  #mid {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 70%;
-  }
-}
-@media screen and (max-width: 625px) {
-  #mid h1 {
-    font-size: 55px;
-  }
-  #mid li {
-    font-size: 20px;
-    max-width: 420px;
-  }
-  #mid {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-  }
-}
-@media screen and (max-width: 510px) {
-  #mid h1 {
-    font-size: 55px;
-  }
-  #mid li {
-    font-size: 18px;
-    max-width: 420px;
-  }
-  #mid {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-  }
+
+  /* Shortcut */
+
   .shortcut-container {
-    position: fixed;
+    width: auto;
+    position: absolute;
     top: 96%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scaleX(-1);
+  }
+  body {
+    overflow-y: hidden;
   }
   .shortcut li {
-    list-style: none;
-    margin: -3px;
+    margin: 0 -1px;
   }
   .shortcut {
+    width: 325px;
+    height: 70px;
     display: flex;
   }
-  #navbar li {
-    display: none;
+  .shortcut img {
+    width: 60px;
+    transition: 0.1s;
+  }
+  .shortcut img:hover {
+    width: 70px;
+    transition: all 0.1s;
+  }
+
+  /* SECTION MID */
+
+  #mid h1 {
+    font-size: 6.5rem;
+    font-weight: 800;
+    line-height: 110px;
+    margin-bottom: 8px;
+  }
+  #mid li {
+    font-size: 35px;
+    line-height: 40px;
+    max-width: 760px;
+  }
+  #mid {
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: 95%;
+  }
+
+  /* UPDATE */
+
+  .update {
+    font-size: 25px;
+    font-weight: 500;
+  }
+}
+@media screen and (max-width: 795px) {
+  #mid h1 {
+    font-size: 6.2rem;
+  }
+  #mid li {
+    font-size: 33px;
+    max-width: 720px;
+  }
+}
+@media screen and (max-width: 760px) {
+  #mid h1 {
+    font-size: 6rem;
+    font-weight: 800;
+    line-height: 110px;
+    margin-bottom: 8px;
+  }
+  #mid li {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+    max-width: 720px;
+  }
+}
+@media screen and (max-width: 735px) {
+  #mid h1 {
+    font-size: 5.6rem;
+    font-weight: 800;
+    line-height: 110px;
+    margin-bottom: 8px;
+  }
+  #mid li {
+    font-size: 30px;
+    font-weight: 500;
+    max-width: 650px;
+  }
+}
+@media screen and (max-width: 685px) {
+  #mid h1 {
+    font-size: 5.4rem;
+    line-height: 110px;
+  }
+  #mid li {
+    font-size: 30px;
+    line-height: 40px;
+    max-width: 620px;
+  }
+}
+@media screen and (max-width: 662px) {
+  #mid h1 {
+    font-size: 5rem;
+  }
+  #mid li {
+    font-size: 28px;
+    line-height: 40px;
+    max-width: 590px;
+  }
+}
+@media screen and (max-width: 612px) {
+  #mid h1 {
+    font-size: 4.6rem;
+  }
+  #mid li {
+    font-size: 26px;
+    line-height: 35px;
+    max-width: 540px;
+  }
+}
+@media screen and (max-width: 564px) {
+  #mid h1 {
+    font-size: 4.2rem;
+  }
+  #mid li {
+    font-size: 24px;
+    line-height: 30px;
+    max-width: 500px;
+  }
+}
+@media screen and (max-width: 514px) {
+  #mid h1 {
+    font-size: 4rem;
+  }
+  #mid li {
+    font-size: 23px;
+    line-height: 30px;
+    max-width: 480px;
+  }
+  /* Shortcut */
+
+  .shortcut {
+    width: 280px;
+    height: 70px;
+    display: flex;
+  }
+  .shortcut img {
+    width: 50px;
+    transition: 0.1s;
+  }
+  .shortcut img:hover {
+    width: 60px;
+    transition: all 0.1s;
   }
 }
