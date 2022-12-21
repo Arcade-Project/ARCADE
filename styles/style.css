@@ -1,8 +1,9 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  list-style: none;
+  text-decoration: none;
 }
 body {
+  overflow-x: hidden;
   background-color: #000000;
 }
 ::selection {
@@ -11,11 +12,9 @@ body {
 body::-webkit-scrollbar {
   width: 10px;
 }
-
 body::-webkit-scrollbar-track {
   background: #202324;
 }
-
 body::-webkit-scrollbar-thumb {
   background-color: #575e62;
   border-radius: 20px;
@@ -26,12 +25,14 @@ body::-webkit-scrollbar-thumb {
 .logo {
   position: absolute;
   left: 10%;
+  top: 30px;
 }
 .logo img {
   width: 150px;
 }
 .sign {
   position: absolute;
+  top: 38px;
   right: 10%;
   list-style: none;
   font-size: 25px;
@@ -55,7 +56,7 @@ body::-webkit-scrollbar-thumb {
 /* HEADER MENU HAMBURGER */
 
 .menu-hamburger {
-  display: none;
+  visibility: hidden;
   width: 70px;
   position: absolute;
   top: 0.8em;
@@ -65,13 +66,13 @@ body::-webkit-scrollbar-thumb {
 
 /* NAVBAR */
 
-#navbar ul {
+.nav-links {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 40px 0;
 }
-#navbar li {
+.nav-links li {
   margin-inline: 20px;
   list-style: none;
 }
@@ -338,18 +339,25 @@ body::-webkit-scrollbar-thumb {
 }
 @media screen and (max-width: 770px) {
   .menu-hamburger {
+    visibility: visible;
+  }
+  .nav-links {
     display: block;
+    position: absolute;
+    top: 50%;
+    left: 150%;
+    transform: translate(-50%, -50%);
   }
-  #navbar ul {
-    display: unset;
-  }
-  .mobile-menu {
-    width: 400px;
-    margin: 0 auto;
-  }
-  #navbar li {
-    margin: 0 auto;
+  .nav-links-active {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
     background-color: red;
+    z-index: 1;
+    width: auto;
+    transition: 0.8s ease-in;
   }
 }
 @media screen and (max-width: 740px) {
