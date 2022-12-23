@@ -107,6 +107,7 @@ body::-webkit-scrollbar-thumb {
   font-weight: 800;
   line-height: 110px;
   margin-bottom: 8px;
+  text-align: center;
 }
 #mid li {
   color: #8b8b8b;
@@ -115,8 +116,11 @@ body::-webkit-scrollbar-thumb {
   font-weight: 500;
   line-height: 40px;
   max-width: 760px;
+  text-align: center;
+  margin: 0 auto;
 }
 #mid {
+  width: max-content;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -183,10 +187,6 @@ body::-webkit-scrollbar-thumb {
 /* MEDIA SCREEN */
 
 @media screen and (max-width: 1530px) {
-  .links a {
-    font-size: 22px;
-    font-weight: 650;
-  }
   #mid h1 {
     font-size: 90px;
     line-height: 90px;
@@ -201,7 +201,7 @@ body::-webkit-scrollbar-thumb {
 }
 @media screen and (max-width: 1380px) {
   #mid h1 {
-    font-size: 90px;
+    font-size: 5.4rem;
     transition: all 0.3s;
   }
   #mid li {
@@ -216,7 +216,7 @@ body::-webkit-scrollbar-thumb {
     transition: all 0.3s;
   }
   #mid li {
-    font-size: 30px;
+    font-size: 28px;
     max-width: 640px;
     transition: all 0.3s;
   }
@@ -249,18 +249,18 @@ body::-webkit-scrollbar-thumb {
   }
   #mid li {
     font-size: 23px;
-    max-width: 610px;
-    transition: all 0.3s;
+    max-width: 500px;
   }
 }
 @media screen and (max-width: 1020px) {
   #mid h1 {
     font-size: 65px;
-    transition: all 0.3s;
+    line-height: 75px;
   }
   #mid li {
-    font-size: 20px;
-    max-width: 600px;
+    font-size: 22px;
+    max-width: 500px;
+    line-height: 28px;
     transition: all 0.3s;
   }
 }
@@ -286,48 +286,13 @@ body::-webkit-scrollbar-thumb {
     margin-left: 8%;
   }
 }
-@media screen and (max-width: 880px) {
-  #mid h1 {
-    font-size: 55px;
-    transition: all 0.3s;
-    margin-bottom: 0px;
-    line-height: 70px;
-  }
-  #mid li {
-    font-size: 18px;
-    max-width: 450px;
-    line-height: 20px;
-    transition: all 0.3s;
-  }
-  .logo {
-    margin-right: 5%;
-  }
-  .sign {
-    margin-left: 5%;
-  }
-  #navbar li {
-    margin-inline: 15px;
-  }
-}
-@media screen and (max-width: 820px) {
-  #mid h1 {
-    line-height: 30px;
-    margin-bottom: 18px;
-  }
-  #mid li {
-    font-size: 15.5px;
-    max-width: 400px;
-    line-height: 20px;
-    transition: all 0.3s;
-  }
-}
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 900px) {
   /* Logo and Sign */
 
   .logo {
     position: absolute;
     left: 50%;
-    top: 50px;
+    top: 70px;
     transform: translate(-50%, -50%);
   }
   .logo img {
@@ -338,6 +303,7 @@ body::-webkit-scrollbar-thumb {
     visibility: hidden;
   }
   .sign-icon {
+    margin-top: 20px;
     display: block;
   }
   .sign-icon img {
@@ -347,6 +313,7 @@ body::-webkit-scrollbar-thumb {
   /* Icon Hamburger */
 
   .menu-hamburger {
+    margin-top: 20px;
     visibility: visible;
     z-index: 2;
   }
@@ -408,23 +375,15 @@ body::-webkit-scrollbar-thumb {
   /* SECTION MID */
 
   #mid h1 {
-    font-size: 6.5rem;
+    font-size: 5rem;
     font-weight: 800;
-    line-height: 110px;
+    line-height: 85px;
     margin-bottom: 8px;
   }
   #mid li {
-    font-size: 35px;
-    line-height: 40px;
-    max-width: 760px;
-  }
-  #mid {
-    position: absolute;
-    top: 50%;
-    left: 52%;
-    transform: translate(-50%, -50%);
-    height: auto;
-    width: 95%;
+    font-size: 28px;
+    line-height: 30px;
+    max-width: 600px;
   }
 
   /* UPDATE */
@@ -436,38 +395,24 @@ body::-webkit-scrollbar-thumb {
 }
 @media screen and (max-width: 795px) {
   #mid h1 {
-    font-size: 6.2rem;
+    font-size: 70px;
   }
   #mid li {
-    font-size: 33px;
-    max-width: 720px;
-  }
-}
-@media screen and (max-width: 760px) {
-  #mid h1 {
-    font-size: 6rem;
-    font-weight: 800;
-    line-height: 110px;
-    margin-bottom: 8px;
-  }
-  #mid li {
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 40px;
-    max-width: 720px;
+    font-size: 28px;
+    max-width: 600px;
   }
 }
 @media screen and (max-width: 735px) {
   #mid h1 {
-    font-size: 5.6rem;
+    font-size: 70px;
     font-weight: 800;
-    line-height: 110px;
+    line-height: 85px;
     margin-bottom: 8px;
   }
   #mid li {
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 500;
-    max-width: 650px;
+    max-width: 600px;
   }
 }
 @media screen and (max-width: 685px) {
