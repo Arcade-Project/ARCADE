@@ -20,6 +20,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px;
 }
 
+/* ---------------------------------------------------------------- */
 /* HEADER */
 
 .logo {
@@ -54,6 +55,8 @@ body::-webkit-scrollbar-thumb {
 .sign-icon {
   display: none;
 }
+
+/* ---------------------------------------------------------------- */
 /* HEADER MENU HAMBURGER */
 
 .menu-hamburger {
