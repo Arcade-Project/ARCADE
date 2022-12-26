@@ -3,6 +3,7 @@
   text-decoration: none;
 }
 body {
+  font-family: "Whitney";
   overflow-x: hidden;
   background-color: #000000;
 }
@@ -23,6 +24,7 @@ body::-webkit-scrollbar-thumb {
 /* ---------------------------------------------------------------- */
 /* HEADER */
 
+/* logo and sign */
 .logo {
   position: absolute;
   left: 10%;
@@ -56,8 +58,7 @@ body::-webkit-scrollbar-thumb {
   display: none;
 }
 
-/* ---------------------------------------------------------------- */
-/* HEADER MENU HAMBURGER */
+/* menu hamburger */
 
 .menu-hamburger {
   visibility: hidden;
@@ -68,7 +69,7 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer;
 }
 
-/* NAVBAR */
+/* navbar */
 
 .nav-links {
   display: flex;
@@ -84,20 +85,19 @@ body::-webkit-scrollbar-thumb {
   font-size: 23px;
   font-weight: 650;
   color: #ffffff;
-}
-
-/* HEADER HOVER  */
-
-.links a {
   padding-bottom: 15px;
   border-bottom: solid 0px #5e5e5e00;
   transition: all ease-in 0.08s;
 }
+
+/* navbar hover */
+
 .links a:hover {
   padding-bottom: 0;
   border-bottom: solid 3px #ffffff;
 }
 
+/* ---------------------------------------------------------------- */
 /* SECTION MID */
 
 #mid h1 {
@@ -107,7 +107,6 @@ body::-webkit-scrollbar-thumb {
   font-weight: 800;
   line-height: 110px;
   margin-bottom: 8px;
-  text-align: center;
 }
 #mid li {
   color: #8b8b8b;
@@ -116,10 +115,10 @@ body::-webkit-scrollbar-thumb {
   font-weight: 500;
   line-height: 40px;
   max-width: 760px;
-  text-align: center;
   margin: 0 auto;
 }
 #mid {
+  text-align: center;
   width: max-content;
   position: absolute;
   top: 50%;
@@ -127,12 +126,13 @@ body::-webkit-scrollbar-thumb {
   transform: translate(-50%, -50%);
 }
 
+/* ---------------------------------------------------------------- */
 /* SHORTCUT */
 
 .shortcut-container {
   width: 80px;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 10px;
   transform: translate(-50%, -50%);
 }
@@ -148,6 +148,7 @@ body::-webkit-scrollbar-thumb {
   transition: all 0.08s;
 }
 
+/* ---------------------------------------------------------------- */
 /* UPDATE */
 
 .update {
@@ -160,6 +161,7 @@ body::-webkit-scrollbar-thumb {
   bottom: 0;
 }
 
+/* ---------------------------------------------------------------- */
 /* FONT FACE */
 
 @font-face {
@@ -184,8 +186,20 @@ body::-webkit-scrollbar-thumb {
   font-display: swap;
 }
 
+/* ---------------------------------------------------------------- */
 /* MEDIA QUERY */
 
+@media screen and (max-width: 1500px) {
+  /* SECTION MID */
+
+  #mid h1 {
+    font-size: 98px;
+  }
+  #mid li {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
 @media screen and (max-width: 896px) {
   /* Logo and Sign */
 
