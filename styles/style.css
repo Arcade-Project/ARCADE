@@ -134,7 +134,7 @@ body::-webkit-scrollbar-thumb {
   transform: translate(-50%, -50%);
 }
 .shortcut li {
-  margin: -5px 0;
+  margin: -8px 0;
 }
 .shortcut img {
   width: 40px;
@@ -181,109 +181,9 @@ body::-webkit-scrollbar-thumb {
   font-display: swap;
 }
 
-/* MEDIA SCREEN */
+/* MEDIA QUERY */
 
-@media screen and (max-width: 1530px) {
-  #mid h1 {
-    font-size: 90px;
-    line-height: 90px;
-    transition: all 0.3s;
-  }
-  #mid li {
-    line-height: 30px;
-    font-size: 30px;
-    max-width: 650px;
-    transition: all 0.3s;
-  }
-}
-@media screen and (max-width: 1380px) {
-  #mid h1 {
-    font-size: 5.4rem;
-    transition: all 0.3s;
-  }
-  #mid li {
-    font-size: 30px;
-    max-width: 650px;
-    transition: all 0.3s;
-  }
-}
-@media screen and (max-width: 1310px) {
-  #mid h1 {
-    font-size: 85px;
-    transition: all 0.3s;
-  }
-  #mid li {
-    font-size: 28px;
-    max-width: 640px;
-    transition: all 0.3s;
-  }
-}
-@media screen and (max-width: 1235px) {
-  #mid h1 {
-    font-size: 75px;
-    transition: all 0.3s;
-    margin-bottom: none;
-    line-height: 80px;
-  }
-  #mid li {
-    font-size: 25px;
-    max-width: 620px;
-    transition: all 0.3s;
-  }
-  .logo {
-    margin-right: 10%;
-  }
-  .sign {
-    margin-left: 10%;
-  }
-}
-@media screen and (max-width: 1100px) {
-  #mid h1 {
-    font-size: 70px;
-    margin-bottom: 0;
-    transition: all 0.3s;
-    line-height: 90px;
-  }
-  #mid li {
-    font-size: 23px;
-    max-width: 500px;
-  }
-}
-@media screen and (max-width: 1020px) {
-  #mid h1 {
-    font-size: 65px;
-    line-height: 75px;
-  }
-  #mid li {
-    font-size: 22px;
-    max-width: 500px;
-    line-height: 28px;
-    transition: all 0.3s;
-  }
-}
-@media screen and (max-width: 975px) {
-  #mid h1 {
-    font-size: 60px;
-    transition: all 0.3s;
-  }
-  #mid li {
-    font-size: 20px;
-    line-height: 25px;
-  }
-}
-@media screen and (max-width: 950px) {
-  #mid h1 {
-    font-size: 60px;
-    transition: all 0.3s;
-  }
-  .logo {
-    margin-right: 8%;
-  }
-  .sign {
-    margin-left: 8%;
-  }
-}
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 896px) {
   /* Logo and Sign */
 
   .logo {
@@ -388,93 +288,5 @@ body::-webkit-scrollbar-thumb {
   .update {
     font-size: 25px;
     font-weight: 500;
-  }
-}
-@media screen and (max-width: 795px) {
-  #mid h1 {
-    font-size: 70px;
-  }
-  #mid li {
-    font-size: 28px;
-    max-width: 600px;
-  }
-}
-@media screen and (max-width: 735px) {
-  #mid h1 {
-    font-size: 70px;
-    font-weight: 800;
-    line-height: 85px;
-    margin-bottom: 8px;
-  }
-  #mid li {
-    font-size: 26px;
-    font-weight: 500;
-    max-width: 600px;
-  }
-}
-@media screen and (max-width: 685px) {
-  #mid h1 {
-    font-size: 5.4rem;
-    line-height: 110px;
-  }
-  #mid li {
-    font-size: 30px;
-    line-height: 40px;
-    max-width: 620px;
-  }
-}
-@media screen and (max-width: 662px) {
-  #mid h1 {
-    font-size: 5rem;
-  }
-  #mid li {
-    font-size: 28px;
-    line-height: 40px;
-    max-width: 590px;
-  }
-}
-@media screen and (max-width: 612px) {
-  #mid h1 {
-    font-size: 4.6rem;
-  }
-  #mid li {
-    font-size: 26px;
-    line-height: 35px;
-    max-width: 540px;
-  }
-}
-@media screen and (max-width: 564px) {
-  #mid h1 {
-    font-size: 4.2rem;
-  }
-  #mid li {
-    font-size: 24px;
-    line-height: 30px;
-    max-width: 500px;
-  }
-}
-@media screen and (max-width: 514px) {
-  #mid h1 {
-    font-size: 4rem;
-  }
-  #mid li {
-    font-size: 23px;
-    line-height: 30px;
-    max-width: 480px;
-  }
-  /* Shortcut */
-
-  .shortcut {
-    width: 280px;
-    height: 70px;
-    display: flex;
-  }
-  .shortcut img {
-    width: 50px;
-    transition: 0.1s;
-  }
-  .shortcut img:hover {
-    width: 60px;
-    transition: all 0.1s;
   }
 }
