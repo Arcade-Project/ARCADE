@@ -39,7 +39,6 @@ body::-webkit-scrollbar-thumb {
   right: 10%;
   font-size: 25px;
   font-weight: 650;
-  font-family: "Whitney";
 }
 .sign a {
   color: #ffffff;
@@ -81,7 +80,6 @@ body::-webkit-scrollbar-thumb {
   margin-inline: 20px;
 }
 .links a {
-  font-family: "Whitney";
   font-size: 23px;
   font-weight: 650;
   color: #ffffff;
@@ -124,7 +122,6 @@ body::-webkit-scrollbar-thumb {
 
 .update {
   color: white;
-  font-family: "Whitney";
   font-size: 15px;
   font-weight: 500;
   position: fixed;
@@ -156,26 +153,3 @@ body::-webkit-scrollbar-thumb {
   font-style: normal;
   font-display: swap;
 }
-
-<<<<<<< HEAD
-/* ---------------------------------------------------------------- */
-/* Animation */
-
-#mid {
-  animation: titleanim 1s ease-in-out forwards;
-  transform: translateY(20px);
-}
-@keyframes titleanim {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-=======
-
-
->>>>>>> febdfe41dd74bfb5a5c66813cf2c5a4136a0ef9f
