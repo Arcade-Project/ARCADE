@@ -1,10 +1,11 @@
 * {
   list-style: none;
   text-decoration: none;
+  padding: 0;
+  margin: 0;
 }
 body {
   font-family: "Whitney";
-  overflow-x: hidden;
   background-color: #000000;
 }
 ::selection {
@@ -24,7 +25,7 @@ body::-webkit-scrollbar-thumb {
 /* ---------------------------------------------------------------- */
 /* HEADER */
 
-/* logo and sign */
+/* HEADER logo and sign */
 .logo {
   position: absolute;
   left: 10%;
@@ -57,18 +58,7 @@ body::-webkit-scrollbar-thumb {
   display: none;
 }
 
-/* menu hamburger */
-
-.menu-hamburger {
-  visibility: hidden;
-  width: 70px;
-  position: absolute;
-  top: 0.8em;
-  right: 2em;
-  cursor: pointer;
-}
-
-/* navbar */
+/* HEADER navbar */
 
 .nav-links {
   display: flex;
@@ -88,22 +78,36 @@ body::-webkit-scrollbar-thumb {
   transition: all ease-in 0.08s;
 }
 
-/* navbar hover */
+/* HEADER navbar hover */
 
 .links a:hover {
   padding-bottom: 0;
   border-bottom: solid 3px #ffffff;
+}
+/* HEADER menu hamburger */
+
+.menu-hamburger {
+  visibility: hidden;
+}
+/* HEADER cross */
+.cross {
+  visibility: hidden;
 }
 
 /* ---------------------------------------------------------------- */
 /* SHORTCUT */
 
 .shortcut-container {
-  width: 80px;
+  padding-top: 10px;
+  margin: 0;
+  height: 200px;
+  width: 50px;
   position: fixed;
-  top: 50%;
-  left: 10px;
+  left: 2.5%;
   transform: translate(-50%, -50%);
+}
+.shortcut {
+  display: block;
 }
 .shortcut li {
   margin: -8px 0;
@@ -191,4 +195,125 @@ nav {
   font-weight: bold;
   font-style: normal;
   font-display: swap;
+}
+
+@media screen and (max-width: 1000px) {
+  /* Logo and Sign */
+
+  .logo {
+    z-index: -1;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .logo img {
+    width: 180px;
+  }
+  .sign {
+    visibility: hidden;
+  }
+  .sign-icon {
+    margin-top: 20px;
+    margin-left: 10px;
+    display: block;
+  }
+  .sign-icon img {
+    height: 40px;
+  }
+
+  /* Icon Hamburger */
+
+  .menu-hamburger {
+    z-index: 2;
+    visibility: visible;
+    height: 40px;
+    width: auto;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    cursor: pointer;
+  }
+  .menuHamburger-active {
+    display: none;
+  }
+  /* Icon Cross */
+
+  .cross {
+    z-index: 2;
+    height: 40px;
+    width: auto;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    cursor: pointer;
+  }
+  .cross-active {
+    visibility: visible;
+  }
+
+  /* Nav-Links */
+
+  .nav-links li {
+    margin-inline: 0px;
+  }
+  .nav-links {
+    display: none;
+    width: 80%;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 600%;
+    transform: translate(250%, -50%);
+    flex-direction: column;
+    transition: 0.2s ease-in;
+  }
+  .nav-links-active {
+    display: block;
+    position: absolute;
+    top: 600%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #353535;
+    z-index: 1;
+    text-align: center;
+    height: 1000%;
+    width: 50%;
+    border-radius: 20px;
+    transition: 0.2s ease-in;
+  }
+  .links a {
+    font-size: 35px;
+  }
+
+  /* Shortcut */
+
+  .shortcut-container {
+    height: unset;
+    width: unset;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 600%) scaleX(-1);
+  }
+  .shortcut {
+    display: flex;
+  }
+  .shortcut li {
+    margin: 0;
+  }
+  .shortcut img {
+    width: 40px;
+    transition: 0.08s;
+  }
+  .shortcut img:hover {
+    width: 50px;
+    transition: all 0.08s;
+  }
+
+  .update {
+    position: fixed;
+    right: 8px;
+    bottom: 5px;
+  }
 }
