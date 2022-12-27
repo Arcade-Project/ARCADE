@@ -1,9 +1,6 @@
 /* ---------------------------------------------------------------- */
 /* SECTION MID */
 
-#mid {
-  font-family: "Poppins" , sans-serif;
-}
 
 #mid h1 {
   color: #ffffff;
@@ -20,12 +17,14 @@
   max-width: 760px;
 }
 #mid {
+  font-family: "Poppins" , sans-serif;
   text-align: center;
   width: max-content;
   position: absolute;
   top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
+
 }
 
 /* ---------------------------------------------------------------- */
