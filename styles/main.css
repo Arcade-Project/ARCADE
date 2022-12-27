@@ -95,9 +95,6 @@ body::-webkit-scrollbar-thumb {
 .links a:hover {
   padding-bottom: 0;
   border-bottom: solid 3px #ffffff;
-  
-  
-
 }
 
 /* ---------------------------------------------------------------- */
@@ -160,23 +157,20 @@ body::-webkit-scrollbar-thumb {
   font-display: swap;
 }
 
-
 /* ---------------------------------------------------------------- */
 /* Animation */
 
-#mid{
+#mid {
   animation: titleanim 1s ease-in-out forwards;
   transform: translateY(20px);
 }
-
-@keyframes titleanim{
-  0%{
-      opacity: 0;
-      transform: translateY(20px);
+@keyframes titleanim {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  100%{
-      opacity: 1;
-      transform: translateY(0px);
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
-
