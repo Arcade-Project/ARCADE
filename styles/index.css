@@ -1,46 +1,53 @@
 /* ---------------------------------------------------------------- */
 /* SECTION MID */
 
+#mid {
+  font-family: "Alliance No.1", Helvetica, Arial;
+}
 
-#mid h1 {
+.mid h1 {
+  font-family: "Alliance No.2", Helvetica, Arial;
   color: #ffffff;
   font-size: 105px;
   font-weight: 800;
-  margin-bottom: 0;
-  margin-top: 0;
+  margin: 0;
 }
-#mid li {
+.mid li {
   color: #8b8b8b;
   font-size: 35px;
   font-weight: 500;
   line-height: 40px;
   max-width: 760px;
 }
-#mid {
-  font-family: "Poppins" , sans-serif;
+.mid {
   text-align: center;
   width: max-content;
   position: absolute;
   top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
 
+/* ---------------------------------------------------------------- */
+/* ANIMATION */
+
+#mid {
+  animation: titleanim 1s ease-in-out forwards;
+}
+@keyframes titleanim {
+  0% {
+    opacity: 0;
+    top: 55%;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
 }
 
 /* ---------------------------------------------------------------- */
 /* MEDIA QUERY */
 
-@media screen and (max-width: 1500px) {
-  /* SECTION MID */
-
-  #mid h1 {
-    font-size: 98px;
-  }
-  #mid li {
-    font-size: 30px;
-    line-height: 35px;
-  }
-}
 @media screen and (max-width: 896px) {
   /* Logo and Sign */
 
@@ -48,7 +55,6 @@
     position: absolute;
     left: 50%;
     top: 70px;
-    transform: translate(-50%, -50%);
   }
   .logo img {
     width: auto;
@@ -125,26 +131,5 @@
   .shortcut img:hover {
     width: 70px;
     transition: all 0.1s;
-  }
-
-  /* SECTION MID */
-
-  #mid h1 {
-    font-size: 5rem;
-    font-weight: 800;
-    line-height: 85px;
-    margin-bottom: 8px;
-  }
-  #mid li {
-    font-size: 28px;
-    line-height: 30px;
-    max-width: 600px;
-  }
-
-  /* UPDATE */
-
-  .update {
-    font-size: 25px;
-    font-weight: 500;
   }
 }
