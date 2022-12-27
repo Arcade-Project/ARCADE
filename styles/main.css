@@ -157,6 +157,7 @@ body::-webkit-scrollbar-thumb {
   font-display: swap;
 }
 
+<<<<<<< HEAD
 /* ---------------------------------------------------------------- */
 /* Animation */
 
@@ -174,3 +175,7 @@ body::-webkit-scrollbar-thumb {
     transform: translateY(0px);
   }
 }
+=======
+
+
+>>>>>>> febdfe41dd74bfb5a5c66813cf2c5a4136a0ef9f
