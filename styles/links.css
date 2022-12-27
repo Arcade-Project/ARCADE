@@ -1,0 +1,144 @@
+/* ---------------------------------------------------------------- */
+/* MID */
+
+#lc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+#lc2 {
+  margin-top: 10em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+/* SECTION CAT */
+
+#other {
+  font-family: "Alliance No.1";
+  width: 240px;
+  margin-right: 20px;
+  text-align: center;
+  text-align: center;
+}
+#other h1 {
+  color: #000000;
+  background-color: white;
+  border-radius: 20px;
+}
+#other ul {
+  margin-top: 15px;
+}
+#other a:hover {
+  padding: 6px 40px;
+  background-color: white;
+  border-radius: 13px;
+  color: #ff62f7;
+  font-weight: 600;
+}
+#other li {
+  list-style: none;
+  margin: 5px 0;
+  margin-bottom: 10px;
+}
+#other a {
+  width: 100%;
+  border-radius: 13px;
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* COMPUTER */
+
+#computer {
+  text-align: center;
+  color: white;
+  font-family: "Alliance No.1";
+  border-radius: 20px;
+  width: 240px;
+}
+#computer h1 {
+  color: #000000;
+  background-color: white;
+  border-radius: 20px;
+}
+#computer ul {
+  margin-top: 15px;
+}
+#computer li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+#computer a {
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #ffffff00;
+  border-radius: 20px;
+}
+#computer a:hover {
+  font-weight: 600;
+  padding: 6px 25px;
+  background-color: white;
+  border-radius: 13px;
+  list-style: none;
+  color: #ff62f7;
+}
+
+/* ANDROID */
+
+#android {
+  color: white;
+  font-family: "Alliance No.1";
+  text-align: center;
+  width: 240px;
+  border-radius: 20px;
+}
+#android h1 {
+  border-radius: 20px;
+  background-color: #ffffff;
+  color: #000000;
+}
+#android ul {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  list-style: none;
+}
+#android a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+#android a:hover {
+  font-weight: 600;
+  padding: 6px 25px;
+  background-color: white;
+  border-radius: 13px;
+  list-style: none;
+  color: #ff62f7;
+}
+
+/* ---------------------------------------------------------------- */
+/* MEDIA SCREEN */
+
+@media screen and (max-width: 1530px) {
+  .title-p {
+    font-size: 90px;
+    font-weight: 800;
+    line-height: 95.5px;
+    transition: all 0.3s;
+  }
+  .p {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 30px;
+    max-width: 750px;
+    transition: all 0.3s;
+  }
+}
