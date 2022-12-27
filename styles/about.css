@@ -1,0 +1,19 @@
+.container {
+  font-family: Helvetica;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 30px;
+}
+.links-contact {
+  border-bottom: solid 1px #fff;
+  color: #fff;
+}
+.links-contact:hover {
+  color: #ff62f7;
+  border-bottom: solid 1px #ff62f7;
+}

@@ -1,0 +1,103 @@
+/* ---------------------------------------------------------------- */
+/* SECTION UPLOAD */
+
+#upload {
+  margin-top: 40px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #161515;
+  border-radius: 20px;
+  width: 75%;
+}
+#upload ul {
+  color: white;
+  list-style: none;
+}
+#upload div {
+  font-family: "Alliance No.1";
+}
+#upload h1 {
+  font-family: "Alliance No.1";
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 20px;
+}
+.up-file1 {
+  margin: 10px 0;
+  text-align: left;
+}
+.up-file {
+  margin-left: 10px;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+.up-file a {
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #000000;
+  background-color: white;
+}
+.up-desc {
+  font-weight: 550;
+  color: white;
+  margin-left: 10px;
+}
+.up-file a:hover {
+  box-shadow: 0px 5px 0px #ff62f7;
+  color: #ff62f7;
+}
+.acc {
+  font-family: "Alliance No.1";
+  background-color: #000000;
+  border-radius: 20px;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+  margin-right: 10px;
+}
+.noacc {
+  font-family: "Alliance No.1";
+  background-color: #000000;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 20px;
+  width: 100%;
+}
+.cat-acc {
+  display: flex;
+  margin: 10px 10px;
+}
+.title-acc {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+  background-color: white;
+}
+.canbe {
+  font-size: 15px;
+}
+
+/* ---------------------------------------------------------------- */
+/* MEDIA SCREEN */
+
+@media screen and (max-width: 1530px) {
+  .title-p {
+    font-size: 90px;
+    font-weight: 800;
+    line-height: 95.5px;
+    transition: all 0.3s;
+  }
+  .p {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 30px;
+    max-width: 750px;
+    transition: all 0.3s;
+  }
+}
