@@ -259,7 +259,7 @@ body::-webkit-scrollbar-thumb {
   /* Logo and Sign */
 
   .logo {
-    z-index: 1;
+    z-index: 3;
     margin-top: 20px;
     position: absolute;
     top: 50%;
@@ -321,6 +321,7 @@ body::-webkit-scrollbar-thumb {
     margin-inline: 0px;
   }
   .navbar {
+    z-index: 2;
     text-align: center;
     display: none;
     width: 80%;
