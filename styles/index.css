@@ -10,6 +10,7 @@
   font-size: 105px;
   font-weight: 800;
   margin: 0;
+  transition: all 0.2s ease-in;
 }
 .mid li {
   color: #8b8b8b;
@@ -17,6 +18,7 @@
   font-weight: 500;
   line-height: 40px;
   max-width: 760px;
+  transition: all 0.2s ease-in;
 }
 .mid {
   text-align: center;
@@ -47,7 +49,18 @@
 /* ---------------------------------------------------------------- */
 /* MEDIA QUERY */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1530px) {
+  .mid h1 {
+    font-size: 95px;
+    transition: all 0.2s ease-in;
+  }
+  .mid li {
+    font-size: 30px;
+    line-height: 38px;
+    transition: all 0.2s ease-in;
+  }
+}
+@media screen and (max-width: 900px) {
   /* SECTION MID */
 
   #mid {
