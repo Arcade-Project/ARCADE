@@ -26,17 +26,18 @@ body::-webkit-scrollbar-thumb {
 /* HEADER */
 
 /* HEADER logo and sign */
+
 .logo {
   position: absolute;
   left: 10%;
-  top: -8px;
+  top: 30px;
 }
 .logo img {
   width: 150px;
 }
 .sign {
   position: absolute;
-  top: 0;
+  top: 40px;
   right: 10%;
   font-size: 25px;
   font-weight: 650;
@@ -60,30 +61,35 @@ body::-webkit-scrollbar-thumb {
 
 /* HEADER navbar */
 
-.nav-links {
+.navbar {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 40px 0;
 }
-.nav-links li {
+.navlinks {
+  display: flex;
+}
+.navbar li {
   margin-inline: 20px;
 }
 .links a {
   font-size: 23px;
   font-weight: 650;
-  color: #ffffff;
-  padding-bottom: 15px;
-  border-bottom: solid 0px #5e5e5e00;
-  transition: all ease-in 0.08s;
+  color: #fff;
+  padding-bottom: 4px;
+  border-bottom: solid 0px none;
+  transition: all ease-in 0.1s;
 }
 
 /* HEADER navbar hover */
 
 .links a:hover {
-  padding-bottom: 0;
-  border-bottom: solid 3px #ffffff;
+  padding: 0;
+  border-bottom: solid 4px #fff;
+  transition: all ease-in 0.1s;
 }
+
 /* HEADER menu hamburger */
 
 .menu-hamburger {
@@ -136,14 +142,20 @@ body::-webkit-scrollbar-thumb {
 /* ---------------------------------------------------------------- */
 /* ANIMATION */
 
-nav {
+.navbar {
+  animation: titleanim2 0.6s ease-in-out forwards;
+}
+.update {
   animation: titleanim2 0.6s ease-in-out forwards;
 }
 .shortcut-container {
   animation: titleanim3 0.6s ease-in-out forwards;
 }
-.update {
-  animation: titleanim2 0.6s ease-in-out forwards;
+.logo {
+  animation: titleanim5 0.6s ease-in-out forwards;
+}
+.sign {
+  animation: titleanim6 0.6s ease-in-out forwards;
 }
 @keyframes titleanim {
   0% {
@@ -184,6 +196,34 @@ nav {
     top: 96%;
   }
 }
+@keyframes titleanim5 {
+  0% {
+    opacity: 0;
+    top: 70px;
+  }
+  100% {
+    opacity: 1;
+    top: 30px;
+  }
+}
+@keyframes titleanim6 {
+  0% {
+    opacity: 0;
+    top: 80px;
+  }
+  100% {
+    opacity: 1;
+    top: 40px;
+  }
+}
+@keyframes titleanim7 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 /* ---------------------------------------------------------------- */
 /* FONT FACE */
@@ -219,9 +259,10 @@ nav {
   /* Logo and Sign */
 
   .logo {
-    z-index: -1;
+    z-index: 1;
+    margin-top: 20px;
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -232,8 +273,9 @@ nav {
     visibility: hidden;
   }
   .sign-icon {
-    margin-top: 20px;
-    margin-left: 10px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
     display: block;
   }
   .sign-icon img {
@@ -248,7 +290,7 @@ nav {
     height: 40px;
     width: auto;
     position: absolute;
-    top: 0;
+    top: 20px;
     right: 10px;
     cursor: pointer;
   }
@@ -262,51 +304,64 @@ nav {
     height: 40px;
     width: auto;
     position: absolute;
-    top: 0;
+    top: 20px;
     right: 10px;
     cursor: pointer;
+    border-bottom: solid 3px #fff;
+    padding-left: 60%;
+    padding-bottom: 20px;
   }
   .cross-active {
     visibility: visible;
   }
 
-  /* Nav-Links */
+  /* NavBAr */
 
-  .nav-links li {
+  .navbar li {
     margin-inline: 0px;
   }
-  .nav-links {
+  .navbar {
+    text-align: center;
     display: none;
     width: 80%;
     margin: auto;
     position: absolute;
-    left: 50%;
-    top: 600%;
-    transform: translate(250%, -50%);
-    flex-direction: column;
+    top: 0;
+    right: 0;
     transition: 0.2s ease-in;
   }
-  .nav-links-active {
-    display: block;
+  .navbar-active {
     position: absolute;
-    top: 600%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    right: 0;
+    display: block;
     background-color: #353535;
-    z-index: 1;
-    text-align: center;
-    height: 1000%;
-    width: 50%;
-    border-radius: 20px;
+    height: 100%;
+    width: 80%;
+    border-radius: 20px 0 0 20px;
     transition: 0.2s ease-in;
+  }
+  .navlinks {
+    display: block;
+    text-align: left;
+    position: absolute;
+    top: 18%;
+    left: 10%;
+  }
+  .links {
+    margin-bottom: 20px;
   }
   .links a {
-    font-size: 35px;
+    font-size: 30px;
+  }
+  .links a:hover {
+    border-bottom: solid 5px;
   }
 
   /* Shortcut */
 
   .shortcut-container {
+    z-index: -1;
     padding-top: 0;
     height: auto;
     width: auto;
@@ -328,13 +383,26 @@ nav {
     width: 40px;
     transition: none;
   }
-  .shortcut-container {
-    animation: titleanim4 0.6s ease-in-out forwards;
-  }
 
   .update {
+    z-index: -1;
     position: fixed;
     right: 8px;
     bottom: 5px;
+  }
+  /* ---------------------------------------------------------------- */
+  /* ANIMATION */
+
+  .shortcut-container {
+    animation: titleanim4 0.6s ease-in-out forwards;
+  }
+  .menu-hamburger {
+    animation: titleanim7 0.6s ease-in-out forwards;
+  }
+  .sign-icon {
+    animation: titleanim7 0.6s ease-in-out forwards;
+  }
+  .navbar {
+    animation: none;
   }
 }
