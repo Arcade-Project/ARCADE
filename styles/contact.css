@@ -7,7 +7,6 @@
 #contact {
   font-family: "Alliance No.1";
   font-size: 18px;
-  text-decoration: none;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -19,6 +18,7 @@
   border-radius: 20px;
 }
 .contact-icon {
+  margin-top: 10px;
   display: flex;
 }
 .contact-icon img {
@@ -77,6 +77,11 @@
 /* MEDIA SCREEN */
 
 @media screen and (max-width: 1530px) {
+  #contact {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 900px) {
   #contact {
     width: 90%;
   }

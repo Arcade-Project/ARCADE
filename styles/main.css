@@ -308,7 +308,7 @@ body::-webkit-scrollbar-thumb {
     right: 10px;
     cursor: pointer;
     border-bottom: solid 3px #fff;
-    padding-left: 60%;
+    padding-left: 55%;
     padding-bottom: 20px;
   }
   .cross-active {
@@ -347,7 +347,7 @@ body::-webkit-scrollbar-thumb {
     text-align: left;
     position: absolute;
     top: 18%;
-    left: 10%;
+    left: 24%;
   }
   .links {
     margin-bottom: 20px;
@@ -405,5 +405,26 @@ body::-webkit-scrollbar-thumb {
   }
   .navbar {
     animation: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .cross {
+    z-index: 2;
+    height: 40px;
+    width: auto;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    cursor: pointer;
+    border-bottom: solid 3px #fff;
+    padding-left: 60%;
+    padding-bottom: 20px;
+  }
+  .navlinks {
+    display: block;
+    text-align: left;
+    position: absolute;
+    top: 18%;
+    left: 10%;
   }
 }
