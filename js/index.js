@@ -14,11 +14,20 @@ cross.addEventListener("click", () => {
   cross.classList.remove("cross-active");
 });
 
-// Contact Part
+// Index Part
 
-const contact = document.getElementById("contact");
-const contactBox = document.querySelector(".contact-ul");
+// let wiki = document.querySelector(".wiki");
+// let usefulLinks = document.querySelector(".useful-links");
+// let githubArcade = document.querySelector(".github-arcade");
 
-contact.addEventListener("mouseover", () => {
-  contactBox.classList.add("contact-container");
-});
+// wiki.addEventListener(
+//   "mouseover",
+//   (e) => {
+//     wiki.style.width = "50px";
+//     usefulLinks.style.width = "47px";
+//     githubArcade.style.width = "44px";
+
+//     console.log(e.target.isTrusted);
+//   },
+//   false
+// );
