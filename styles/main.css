@@ -34,6 +34,7 @@ body::-webkit-scrollbar-thumb {
 }
 .logo img {
   width: 150px;
+  cursor: pointer;
 }
 .sign {
   position: absolute;
@@ -142,8 +143,8 @@ body::-webkit-scrollbar-thumb {
 /* ---------------------------------------------------------------- */
 /* ANIMATION */
 
-.navbar {
-  animation: titleanim2 0.6s ease-in-out forwards;
+.navlinks {
+  animation: titleanim1 0.6s ease-in-out forwards;
 }
 .update {
   animation: titleanim2 0.6s ease-in-out forwards;
@@ -157,14 +158,15 @@ body::-webkit-scrollbar-thumb {
 .sign {
   animation: titleanim6 0.6s ease-in-out forwards;
 }
-@keyframes titleanim {
+
+@keyframes titleanim1 {
   0% {
     opacity: 0;
-    top: 55%;
+    margin: 20px 0;
   }
   100% {
     opacity: 1;
-    transform: translate(-50%, -50%);
+    margin: 0;
   }
 }
 @keyframes titleanim2 {
