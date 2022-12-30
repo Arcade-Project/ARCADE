@@ -16,13 +16,14 @@
   align-items: center;
   justify-content: center;
   border-radius: 20px;
+  width: 65%;
 }
 .contact-icon {
   margin-top: 10px;
   display: flex;
 }
 .contact-icon img {
-  width: 40px;
+  width: 50px;
   margin-inline: 2px;
 }
 .contact-icon li {
@@ -33,7 +34,7 @@
   margin: 0;
   padding-bottom: 0px;
   border-bottom: 2px solid #ffffff;
-  font-size: 50px;
+  font-size: 70px;
   font-weight: 600;
   width: 100%;
   color: #fff;
@@ -53,8 +54,8 @@
 .contact {
   margin-top: 20px;
   color: #8b8b8b;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 28px;
+  line-height: 40px;
 }
 
 /* ---------------------------------------------------------------- */
@@ -80,9 +81,25 @@
   #contact {
     width: 45%;
   }
+  #contact h1 {
+    font-size: 50px;
+  }
+  .contact-icon img {
+    width: 40px;
+  }
+  .contact {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 @media screen and (max-width: 900px) {
+  #contact h1 {
+    font-size: 50px;
+  }
   #contact {
     width: 90%;
+  }
+  .contact {
+    font-size: 20px;
   }
 }
