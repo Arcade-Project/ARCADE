@@ -236,13 +236,18 @@ body::-webkit-scrollbar-thumb {
 }
 @keyframes titleanim9 {
   0% {
-    border-bottom: solid 0px #fff;
-  }
-  99% {
-    border-bottom: solid 0px #fff;
+    padding-left: 0%;
   }
   100% {
-    border-bottom: solid 3px #fff;
+    padding-left: 55%;
+  }
+}
+@keyframes titleanim10 {
+  0% {
+    padding-left: 0%;
+  }
+  100% {
+    padding-left: 60%;
   }
 }
 
@@ -331,10 +336,11 @@ body::-webkit-scrollbar-thumb {
     top: 20px;
     right: 10px;
     cursor: pointer;
-    padding-left: 55%;
+    /* padding-left: 55%; */
     padding-bottom: 20px;
   }
   .cross-active {
+    border-bottom: solid 3px #fff;
     visibility: visible;
   }
 
@@ -361,7 +367,7 @@ body::-webkit-scrollbar-thumb {
     display: block;
     background-color: #353535;
     height: 100%;
-    width: 80%;
+    width: 70%;
     border-radius: 20px 0 0 20px;
     transition: 0.2s ease-in;
   }
@@ -438,22 +444,18 @@ body::-webkit-scrollbar-thumb {
 }
 @media screen and (max-width: 500px) {
   .cross {
-    z-index: 2;
-    height: 40px;
-    width: auto;
-    position: absolute;
-    top: 20px;
-    right: 10px;
-    cursor: pointer;
-    border-bottom: solid 3px #fff;
-    padding-left: 60%;
     padding-bottom: 20px;
   }
   .navlinks {
-    display: block;
-    text-align: left;
-    position: absolute;
-    top: 18%;
     left: 10%;
+  }
+  /* ---------------------------------------------------------------- */
+  /* ANIMATION */
+
+  .cross-active {
+    animation: titleanim10 0.25s ease-in-out forwards;
+  }
+  .navbar-active {
+    width: 80%;
   }
 }
