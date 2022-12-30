@@ -226,6 +226,25 @@ body::-webkit-scrollbar-thumb {
     opacity: 1;
   }
 }
+@keyframes titleanim8 {
+  0% {
+    right: -200%;
+  }
+  100% {
+    right: 0;
+  }
+}
+@keyframes titleanim9 {
+  0% {
+    border-bottom: solid 0px #fff;
+  }
+  99% {
+    border-bottom: solid 0px #fff;
+  }
+  100% {
+    border-bottom: solid 3px #fff;
+  }
+}
 
 /* ---------------------------------------------------------------- */
 /* FONT FACE */
@@ -258,6 +277,9 @@ body::-webkit-scrollbar-thumb {
   }
 }
 @media screen and (max-width: 900px) {
+  body {
+    overflow-x: hidden;
+  }
   /* Logo and Sign */
 
   .logo {
@@ -309,7 +331,6 @@ body::-webkit-scrollbar-thumb {
     top: 20px;
     right: 10px;
     cursor: pointer;
-    border-bottom: solid 3px #fff;
     padding-left: 55%;
     padding-bottom: 20px;
   }
@@ -405,7 +426,13 @@ body::-webkit-scrollbar-thumb {
   .sign-icon {
     animation: titleanim7 0.6s ease-in-out forwards;
   }
-  .navbar {
+  .navbar-active {
+    animation: titleanim8 0.25s ease-out forwards;
+  }
+  .cross-active {
+    animation: titleanim9 0.25s ease-out forwards;
+  }
+  .navlinks {
     animation: none;
   }
 }
