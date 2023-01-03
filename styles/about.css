@@ -1,19 +1,79 @@
-.container {
-  font-family: Helvetica;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 800px;
-  color: #fff;
+#about {
+  font-family: "Alliance No.1";
   font-size: 18px;
-  line-height: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+}
+#about h1 {
+  font-family: "Alliance No.2";
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ffffff;
+  font-size: 70px;
+  font-weight: 600;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
+.about {
+  color: #8b8b8b;
+  font-size: 28px;
+  line-height: 40px;
 }
 .links-contact {
-  border-bottom: solid 1px #fff;
-  color: #fff;
+  color: #ff62f7;
 }
 .links-contact:hover {
-  color: #ff62f7;
-  border-bottom: solid 1px #ff62f7;
+  text-decoration: underline #ff62f7;
+}
+
+/* MEDIA SCREEN */
+
+@media screen and (max-width: 1530px) {
+  #about {
+    width: 73%;
+  }
+  #about h1 {
+    font-size: 50px;
+  }
+  .about {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 900px) {
+  #about h1 {
+    font-size: 50px;
+    position: absolute;
+    top: 0%;
+  }
+  #about {
+    /* background-color: red; */
+    z-index: -1;
+    font-family: "Alliance No.1";
+    font-size: 18px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 420px;
+    overflow: auto;
+    width: 90%;
+  }
+  .about {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    font-size: 20px;
+  }
 }

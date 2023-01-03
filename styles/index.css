@@ -79,6 +79,7 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 25px;
+    margin: 0 auto;
     max-width: 380px;
   }
   .mid {
@@ -88,6 +89,17 @@
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 380px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .mid h1 {
+    font-size: 2.4em;
+  }
+  .mid li {
+    font-size: 0.8em;
+    line-height: 18px;
+    margin: 0 auto;
+    width: 280px;
   }
 }

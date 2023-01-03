@@ -317,7 +317,7 @@ body::-webkit-scrollbar-thumb {
     z-index: 2;
     visibility: visible;
     height: 40px;
-    width: auto;
+    width: unset;
     position: absolute;
     top: 20px;
     right: 10px;
@@ -336,7 +336,6 @@ body::-webkit-scrollbar-thumb {
     top: 20px;
     right: 10px;
     cursor: pointer;
-    /* padding-left: 55%; */
     padding-bottom: 20px;
   }
   .cross-active {
@@ -457,5 +456,57 @@ body::-webkit-scrollbar-thumb {
   }
   .navbar-active {
     width: 80%;
+  }
+}
+@media screen and (max-width: 330px) {
+  /* Logo and Sign */
+
+  .logo img {
+    margin-top: 0px;
+    width: 170px;
+  }
+  .sign-icon {
+    top: 25px;
+    left: 5px;
+  }
+  .sign-icon img {
+    height: 35px;
+  }
+
+  /* Icon Hamburger */
+
+  .menu-hamburger {
+    top: 25px;
+    right: 5px;
+    height: 35px;
+  }
+  .menuHamburger-active {
+    display: none;
+  }
+  /* Icon Cross */
+
+  .cross {
+    z-index: 2;
+    height: 35px;
+    width: auto;
+    top: 25px;
+    right: 5px;
+  }
+  .cross-active {
+    border-bottom: solid 3px #fff;
+    visibility: visible;
+  }
+  .navbar-active {
+    width: 84%;
+  }
+
+  /* Shortcut */
+  .shortcut img {
+    width: 35px;
+    transition: none;
+  }
+  .shortcut img:hover {
+    width: 35px;
+    transition: none;
   }
 }
