@@ -1,59 +1,82 @@
 /* ---------------------------------------------------------------- */
 /* CATEGORY */
 
-.container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.acc {
+  margin: 0 auto;
+  width: 500px;
 }
-.category {
-  color: white;
-  font-family: "Alliance No.1";
+.acc li {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #161515;
+}
+.acc li label {
   text-align: center;
-  width: 240px;
-  border-radius: 20px;
-  /* background-color: #353535; */
+  font-size: 1.2em;
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+  display: flex;
+  align-items: center;
+  margin: 5px 10px 5px;
+  padding: 5px 0;
+  cursor: pointer;
 }
-.category h1 {
-  border-radius: 20px;
-  background-color: #ffffff;
-  color: #000000;
-}
-.category ul {
-  margin-top: 15px;
-}
-.category li {
-  margin-bottom: 8px;
-}
-.category a {
-  color: white;
-  font-size: 20px;
-}
-.category a:hover {
+label::before {
+  font-size: 24px;
   font-weight: 600;
-  padding: 6px 25px;
-  background-color: white;
-  border-radius: 13px;
-  list-style: none;
-  color: #ff62f7;
+}
+input[type="radio"] {
+  display: none;
+}
+.acc .content {
+  color: #8b8b8b;
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  /* transition: max-height 0.5s;
+  transition: padding 0.5s; */
+  transition: all 0.5s;
+}
+.acc input[type="radio"]:checked + label + .content {
+  max-height: 400px;
+  padding: 10px 10px 20px;
+}
+.content a img {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+  margin-top: 3px;
+}
+.content a {
+  display: flex;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  box-shadow: 4px 4px 4px 0px #000000;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.content a:hover {
+  color: rgb(255, 255, 255);
+  background-color: black;
+  box-shadow: 4px 4px 4px 0px #000000;
+}
+.desc {
+  margin-left: 15px;
+  background-color: rebeccapurple;
+}
+.cat {
+  display: flex;
+  flex-direction: row;
+}
+.line {
+  border-bottom: solid 2px #ffffff;
+  width: 200px;
+  margin: 8px auto;
 }
 
 /* ---------------------------------------------------------------- */
 /* MEDIA SCREEN */
 
 @media screen and (max-width: 1530px) {
-  .title-p {
-    font-size: 90px;
-    font-weight: 800;
-    line-height: 95.5px;
-    transition: all 0.3s;
-  }
-  .p {
-    font-size: 30px;
-    font-weight: 500;
-    line-height: 30px;
-    max-width: 750px;
-    transition: all 0.3s;
-  }
 }

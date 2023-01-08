@@ -5,7 +5,7 @@
   margin: 0;
 }
 body {
-  font-family: "Whitney";
+  font-family: "Whitney", helvetica, sans-serif;
   background-color: #000000;
 }
 ::selection {
