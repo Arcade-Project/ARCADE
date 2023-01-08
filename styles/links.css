@@ -50,20 +50,19 @@ input[type="radio"] {
 }
 .content a {
   display: flex;
-  color: rgb(0, 0, 0);
+  color: #000000;
   background-color: #ffffff;
   box-shadow: 4px 4px 4px 0px #000000;
   padding: 5px 10px;
   border-radius: 10px;
 }
 .content a:hover {
-  color: rgb(255, 255, 255);
-  background-color: black;
+  color: #ffffff;
+  background-color: #000000;
   box-shadow: 4px 4px 4px 0px #000000;
 }
 .desc {
   margin-left: 15px;
-  background-color: rebeccapurple;
 }
 .cat {
   display: flex;
