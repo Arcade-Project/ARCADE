@@ -1,6 +1,148 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Whitney", helvetica, sans-serif;
+  background-color: #000000;
+}
+::selection {
+  background-color: #5900ff;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: #20232400;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #727272;
+  border-radius: 20px;
+}
+
+/* ---------------------------------------------------------------- */
+/* HEADER */
+
+/* HEADER logo and sign */
+
+.logo {
+  position: fixed;
+  left: 10%;
+  top: 17px;
+}
+.logo img {
+  width: 150px;
+  cursor: pointer;
+}
+.sign {
+  position: fixed;
+  top: 25px;
+  right: 10%;
+  font-size: 25px;
+  font-weight: 650;
+}
+.sign a {
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 3px 10px;
+  transition: all 0.3s;
+}
+.sign a:hover {
+  color: black;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  transition: all 0.3s;
+}
+.sign-icon {
+  display: none;
+}
+
+/* HEADER navbar */
+
+nav {
+  position: fixed;
+  top: -0;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0px 10px 50px #000000;
+}
+.navbar {
+  display: flex;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 40px 0;
+}
+.navlinks {
+  display: flex;
+}
+.navbar li {
+  margin-inline: 20px;
+}
+.links a {
+  font-size: 23px;
+  font-weight: 650;
+  color: #fff;
+  padding-bottom: 4px;
+  border-bottom: solid 0px none;
+  transition: all ease-in 0.1s;
+}
+
+/* HEADER navbar hover */
+
+.links a:hover {
+  padding: 0;
+  border-bottom: solid 4px #fff;
+  transition: all ease-in 0.1s;
+}
+
+/* HEADER menu hamburger */
+
+.menu-hamburger {
+  visibility: hidden;
+}
+/* HEADER cross */
+.cross {
+  visibility: hidden;
+}
+
+/* ---------------------------------------------------------------- */
+/* SHORTCUT */
+
+.shortcut-container {
+  padding-top: 10px;
+  margin: 0;
+  height: 200px;
+  width: 50px;
+  position: fixed;
+  top: 50%;
+  left: 2%;
+  transform: translate(-50%, -50%);
+}
+.shortcut {
+  display: block;
+}
+.shortcut li {
+  margin: -8px 0;
+}
+.shortcut img {
+  width: 40px;
+  transition: 0.08s;
+}
+.shortcut img:hover {
+  width: 50px;
+  transition: all 0.08s;
+}
 /* ---------------------------------------------------------------- */
 /* CATEGORY */
 
+.container {
+  margin-top: 15%;
+}
 .acc {
   margin: 0 auto;
   width: 500px;
@@ -25,7 +167,7 @@ label::before {
   font-size: 24px;
   font-weight: 600;
 }
-input[type="radio"] {
+input[type="checkbox"] {
   display: none;
 }
 .acc .content {
@@ -34,11 +176,9 @@ input[type="radio"] {
   line-height: 26px;
   max-height: 0;
   overflow: hidden;
-  /* transition: max-height 0.5s;
-  transition: padding 0.5s; */
   transition: all 0.5s;
 }
-.acc input[type="radio"]:checked + label + .content {
+.acc input[type="checkbox"]:checked + label + .content {
   max-height: 400px;
   padding: 10px 10px 20px;
 }

@@ -110,6 +110,7 @@ body::-webkit-scrollbar-thumb {
   height: 200px;
   width: 50px;
   position: fixed;
+  top: 50%;
   left: 2%;
   transform: translate(-50%, -50%);
 }
