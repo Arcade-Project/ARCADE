@@ -30,7 +30,7 @@ body::-webkit-scrollbar-thumb {
 .logo {
   position: absolute;
   left: 10%;
-  top: 30px;
+  top: 32px;
 }
 .logo img {
   width: 150px;
@@ -38,7 +38,7 @@ body::-webkit-scrollbar-thumb {
 }
 .sign {
   position: absolute;
-  top: 40px;
+  top: 36px;
   right: 10%;
   font-size: 25px;
   font-weight: 650;
@@ -62,11 +62,17 @@ body::-webkit-scrollbar-thumb {
 
 /* HEADER navbar */
 
+/* nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+} */
 .navbar {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 40px 0;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .navlinks {
   display: flex;
@@ -144,90 +150,7 @@ body::-webkit-scrollbar-thumb {
 /* ---------------------------------------------------------------- */
 /* ANIMATION */
 
-.navlinks {
-  animation: titleanim1 0.6s ease-in-out forwards;
-}
-.update {
-  animation: titleanim2 0.6s ease-in-out forwards;
-}
-.shortcut-container {
-  animation: titleanim3 0.6s ease-in-out forwards;
-}
-.logo {
-  animation: titleanim5 0.6s ease-in-out forwards;
-}
-.sign {
-  animation: titleanim6 0.6s ease-in-out forwards;
-}
-
-@keyframes titleanim1 {
-  0% {
-    opacity: 0;
-    margin: 20px 0;
-  }
-  100% {
-    opacity: 1;
-    margin: 0;
-  }
-}
-@keyframes titleanim2 {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes titleanim3 {
-  0% {
-    opacity: 0;
-    top: 55%;
-  }
-  100% {
-    opacity: 1;
-    top: 50%;
-  }
-}
-@keyframes titleanim4 {
-  0% {
-    opacity: 0;
-    top: 100%;
-  }
-  100% {
-    opacity: 1;
-    top: 96%;
-  }
-}
-@keyframes titleanim5 {
-  0% {
-    opacity: 0;
-    top: 70px;
-  }
-  100% {
-    opacity: 1;
-    top: 30px;
-  }
-}
-@keyframes titleanim6 {
-  0% {
-    opacity: 0;
-    top: 80px;
-  }
-  100% {
-    opacity: 1;
-    top: 40px;
-  }
-}
-@keyframes titleanim7 {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes titleanim8 {
+@keyframes anim8 {
   0% {
     right: -200%;
   }
@@ -235,15 +158,7 @@ body::-webkit-scrollbar-thumb {
     right: 0;
   }
 }
-@keyframes titleanim9 {
-  0% {
-    padding-left: 0%;
-  }
-  100% {
-    padding-left: 55%;
-  }
-}
-@keyframes titleanim10 {
+@keyframes anim9 {
   0% {
     padding-left: 0%;
   }
@@ -292,7 +207,7 @@ body::-webkit-scrollbar-thumb {
     z-index: 3;
     margin-top: 20px;
     position: absolute;
-    top: 50%;
+    top: 30px;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -353,30 +268,30 @@ body::-webkit-scrollbar-thumb {
     z-index: 2;
     text-align: center;
     display: none;
-    width: 80%;
+    width: unset;
     margin: auto;
     position: absolute;
     top: 0;
-    right: 0;
-    transition: 0.2s ease-in;
+    left: 0;
+    transform: none;
   }
   .navbar-active {
     position: absolute;
     top: 0;
     right: 0;
+    left: unset;
     display: block;
     background-color: #353535;
     height: 100%;
-    width: 70%;
+    width: 80%;
     border-radius: 20px 0 0 20px;
-    transition: 0.2s ease-in;
   }
   .navlinks {
     display: block;
     text-align: left;
     position: absolute;
     top: 18%;
-    left: 24%;
+    left: 18%;
   }
   .links {
     margin-bottom: 20px;
@@ -423,23 +338,11 @@ body::-webkit-scrollbar-thumb {
   /* ---------------------------------------------------------------- */
   /* ANIMATION */
 
-  .shortcut-container {
-    animation: titleanim4 0.6s ease-in-out forwards;
-  }
-  .menu-hamburger {
-    animation: titleanim7 0.6s ease-in-out forwards;
-  }
-  .sign-icon {
-    animation: titleanim7 0.6s ease-in-out forwards;
-  }
   .navbar-active {
-    animation: titleanim8 0.25s ease-out forwards;
+    animation: anim8 0.25s ease-out forwards;
   }
   .cross-active {
-    animation: titleanim9 0.25s ease-out forwards;
-  }
-  .navlinks {
-    animation: none;
+    animation: anim9 0.25s ease-out forwards;
   }
 }
 @media screen and (max-width: 500px) {
@@ -448,15 +351,6 @@ body::-webkit-scrollbar-thumb {
   }
   .navlinks {
     left: 10%;
-  }
-  /* ---------------------------------------------------------------- */
-  /* ANIMATION */
-
-  .cross-active {
-    animation: titleanim10 0.25s ease-in-out forwards;
-  }
-  .navbar-active {
-    width: 80%;
   }
 }
 @media screen and (max-width: 330px) {
@@ -480,9 +374,6 @@ body::-webkit-scrollbar-thumb {
     top: 25px;
     right: 5px;
     height: 35px;
-  }
-  .menuHamburger-active {
-    display: none;
   }
   /* Icon Cross */
 
