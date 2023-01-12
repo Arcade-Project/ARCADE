@@ -11,6 +11,7 @@ nav {
 
 .container {
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 .acc {
   margin: 0 auto;
@@ -48,7 +49,7 @@ input[type="checkbox"] {
   transition: all 0.5s;
 }
 .acc input[type="checkbox"]:checked + label + .content {
-  max-height: 400px;
+  max-height: 500px;
   padding: 10px 10px 20px;
 }
 .content a img {
