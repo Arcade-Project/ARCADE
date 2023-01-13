@@ -107,7 +107,7 @@ body::-webkit-scrollbar-thumb {
   width: 50px;
   position: fixed;
   top: 50%;
-  left: 10px;
+  left: 2%;
   transform: translate(-50%, -50%);
 }
 .shortcut {
