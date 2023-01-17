@@ -10,8 +10,6 @@ nav {
 /* CATEGORY */
 
 .container {
-  margin-top: 100px;
-  margin-bottom: 100px;
 }
 .acc {
   margin: 0 auto;
@@ -94,9 +92,16 @@ input[type="checkbox"] {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 80px;
   font-size: 5em;
   font-family: "Alliance No.2";
   color: #ffffff;
+}
+.info {
+  color: #ffffff;
+  margin: 0 auto;
+  width: 500px;
+  margin: 20px auto;
 }
 
 /* ---------------------------------------------------------------- */
