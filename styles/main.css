@@ -59,34 +59,35 @@ body::-webkit-scrollbar-thumb {
 .sign-icon {
   display: none;
 }
-.navbar {
+.navlinks {
   display: flex;
   position: absolute;
   top: 50px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.navlinks {
+.navlinks ul {
   display: flex;
 }
-.navbar li {
+.navlinks li {
   margin-inline: 20px;
 }
-.links a {
+.navlinks a {
   font-size: 23px;
   font-weight: 650;
   color: #fff;
-  padding-bottom: 4px;
-  border-bottom: solid 0px none;
-  transition: all ease-in 0.1s;
 }
-
-/* HEADER navbar hover */
-
-.links a:hover {
-  padding: 0;
-  border-bottom: solid 4px #fff;
-  transition: all ease-in 0.1s;
+.navlinks ul li::after {
+  content: "";
+  width: 0%;
+  height: 4px;
+  background: #ffffff;
+  display: block;
+  margin: auto;
+  transition: 0.3s;
+}
+.navlinks ul li:hover::after {
+  width: 100%;
 }
 
 /* HEADER menu hamburger */
@@ -118,11 +119,11 @@ body::-webkit-scrollbar-thumb {
 }
 .shortcut img {
   width: 40px;
-  transition: all 0.2s;
+  transition: all 0.03s;
 }
 .shortcut img:hover {
   padding-left: 5px;
-  transition: all 0.1s;
+  transition: all 0.03s;
 }
 
 /* ---------------------------------------------------------------- */
@@ -249,12 +250,12 @@ body::-webkit-scrollbar-thumb {
     visibility: visible;
   }
 
-  /* NavBAr */
+  /* navlinks */
 
-  .navbar li {
+  .navlinks li {
     margin-inline: 0px;
   }
-  .navbar {
+  .navlinks {
     z-index: 2;
     text-align: center;
     display: none;
@@ -265,7 +266,7 @@ body::-webkit-scrollbar-thumb {
     left: 0;
     transform: none;
   }
-  .navbar-active {
+  .navlinks-active {
     position: absolute;
     top: 0;
     right: 0;
@@ -276,21 +277,18 @@ body::-webkit-scrollbar-thumb {
     width: 80%;
     border-radius: 20px 0 0 20px;
   }
-  .navlinks {
+  .navlinks ul {
     display: block;
     text-align: left;
     position: absolute;
     top: 18%;
     left: 18%;
   }
-  .links {
+  .navlinks {
     margin-bottom: 20px;
   }
-  .links a {
+  .navlinks a {
     font-size: 30px;
-  }
-  .links a:hover {
-    border-bottom: solid 5px;
   }
 
   /* Shortcut */
@@ -328,7 +326,7 @@ body::-webkit-scrollbar-thumb {
   /* ---------------------------------------------------------------- */
   /* ANIMATION */
 
-  .navbar-active {
+  .navlinks-active {
     animation: anim8 0.25s ease-out forwards;
   }
   .cross-active {
@@ -339,7 +337,7 @@ body::-webkit-scrollbar-thumb {
   .cross {
     padding-bottom: 20px;
   }
-  .navlinks {
+  .navlinks ul {
     left: 10%;
   }
 }
@@ -378,7 +376,7 @@ body::-webkit-scrollbar-thumb {
     border-bottom: solid 3px #fff;
     visibility: visible;
   }
-  .navbar-active {
+  .navlinks-active {
     width: 84%;
   }
 
