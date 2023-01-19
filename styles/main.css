@@ -21,6 +21,16 @@ body::-webkit-scrollbar-thumb {
   background-color: #727272;
   border-radius: 20px;
 }
+.back-video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+  /* -webkit-filter: blur(2px); */
+}
 
 /* ---------------------------------------------------------------- */
 /* HEADER */
