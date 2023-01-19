@@ -29,7 +29,7 @@ body::-webkit-scrollbar-thumb {
   top: 0;
   left: 0;
   opacity: 0.2;
-  /* -webkit-filter: blur(2px); */
+  -webkit-filter: blur(2px);
 }
 
 /* ---------------------------------------------------------------- */
