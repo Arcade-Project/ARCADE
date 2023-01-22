@@ -10,6 +10,7 @@ nav {
 /* CATEGORY */
 
 .container {
+  margin-bottom: 20px;
 }
 .acc {
   margin: 0 auto;
@@ -84,10 +85,6 @@ input[type="checkbox"] {
 .espace {
   margin-top: 18px;
 }
-.arrow {
-  width: 16px;
-  margin-left: 10px;
-}
 .title {
   display: flex;
   align-items: center;
@@ -107,5 +104,107 @@ input[type="checkbox"] {
 /* ---------------------------------------------------------------- */
 /* MEDIA SCREEN */
 
-@media screen and (max-width: 1530px) {
+@media screen and (max-width: 900px) {
+  nav {
+    position: unset;
+    top: unset;
+    width: unset;
+    height: unset;
+    background-color: none;
+    box-shadow: none;
+  }
+  .update {
+    display: none;
+  }
+  .shortcut-container {
+    display: none;
+  }
+  .acc {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .acc li {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #161515;
+  }
+  .acc li label {
+    text-align: center;
+    font-size: 1.2em;
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+    display: flex;
+    align-items: center;
+    margin: 5px 10px 5px;
+    padding: 5px 0;
+    cursor: pointer;
+  }
+  label::before {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+  .acc .content {
+    color: #8b8b8b;
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: none;
+  }
+  .acc input[type="checkbox"]:checked + label + .content {
+    max-height: 100%;
+    padding: 10px 10px 20px;
+  }
+  .content a img {
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+    margin-top: 3px;
+  }
+  .content a {
+    display: flex;
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 4px 0px #000000;
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+  .content a:hover {
+    color: #ffffff;
+    background-color: #000000;
+    box-shadow: 4px 4px 4px 0px #000000;
+  }
+  .desc {
+    margin-left: 15px;
+  }
+  .cat {
+    display: flex;
+    flex-direction: row;
+  }
+  .line {
+    border-bottom: solid 2px #ffffff;
+    width: 40%;
+    margin: 8px auto;
+  }
+  .espace {
+    margin-top: 18px;
+  }
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    font-size: 3em;
+    font-family: "Alliance No.2";
+    color: #ffffff;
+  }
+  .info {
+    color: #ffffff;
+    margin: 0 auto;
+    width: 80%;
+    margin: 20px auto;
+  }
 }

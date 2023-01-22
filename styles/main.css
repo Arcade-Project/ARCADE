@@ -266,6 +266,7 @@ body::-webkit-scrollbar-thumb {
   /* navlinks */
 
   .navlinks li {
+    margin: 10px 0;
     margin-inline: 0px;
   }
   .navlinks {

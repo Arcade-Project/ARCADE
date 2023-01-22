@@ -14,11 +14,15 @@
   width: 65%;
 }
 .contact-icon {
+  padding: 0 10px;
   margin-top: 10px;
   display: flex;
+  background-color: #ffffff;
+  border-radius: 60px;
 }
-.contact-icon img {
-  width: 50px;
+.contact-icon li a img {
+  width: 30px;
+  height: 30px;
   margin-inline: 2px;
 }
 .contact-icon li {
@@ -37,8 +41,9 @@
 .contact-icon a {
   color: white;
 }
-.contact-icon a:hover {
-  color: #ff62f7;
+.contact-icon img:hover {
+  border-radius: 60px;
+  background-color: #ff62f7;
 }
 .contact {
   margin-top: 20px;
