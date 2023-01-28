@@ -13,6 +13,7 @@
   transition: all 0.2s ease-in;
 }
 .mid li {
+  margin: 0 auto;
   color: #8b8b8b;
   font-size: 35px;
   font-weight: 500;
