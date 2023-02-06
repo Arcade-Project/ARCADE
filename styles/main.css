@@ -122,11 +122,11 @@ body::-webkit-scrollbar-thumb {
 }
 .shortcut img {
   width: 40px;
-  transition: all 0.03s;
+  transition: all 0.1s;
 }
 .shortcut img:hover {
   padding-left: 5px;
-  transition: all 0.03s;
+  transition: all 0.1s;
 }
 
 /* ---------------------------------------------------------------- */
@@ -249,6 +249,7 @@ body::-webkit-scrollbar-thumb {
     padding-bottom: 20px;
   }
   .cross-active {
+    position: fixed;
     border-bottom: solid 3px #fff;
     visibility: visible;
   }
@@ -261,16 +262,18 @@ body::-webkit-scrollbar-thumb {
   }
   .navlinks {
     z-index: 2;
-    text-align: center;
     display: none;
-    width: unset;
-    margin: auto;
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
+    left: unset;
+    background-color: #353535;
+    height: 100%;
+    width: 80%;
+    border-radius: 20px 0 0 20px;
     transform: none;
   }
-  .navlinks-active {
+  /* .navlinks-active {
     position: absolute;
     top: 0;
     right: 0;
@@ -280,7 +283,7 @@ body::-webkit-scrollbar-thumb {
     height: 100%;
     width: 80%;
     border-radius: 20px 0 0 20px;
-  }
+  } */
   .navlinks ul {
     display: block;
     text-align: left;
@@ -332,6 +335,9 @@ body::-webkit-scrollbar-thumb {
 
   .navlinks-active {
     animation: anim8 0.25s ease-out forwards;
+  }
+  .navlinks {
+    animation: anim10 0.25s ease-out forwards;
   }
   .cross-active {
     animation: anim9 0.25s ease-out forwards;
