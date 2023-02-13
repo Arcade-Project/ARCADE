@@ -18,11 +18,11 @@
   font-size: 70px;
   font-weight: 600;
   width: 100%;
-  color: #fff;
+  color: var(--text-color);
   text-align: center;
 }
 .about {
-  color: #8b8b8b;
+  color: var(--text-desc);
   font-size: 28px;
   line-height: 40px;
 }
