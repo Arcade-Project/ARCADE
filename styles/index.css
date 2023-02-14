@@ -66,10 +66,8 @@
 
   #mid {
     z-index: -1;
-    font-family: "JetBrains Mono", Helvetica, Arial;
   }
   .mid h1 {
-    font-family: "Alliance No.2", Helvetica, Arial;
     color: var(--text-color);
     font-size: 50px;
     font-weight: 800;
