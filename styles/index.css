@@ -7,7 +7,7 @@
 .mid h1 {
   font-family: "Alliance No.2", Helvetica, Arial;
   color: var(--text-color);
-  font-size: 105px;
+  font-size: 5.5em;
   font-weight: 800;
   margin: 0;
   transition: all 0.2s ease-in;
@@ -15,10 +15,10 @@
 .mid li {
   margin: 0 auto;
   color: var(--text-desc);
-  font-size: 35px;
+  font-size: 1.8em;
   font-weight: 500;
-  line-height: 40px;
-  max-width: 760px;
+  line-height: 35px;
+  max-width: 700px;
   transition: all 0.2s ease-in;
 }
 .mid {

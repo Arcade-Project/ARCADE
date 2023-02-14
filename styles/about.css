@@ -1,6 +1,5 @@
 #about {
   font-family: "Alliance No.1";
-  font-size: 18px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -15,7 +14,7 @@
   font-family: "Alliance No.2";
   margin-bottom: 20px;
   border-bottom: 2px solid #ffffff;
-  font-size: 70px;
+  font-size: 4em;
   font-weight: 600;
   width: 100%;
   color: var(--text-color);
@@ -23,7 +22,7 @@
 }
 .about {
   color: var(--text-desc);
-  font-size: 28px;
+  font-size: 1.5em;
   line-height: 40px;
 }
 .links-contact {
