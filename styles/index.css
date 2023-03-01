@@ -1,6 +1,12 @@
 /* ---------------------------------------------------------------- */
 /* SECTION MID */
 
+.add-button {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+}
+
 #mid {
   font-family: "Alliance No.1", Helvetica, Arial;
 }

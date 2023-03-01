@@ -8,7 +8,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 75%;
+  width: 48%;
 }
 #about h1 {
   font-family: "Alliance No.2";
@@ -22,8 +22,8 @@
 }
 .about {
   color: var(--text-desc);
-  font-size: 1.5em;
-  line-height: 40px;
+  font-size: 1.2em;
+  line-height: 30px;
 }
 .links-contact {
   color: #ff62f7;
@@ -53,7 +53,35 @@
     top: 0%;
   }
   #about {
-    /* background-color: red; */
+    z-index: -1;
+    font-family: "Alliance No.1";
+    font-size: 18px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    overflow: auto;
+    width: 90%;
+  }
+  .about {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  #about h1 {
+    font-size: 50px;
+    position: absolute;
+    top: 0%;
+  }
+  #about {
     z-index: -1;
     font-family: "Alliance No.1";
     font-size: 18px;
