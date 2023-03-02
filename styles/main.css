@@ -58,7 +58,7 @@ body::-webkit-scrollbar-thumb {
 }
 .btnr a:hover {
   background-color: #8400ff;
-  box-shadow: #8400ffa4 0px 20px 30px -10px;
+  box-shadow: #8400ffa4 0px 12px 30px -10px;
   color: black;
 }
 .sign-icon {
@@ -85,18 +85,12 @@ nav {
   font-size: 18px;
   font-weight: 650;
   color: var(--text-color);
+  transition: 0.1s;
 }
-.navlinks ul li::after {
-  content: "";
-  width: 0%;
-  height: 3px;
-  background: var(--background-2);
-  display: block;
-  margin: auto;
-  transition: 0.3s;
-}
-.navlinks ul li:hover::after {
-  width: 100%;
+.navlinks a:hover {
+  /* border-bottom: #8400ff 3px; */
+  color: #8400ff;
+  transition: 0.1s;
 }
 
 /* HEADER menu hamburger */

@@ -35,6 +35,16 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.letter {
+  transition: 0.1s;
+}
+.letter:hover {
+  /* color: #8400ff;
+  transition: 0.3s; */
+  -webkit-text-stroke: 3px #8400ff;
+  color: #00000000;
+  transition: -webkit-text-stroke 0s;
+}
 
 /* ---------------------------------------------------------------- */
 /* ANIMATION */
