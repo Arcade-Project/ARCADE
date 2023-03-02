@@ -226,17 +226,44 @@ nav {
     z-index: 3;
     margin-top: 20px;
     position: absolute;
-    top: 30px;
+    top: 8px;
+    transition: 0.2s;
+  }
+  .logofix {
+    z-index: 3;
+    margin-top: 20px;
+    position: absolute;
+    top: 8px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
+    transition: 0.2s;
   }
   .logo img {
     width: 180px;
   }
   .btnr {
     visibility: hidden;
+    position: fixed;
+    z-index: 3;
+    right: unset;
+    top: unset;
+    bottom: 5%;
+    left: 35%;
   }
-
+  .btnr a {
+    padding: 12px 80%;
+    color: black;
+    border: none;
+    background-color: #8400ff;
+    box-shadow: #8400ffa4 0px 12px 30px -10px;
+    transition: none;
+  }
+  .btnr a:hover {
+    background-color: transparent;
+    border: solid #8400ff 2px;
+    color: #8b31ff;
+    box-shadow: none;
+  }
   /* Icon Hamburger */
 
   .menu-hamburger {
@@ -287,6 +314,7 @@ nav {
     width: 80%;
     border-radius: 20px 0 0 20px;
     transform: none;
+    transition: 0.2s;
   }
   .navlinks ul {
     display: block;
@@ -294,6 +322,7 @@ nav {
     position: absolute;
     top: 18%;
     left: 18%;
+    transition: 0.2s;
   }
   .navlinks {
     margin-bottom: 20px;
