@@ -57,6 +57,7 @@ body::-webkit-scrollbar-thumb {
   transition: all 0.3s;
 }
 .btnr a:hover {
+  padding: 10px 30px;
   background-color: #8400ff;
   box-shadow: #8400ffa4 0px 12px 30px -10px;
   color: black;
@@ -83,12 +84,11 @@ nav {
 }
 .navlinks a {
   font-size: 18px;
-  font-weight: 650;
   color: var(--text-color);
   transition: 0.1s;
 }
 .navlinks a:hover {
-  /* border-bottom: #8400ff 3px; */
+  font-weight: 650;
   color: #8400ff;
   transition: 0.1s;
 }
@@ -204,6 +204,11 @@ nav {
   }
 }
 @media screen and (max-width: 1400px) {
+  .navlinks {
+    right: 17%;
+  }
+}
+@media screen and (max-width: 1200px) {
   .navlinks {
     right: 20%;
   }
