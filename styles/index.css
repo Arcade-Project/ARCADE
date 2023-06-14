@@ -37,6 +37,7 @@
 }
 .letter {
   transition: 0.1s;
+  user-select: none;
 }
 .letter:hover {
   /* color: #8400ff;
