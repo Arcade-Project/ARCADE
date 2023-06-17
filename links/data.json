@@ -1,0 +1,36 @@
+{
+    "title": "Titre de la page",
+    "meta": {
+      "description": "Description de la page",
+      "keywords": ["mot-clé 1", "mot-clé 2", "mot-clé 3"]
+    },
+    "content": [
+      {
+        "type": "heading",
+        "text": "Titre de section 1"
+      },
+      {
+        "type": "paragraph",
+        "text": "Contenu du paragraphe 1"
+      },
+      {
+        "type": "image",
+        "src": "chemin/vers/image.jpg",
+        "alt": "Texte alternatif de l'image"
+      },
+      {
+        "type": "heading",
+        "text": "Titre de section 2"
+      },
+      {
+        "type": "paragraph",
+        "text": "Contenu du paragraphe 2"
+      },
+      {
+        "type": "link",
+        "text": "Texte du lien",
+        "href": "https://exemple.com"
+      }
+    ]
+  }
+  

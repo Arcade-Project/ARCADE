@@ -1,0 +1,74 @@
+/* ---------------------------------------------------------------- */
+/* Poppins */
+@font-face {
+  font-family: "Poppins Black";
+  src: url("../assets/fonts/Poppins-Black.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins Bold";
+  src: url("../assets/fonts/Poppins-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins SemiBold";
+  src: url("../assets/fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+/* ---------------------------------------------------------------- */
+/* Alliance */
+@font-face {
+  font-family: "Alliance No.1";
+  src: url("../assets/fonts/AllianceNo1-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Alliance No.2";
+  src: url("../assets/fonts/AllianceNo2-ExtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+/* ---------------------------------------------------------------- */
+/* JetBrains */
+@font-face {
+  font-family: "JetBrains Bold";
+  src: url(../assets/fonts/JetBrainsMonoNL-Bold.ttf) format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JetBrains V";
+  src: url(../assets/fonts/JetBrainsMono[wght].ttf) format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+/* ---------------------------------------------------------------- */
+/* DM Sans */
+@font-face {
+  font-family: "DMSans Bold";
+  src: url(../assets/fonts/DMSans-Bold.ttf) format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DMSans Medium";
+  src: url(../assets/fonts/DMSans-Medium.ttf) format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DMSans Regular";
+  src: url(../assets/fonts/DMSans-Regular.ttf) format("truetype");
+  font-style: normal;
+  font-display: swap;
+}

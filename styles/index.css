@@ -1,119 +1,124 @@
 /* ---------------------------------------------------------------- */
 /* SECTION MID */
-
-.add-button {
-  position: absolute;
-  top: 1px;
-  left: 1px;
+section {
+  font-family: "JetBrains V", Helvetica, Arial;
+  display: flex;
+  flex-direction: column;
 }
-
-#mid {
-  font-family: "Alliance No.1", Helvetica, Arial;
-}
-.mid h1 {
-  font-family: "Alliance No.2", Helvetica, Arial;
-  color: var(--text-color);
-  font-size: 5.5em;
+section h1 {
+  color: var(--secondary-color);
+  font-size: 8em;
   font-weight: 800;
-  margin: 0;
-  transition: all 0.2s ease-in;
-}
-.mid li {
   margin: 0 auto;
-  color: var(--text-desc);
-  font-size: 1.8em;
-  font-weight: 500;
-  line-height: 35px;
-  max-width: 700px;
+}
+.first {
+  margin: 15em auto 0 auto;
+  width: 92%;
+}
+.first li:first-child {
+  font-size: 8em;
+  font-weight: 800;
+  color: white;
   transition: all 0.2s ease-in;
 }
-.mid {
-  text-align: center;
-  width: max-content;
-  position: absolute;
-  top: 48%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.about {
+  margin: 50vh auto 0 auto;
+  width: 80%;
 }
-.letter {
-  transition: 0.1s;
+.first li:last-child {
+  margin-top: 3em;
+  font-size: 1.5em;
+  max-width: 30em;
+  color: var(--grey);
 }
-.letter:hover {
-  /* color: #8400ff;
-  transition: 0.3s; */
-  -webkit-text-stroke: 3px #8400ff;
-  color: #00000000;
-  transition: -webkit-text-stroke 0s;
+.about div {
+  font-size: 1.5em;
+}
+.contact div,
+.about div {
+  font-size: 1.2em;
+  margin-top: 3em;
+  color: var(--grey);
+}
+.contact a,
+.about a {
+  color: var(--grey);
+  width: fit-content;
+  display: inline-block;
+  border-bottom: solid var(--secondary-color) 2px;
+}
+.contact a::after,
+.about a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--secondary-color);
+  transition: width 0.3s;
+}
+.contact {
+  margin: 50vh auto 40px auto;
+  width: 70%;
+}
+.contact a:hover::after,
+.about a:hover::after {
+  width: 100%;
 }
 
 /* ---------------------------------------------------------------- */
-/* ANIMATION */
+/* UPDATE VERSION */
 
-#mid {
-  animation: titleanim 0.6s ease-in-out forwards;
+.version {
+  font-family: "Poppins Bold";
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-@keyframes titleanim {
-  0% {
-    opacity: 0;
-    top: 55%;
-  }
-  100% {
-    opacity: 1;
-    transform: translate(-50%, -50%);
-  }
+.version a {
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 99rem;
+  background-color: #222222c0;
+  transition: 0.25s;
+}
+.version a:hover {
+  background-color: #646669;
+  transition: 0.25s;
 }
 
 /* ---------------------------------------------------------------- */
 /* MEDIA QUERY */
-
-@media screen and (max-width: 1530px) {
-  .mid h1 {
-    font-size: 95px;
-    transition: all 0.2s ease-in;
+@media screen and (max-width: 740px) {
+  .first li:first-child {
+    font-size: 4.5em;
   }
-  .mid li {
-    font-size: 30px;
-    line-height: 38px;
-    transition: all 0.2s ease-in;
+  section h1 {
+    font-size: 5em;
   }
-}
-@media screen and (max-width: 900px) {
-  /* SECTION MID */
-
-  #mid {
-    z-index: -1;
+  .first {
+    margin: 15em auto 0 auto;
+    width: 90%;
   }
-  .mid h1 {
-    color: var(--text-color);
-    font-size: 50px;
-    font-weight: 800;
-    margin: 0;
+  .contact {
+    margin: 10em auto 40px auto;
+    width: 90%;
   }
-  .mid li {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 25px;
-    margin: 0 auto;
-    max-width: 380px;
+  .about {
+    margin: 55% auto 0 auto;
+    width: 90%;
   }
-  .mid {
-    text-align: center;
-    width: max-content;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-  }
-}
-@media screen and (max-width: 380px) {
-  .mid h1 {
-    font-size: 2.4em;
-  }
-  .mid li {
-    font-size: 0.8em;
-    line-height: 18px;
-    margin: 0 auto;
-    width: 280px;
+  .sublist li:first-child {
+    display: block;
+    display: flex;
+    background-color: var(--light-grey);
   }
 }

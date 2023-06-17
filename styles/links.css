@@ -1,188 +1,61 @@
-nav {
-  top: 0;
-  width: 100%;
-  background-color: #000000ee;
-  box-shadow: 0px 8px 10px #000000;
-}
-/* ---------------------------------------------------------------- */
-/* CATEGORY */
-
 .container {
-  margin-bottom: 20px;
+  font-family: "DMSans Regular";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px 0;
 }
-.acc {
-  margin: 0 auto;
-  width: 60%;
+link-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
-.acc li {
-  width: 100%;
-  border-radius: 10px;
-  background-color: #161515;
-}
-.acc li label {
+h1 {
+  color: var(--secondary-color);
+  font-size: 2.4em;
   text-align: center;
-  font-size: 1.2em;
-  color: var(--text-color);
-  border-bottom: 2px solid #ffffff;
-  display: flex;
-  align-items: center;
-  margin: 5px 10px 5px;
-  padding: 5px 0;
-  cursor: pointer;
 }
-label::before {
-  font-size: 24px;
+.container ul {
+  margin: 10px 20px;
+}
+.container li:first-child {
+  color: var(--primary-color);
+  font-size: 2.2em;
   font-weight: 600;
+  margin-left: 0;
+  margin-bottom: 15px;
 }
-input[type="checkbox"] {
-  display: none;
+.container li {
+  margin: 0 0 0 1em;
 }
-.acc .content {
-  color: var(--text-desc);
-  padding: 0 10px;
-  line-height: 26px;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.5s;
+.container a {
+  font-size: 1.2em;
+  color: var(--white);
+  box-shadow: inset 0 0 0 0 #00000000;
+  color: #ffffff;
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition: color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
 }
-.acc input[type="checkbox"]:checked + label + .content {
-  max-height: 500px;
-  padding: 10px 10px 20px;
+.container a:hover {
+  box-shadow: inset 200px 0 0 0 var(--primary-color);
+  transition: all 0.4s;
+  color: white;
 }
-.content a img {
-  height: 20px;
-  width: 20px;
-  margin-right: 5px;
-  margin-top: 3px;
+.empty {
+  text-decoration: line-through;
 }
-.content a {
-  display: flex;
-  color: #000000;
-  background-color: #ffffff;
-  box-shadow: 4px 4px 4px 0px #000000;
-  padding: 5px 10px;
-  border-radius: 10px;
-}
-.content a:hover {
-  color: var(--text-color);
-  background-color: #000000;
-  box-shadow: 4px 4px 4px 0px #000000;
-}
-.desc {
-  margin-left: 15px;
-}
-.cat {
-  display: flex;
-  flex-direction: row;
-}
-.line {
-  border-bottom: solid 2px #ffffff;
-  width: 200px;
-  margin: 8px auto;
-}
-.espace {
-  margin-top: 18px;
-}
-.title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 80px;
-  font-size: 3em;
-  font-family: "Alliance No.2";
-  color: var(--text-color);
-}
-
-/* ---------------------------------------------------------------- */
-/* MEDIA SCREEN */
-
-@media screen and (max-width: 900px) {
-  .update {
-    display: none;
+@media screen and (max-width: 740px) {
+  link-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
-  .shortcut-container {
-    display: none;
-  }
-  .acc {
-    margin: 0 auto;
-    width: 95%;
-  }
-  .acc li {
-    width: 100%;
-    border-radius: 10px;
-    background-color: #161515;
-  }
-  .acc li label {
-    text-align: center;
-    font-size: 1.2em;
-    color: #ffffff;
-    border-bottom: 2px solid #ffffff;
+  .sublist li:nth-child(2) {
+    display: block;
     display: flex;
-    align-items: center;
-    margin: 5px 10px 5px;
-    padding: 5px 0;
-    cursor: pointer;
+    background-color: var(--light-grey);
   }
-  label::before {
-    font-size: 24px;
-    font-weight: 600;
-  }
-  input[type="checkbox"] {
-    display: none;
-  }
-  .acc .content {
-    color: var(--text-desc);
-    padding: 0 10px;
-    line-height: 26px;
-    max-height: 0;
-    overflow: hidden;
-    transition: none;
-  }
-  .acc input[type="checkbox"]:checked + label + .content {
-    max-height: 100%;
-    padding: 10px 10px 20px;
-  }
-  .content a img {
-    height: 20px;
-    width: 20px;
-    margin-right: 5px;
-    margin-top: 3px;
-  }
-  .content a {
-    display: flex;
-    color: #000000;
-    background-color: var(--background-2);
-    box-shadow: 4px 4px 4px 0px #000000;
-    padding: 5px 10px;
-    border-radius: 10px;
-  }
-  .content a:hover {
-    color: var(--text-color);
-    background-color: #000000;
-    box-shadow: 4px 4px 4px 0px #000000;
-  }
-  .desc {
-    margin-left: 15px;
-  }
-  .cat {
-    display: flex;
-    flex-direction: row;
-  }
-  .line {
-    border-bottom: solid 2px #ffffff;
-    width: 40%;
-    margin: 8px auto;
-  }
-  .espace {
-    margin-top: 18px;
-  }
-  .title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
-    font-size: 3em;
-    font-family: "Alliance No.2";
-    color: #ffffff;
+}
+@media screen and (max-width: 330px) {
+  .container ul {
+    margin: 0px 0px;
   }
 }
