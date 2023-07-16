@@ -149,6 +149,12 @@ nav {
   color: #222222c0;
 }
 i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
   color: #646669;
   line-height: 32px;
   text-align: center;
@@ -330,6 +336,10 @@ i {
   }
   .navlinks a:hover {
     color: var(--text-color);
+  }
+  .scrollToTopButton {
+    bottom: 1rem;
+    right: 1rem;
   }
 }
 @media screen and (max-width: 330px) {

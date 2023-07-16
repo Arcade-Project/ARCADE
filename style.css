@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.tree,
+.tree ul {
+  margin: 0 0 0 1em;
+  list-style: none;
+  position: relative;
+}
+.tree ul {
+  margin-left: 0.5em;
+}
+.tree:before,
+.tree ul:before {
+  content: "";
+  display: block;
+  width: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  border-left: 1px solid #b10dc9;
+}
+.tree li {
+  padding: 0 1.5em;
+  line-height: 1.7em;
+  position: relative;
+}
+.tree li:before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 0;
+  border-top: 1px solid #b10dc9;
+  margin-top: -1px;
+  position: absolute;
+  top: 0.8em;
+  left: 0;
+}
+.tree li:last-child:before {
+  background: white;
+  height: auto;
+  top: 0.8em;
+  bottom: 0;
+}
+.tree .folder {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+.tree .link:before,
+.tree .folder:before {
+  display: inline-block;
+  margin-left: -0.8em;
+  margin-right: 0.2em;
+  color: #b10dc9;
+  cursor: pointer;
+}
+.tree .link {
+  display: inline-block;
+  width: 100%;
+}
+.tree .folder:before {
+  content: "📁";
+}
+.tree .link:before {
+  content: "🗎";
+}
