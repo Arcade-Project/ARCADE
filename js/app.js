@@ -172,10 +172,15 @@ subFolders.forEach((subFolder) => {
       toggleMarkdownView("hide");
     }
 
-    const content = subFolder.textContent.toLowerCase();
+    const content = subFolder.textContent.toLowerCase().replace("?", "");
+    console.log(content);
     const p1 = subFolder.parentElement;
     const p2 = p1.parentElement;
-    const title = p2.querySelector(".title").textContent.trim().toLowerCase();
+    const title = p2
+      .querySelector(".title")
+      .textContent.trim()
+      .toLowerCase()
+      .replace("?", "");
     let data = `/data/${title}/${content}.md`;
     md(data);
   });
