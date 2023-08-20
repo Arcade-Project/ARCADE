@@ -294,7 +294,7 @@ nav {
 .markdown-content {
   font-family: "Inter";
 
-  overflow-y: scroll;
+  overflow-y: auto;
   color: white;
 
   margin: 1em auto 1em auto;
