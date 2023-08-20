@@ -1,0 +1,27 @@
+{
+    "Browser": {
+      "Extension": "",
+      "Security": {
+        "Local": "",
+        "Online": ""
+      }
+    },
+    "Graphics": "",
+    "Informatics": {
+      "${code}": "",
+      "Games": "",
+      "OSINT": "",
+      "Security": "",
+      "Upload": ""
+    },
+    "Music": {
+        "Streaming": ""
+    },
+    "Phone": {
+        "Purchase": ""
+    },
+    "Streaming": {
+      "Video": "",
+      "Streaming": ""
+    }
+  }

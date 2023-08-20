@@ -4,42 +4,36 @@ const mediaQuery = window.matchMedia("(max-width: 740px)");
 
 const handleMediaQuery = (mediaQuery) => {
   if (mediaQuery.matches) {
-    const btn_menu = document.querySelector(".btn-menu");
-    const navlinks = document.querySelector(".navlinks");
-    const btn_close = document.querySelector(".btn-close");
     const nav = document.querySelector("nav");
-    const logo = document.querySelector(".logo");
-    const exitArea = document.querySelector(".exit-area");
-    const btn_dl = document.querySelector("#btn-dl");
-    const sublist = document.querySelector(".sublist");
+    const navlinks = nav.querySelector(".navlinks");
+    const logo = navlinks.querySelector(".logo");
+    const sublist = navlinks.querySelector(".sublist");
+    const btn_dl = sublist.querySelector("#btn-dl");
+    const btn_menu = nav.querySelector(".btn-menu");
+    const btn_close = nav.querySelector(".btn-close");
+    const exitArea = nav.querySelector(".exit-area");
 
     btn_menu.addEventListener("click", () => {
       document.body.style.overflowY = "hidden";
       nav.classList.add("nav-active");
+      navlinks.classList.add("navlinks-active");
+      logo.classList.add("logofix");
       btn_close.style.display = "block";
       btn_menu.style.display = "none";
       btn_dl.style.display = "block";
       sublist.style.display = "block";
-      logo.classList.add("logofix");
-      navlinks.style.backgroundColor = "#353535";
-      navlinks.style.right = "0";
-      navlinks.style.position = "fixed";
-      navlinks.style.height = "100%";
       exitArea.style.display = "block";
     });
 
     btn_close.addEventListener("click", () => {
       document.body.style.overflowY = "unset";
       nav.classList.remove("nav-active");
+      navlinks.classList.remove("navlinks-active");
+      logo.classList.remove("logofix");
       btn_close.style.display = "none";
       btn_menu.style.display = "flex";
       btn_dl.style.display = "none";
       sublist.style.display = "none";
-      logo.classList.remove("logofix");
-      navlinks.style.backgroundColor = "unset";
-      navlinks.style.right = "-100%";
-      navlinks.style.position = "unset";
-      navlinks.style.height = "40px";
       exitArea.style.display = "none";
     });
 
@@ -100,10 +94,19 @@ links.forEach((link) => {
 });
 
 scrollToTopButton.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
+  const scrollToTop = () => {
+    if (window.scrollY > 0) {
+      const scrollStep = window.scrollY / 10;
+      window.scrollBy(0, -scrollStep);
+      if (window.scrollY === 0) return;
+    } else if (window.scrollY < 0) {
+      const scrollStep = -window.scrollY / 10;
+      window.scrollBy(0, scrollStep);
+      if (window.scrollY >= 0) return;
+    }
+    requestAnimationFrame(scrollToTop);
+  };
+  scrollToTop();
 });
 
 window.addEventListener("scroll", () => {
@@ -117,6 +120,21 @@ window.addEventListener("scroll", () => {
     scrollToTopButton.style.display = "block";
   } else {
     scrollToTopButton.style.display = "none";
+  }
+});
+
+const reloadFromServer = () => {
+  location.reload(true);
+};
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth < 740) {
+    window.addEventListener("resize", function checkWidth() {
+      if (window.innerWidth >= 740) {
+        reloadFromServer();
+        window.removeEventListener("resize", checkWidth);
+      }
+    });
   }
 });
 
