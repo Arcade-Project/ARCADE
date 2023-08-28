@@ -4,11 +4,12 @@
 <head>
     <title>ARCADE Links</title>
     <!-- links -->
-    <link rel="stylesheet" href="../styles/wiki.css">
-    <link rel="stylesheet" href="../styles/fonts.css" />
+    <link rel="stylesheet" href="/styles/wiki.css">
+    <link rel="stylesheet" href="/styles/markdown.css">
+    <link rel="stylesheet" href="/styles/fonts.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- icon -->
-    <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon" />
     <!-- meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
@@ -33,7 +34,7 @@
     <meta property="og:image" content="https://arcade-project.ml/assets/img/meta.png" />
     <meta name="next-head-count" content="16" />
     <!-- script -->
-    <script src="https://cdn.jsdelivr.net/npm/marked@7.0.3/lib/marked.umd.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/showdown@2.1.0/dist/showdown.min.js" defer></script>
     <script src="/js/app.js" defer></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
@@ -44,7 +45,7 @@
 <body>
     <nav>
         <ul class="navlinks">
-            <li class="logo"><a href="../index.html"><img src="../assets/svg/arcade.svg" alt="arcade logo" /></a></li>
+            <li class="logo"><a href="/index.html"><img src="/assets/svg/arcade.svg" alt="arcade logo" /></a></li>
             <ul class="sublist">
                 <li><a href="/explore.html">Explore</a></li>
                 <li><a href="/index.html#about">About</a></li>
@@ -78,9 +79,19 @@
 
     <div class="container-wrapper">
         <div class="summary" id="summary">
-            <h1>⚜️ Welcome</h1>
+            <h1 class="welcome">⚜️ Welcome</h1>
             <div class="folders">
                 <ul class="folder">
+                    <li id="parent">
+                        <div class="title">Arcade<svg class="arrowSvg" width="8" height="12" viewBox="0 0 8 12"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.00195 2L6.00195 6L2.00195 10" stroke="#FFFFFF" stroke-width="2"
+                                    stroke-miterlimit="10" stroke-linecap="square" />
+                            </svg></div>
+                        <ul class="sub-folder">
+                            <li>markdown syntax</li>
+                        </ul>
+                    </li>
                     <li id="parent">
                         <div class="title">Browser<svg class="arrowSvg" width="8" height="12" viewBox="0 0 8 12"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -138,7 +149,7 @@
                                     stroke-miterlimit="10" stroke-linecap="square" />
                             </svg></div>
                         <ul class="sub-folder">
-                            <li>Site list</li>
+                            <li>Sites list</li>
                         </ul>
                     </li>
                     <li id="parent">
@@ -153,7 +164,9 @@
             <div class="downloadBtn"><button>Download</button></div>
         </div>
         <section class="contents">
-            <div class="markdown-content"></div>
+            <div class="scrollbox">
+                <div class="markdown-content"></div>
+            </div>
         </section>
     </div>
 </body>

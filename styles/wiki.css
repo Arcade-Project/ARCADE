@@ -165,6 +165,9 @@ nav {
 #parent:hover {
   background-color: unset;
 }
+.welcome {
+  cursor: pointer;
+}
 .folder {
   padding: 0;
 }
@@ -175,11 +178,14 @@ nav {
   padding: 8px 10px 8px 10px;
 
   border-radius: 10px;
+
+  cursor: pointer;
 }
 .title:hover {
   background-color: var(--background-3);
 }
 .sub-folder {
+  cursor: pointer;
   display: none;
 
   padding-left: 1em;
@@ -240,6 +246,12 @@ nav {
   box-shadow: 0px 0px 18px 0px #140d21, 0px 0px 18px 2px #140d21 inset;
   background-color: var(--purple-background);
 }
+.downloadBtn button:active {
+  color: var(--purple-background);
+  box-shadow: 0px 0px 18px 0px var(--primary-color),
+    0px 0px 18px 2px var(--primary-color) inset;
+  background-color: var(--primary-color);
+}
 
 /* Scroll bar */
 .folders::-webkit-scrollbar {
@@ -253,14 +265,14 @@ nav {
   border-radius: 20px;
   background-color: #3d3d3d;
 }
-.markdown-content::-webkit-scrollbar {
+.scrollbox::-webkit-scrollbar {
   width: 10px;
 }
-.markdown-content::-webkit-scrollbar-track {
+.scrollbox::-webkit-scrollbar-track {
   border-radius: 20px;
   background: #222222;
 }
-.markdown-content::-webkit-scrollbar-thumb {
+.scrollbox::-webkit-scrollbar-thumb {
   border-radius: 20px;
   background-color: #3d3d3d;
 }
@@ -285,6 +297,12 @@ nav {
 /* MarkDown */
 /* ---------------------------------------------------------- */
 
+.scrollbox {
+  max-height: calc(100% - 2em);
+  overflow-y: auto;
+  max-width: 96%;
+  margin: 1em auto 1em auto;
+}
 .contents {
   margin: 10px;
   background-color: var(--background-2);
@@ -294,128 +312,14 @@ nav {
 .markdown-content {
   font-family: "Inter";
 
-  overflow-y: auto;
   color: white;
 
-  margin: 1em auto 1em auto;
-  padding-right: 1em;
-
   max-width: 50%;
-  max-height: calc(100% - 2em);
+  margin: 0 auto;
 
   display: flex;
   flex-direction: column;
   row-gap: 1em;
-}
-
-hr {
-  border: 1px solid var(--background-3);
-  margin: 10px 0;
-}
-blockquote {
-  border-left: 4px solid var(--primary-color);
-  padding: 5px 5px 5px 10px;
-}
-details {
-  color: white;
-  border-radius: 20px;
-  padding: 1em;
-  border: solid 2px var(--background-3);
-}
-summary {
-  display: flex;
-  color: var(--primary-color);
-  width: 100%;
-  user-select: none;
-}
-.arrowSvgSummary {
-  transition: all 0.2s;
-}
-.svgCnt {
-  display: flex;
-  align-self: center;
-  margin-left: auto;
-  padding-left: 1em;
-}
-details > :not(summary) {
-  margin-top: 1em;
-}
-.markdown-content h1 {
-  font-size: 1.9em;
-  font-weight: 600;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-th,
-td {
-  padding: 0.2em;
-  border: solid 1px var(--background-3);
-}
-thead tr,
-th {
-  background-color: #1d1d1d;
-}
-color-p {
-  color: var(--primary-color);
-}
-.markdown-content img {
-  width: 100%;
-  border-radius: 20px;
-}
-code {
-  display: block;
-  width: auto;
-  padding: 1em;
-  border-radius: 10px;
-  background-color: var(--background-3);
-}
-.markdown-content ul:not(ul ul) {
-  padding: 0;
-}
-.markdown-content li {
-  list-style: inside;
-}
-.markdown-content li:not(:last-child) {
-  margin-bottom: 10px;
-}
-
-.markdown-content ol {
-  padding-left: 1.5em;
-}
-.markdown-content ol li {
-  list-style: decimal;
-}
-.disclaimer {
-  border-left: 4px solid var(--secondary-color);
-  padding: 5px 5px 5px 10px;
-}
-
-.markdown-content li::marker {
-  color: #474747;
-}
-.markdown-content ul ul,
-.markdown-content ol ol {
-  border-left: solid 1px var(--background-3);
-  margin: 0;
-}
-.markdown-content a {
-  color: var(--primary-color);
-  width: fit-content;
-  font-weight: bold;
-  display: inline-block;
-}
-.markdown-content a::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: var(--primary-color);
-  transition: width 0.3s;
-}
-.markdown-content a:hover::after {
-  width: 100%;
 }
 /* ---------------------------------------------------------- */
 /* Responsive */
@@ -423,7 +327,7 @@ code {
 @media screen and (max-width: 1100px) {
   .markdown-content {
     max-width: unset;
-    width: 80%;
+    width: 96%;
   }
 }
 @media screen and (max-width: 780px) {

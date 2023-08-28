@@ -1,0 +1,257 @@
+details {
+  color: white;
+  border-radius: 20px;
+  padding: 1em;
+  border: solid 2px var(--background-3);
+}
+summary {
+  display: flex;
+  color: var(--primary-color);
+  width: 100%;
+  user-select: none;
+  cursor: pointer;
+}
+.arrowSvgSummary {
+  transition: all 0.2s;
+}
+.svgCnt {
+  display: flex;
+  align-self: center;
+  margin-left: auto;
+  padding-left: 1em;
+}
+details > :not(summary) {
+  margin-top: 1em;
+}
+hr {
+  border: 1px solid var(--background-3);
+  margin: 10px 0;
+}
+.markdown-content h1 {
+  font-size: 1.9em;
+  font-weight: 600;
+}
+.markdown-content img {
+  width: 100%;
+  border-radius: 20px;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th,
+td {
+  padding: 0.2em;
+  border: solid 1px var(--background-3);
+}
+blockquote thead tr,
+th {
+  background-color: #1d1d1d;
+}
+
+blockquote {
+  border-left: 4px solid var(--primary-color);
+  padding: 5px 5px 5px 10px;
+}
+blockquote p:not(:last-child) {
+  margin-bottom: 10px;
+}
+blockquote svg {
+  flex-shrink: 0;
+
+  width: 24px;
+  height: 24px;
+
+  display: flex;
+}
+blockquote .iconCtn {
+  margin-right: 10px;
+}
+blockquote.settings h3,
+blockquote.check h3,
+blockquote.warning h3,
+blockquote.bug h3,
+blockquote.info h3,
+blockquote.note h3,
+blockquote.quote h3,
+blockquote.example h3,
+blockquote.default h3 {
+  display: flex;
+  margin-bottom: 1em;
+  padding: 0;
+}
+blockquote.settings,
+blockquote.check,
+blockquote.warning,
+blockquote.bug,
+blockquote.info,
+blockquote.note,
+blockquote.quote,
+blockquote.example,
+blockquote.default {
+  border-radius: 10px;
+  padding: 1em;
+}
+blockquote.default {
+  border: none;
+  background-color: #5c14e13c;
+}
+blockquote.default h3 {
+  color: var(--primary-color);
+}
+blockquote.quote {
+  border: none;
+  background-color: #6363632f;
+}
+blockquote.quote svg {
+  fill: #9f9f9f;
+}
+blockquote.quote h3 {
+  color: #c1c1c1;
+}
+blockquote.note,
+blockquote.info {
+  border: none;
+  background-color: #2f4eff2f;
+}
+blockquote.info svg {
+  stroke: #2f63ffc9;
+}
+blockquote.note h3,
+blockquote.info h3 {
+  color: #2f63ffc9;
+}
+blockquote.bug,
+blockquote.warning {
+  border: none;
+  background-color: #ff2f2f2f;
+}
+blockquote.warning svg {
+  stroke: #ff2f2fc9;
+}
+blockquote.bug h3,
+blockquote.warning h3 {
+  color: #ff2f2fc9;
+}
+blockquote.check {
+  border: none;
+  background-color: #15ad2727;
+}
+blockquote.check svg {
+  stroke: #15ad27;
+}
+blockquote.check h3 {
+  color: #15ad27;
+}
+blockquote.example {
+  border: none;
+  background-color: #6915ad27;
+}
+blockquote.example svg {
+  stroke: #6915ad;
+}
+blockquote.example h3 {
+  color: #6915ad;
+}
+blockquote.settings {
+  border: none;
+  background-color: #c3136e37;
+}
+blockquote.settings svg {
+  stroke: #c3136e;
+}
+blockquote.settings h3 {
+  color: #c3136e;
+}
+mark {
+  color: white;
+  background-color: #e0d90d;
+  padding: 0.1em 0.4em;
+  border-radius: 0.8em 0.3em;
+  text-shadow: 0 0 0.75em black, 0 0 0.75em black;
+}
+.custom-space {
+  width: 0.4em;
+  display: inline-block;
+}
+.markdown-content ul:not(ul ul) {
+  padding: 0;
+}
+.markdown-content li {
+  list-style: inside;
+}
+.markdown-content li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.markdown-content ol {
+  padding-left: 1.5em;
+}
+.markdown-content ol li {
+  list-style: decimal;
+}
+.markdown-content li::marker {
+  color: #474747;
+}
+.markdown-content ul ul,
+.markdown-content ol ol {
+  border-left: solid 1px var(--background-3);
+  margin: 0;
+}
+.markdown-content a {
+  color: var(--primary-color);
+  width: fit-content;
+  font-weight: bold;
+  display: inline-block;
+}
+.markdown-content a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--primary-color);
+  transition: width 0.3s;
+}
+.markdown-content a:hover::after {
+  width: 100%;
+}
+code {
+  position: relative;
+  display: block;
+  width: auto;
+  padding: 1.8em;
+  border-radius: 10px;
+  background-color: var(--background-3);
+  white-space: pre-wrap;
+}
+.copyCtn {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  height: fit-content;
+  width: min-content;
+  user-select: none;
+  line-height: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: inter;
+  padding: 0.2em;
+  border-radius: 8px;
+}
+.copyCtn span {
+  color: #9c9c9c;
+}
+.copyCtn:hover {
+  background-color: #4f100f;
+}
+.copyCtn:hover span {
+  color: #ff322f;
+  font-weight: 600;
+}
+.copyCtn:active span {
+  color: #4f100f;
+  font-weight: 600;
+}
+.copyCtn:active {
+  background-color: #ff322f;
+}
