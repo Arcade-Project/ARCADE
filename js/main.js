@@ -40,15 +40,12 @@ const handleMediaQuery = (mediaQuery) => {
     exitArea.addEventListener("click", () => {
       document.body.style.overflowY = "unset";
       nav.classList.remove("nav-active");
+      navlinks.classList.remove("navlinks-active");
+      logo.classList.remove("logofix");
       btn_close.style.display = "none";
       btn_menu.style.display = "flex";
       btn_dl.style.display = "none";
       sublist.style.display = "none";
-      logo.classList.remove("logofix");
-      navlinks.style.backgroundColor = "unset";
-      navlinks.style.right = "-100%";
-      navlinks.style.position = "unset";
-      navlinks.style.height = "40px";
       exitArea.style.display = "none";
     });
 
@@ -58,15 +55,12 @@ const handleMediaQuery = (mediaQuery) => {
       link.addEventListener("click", (event) => {
         document.body.style.overflowY = "unset";
         nav.classList.remove("nav-active");
+        navlinks.classList.remove("navlinks-active");
+        logo.classList.remove("logofix");
         btn_close.style.display = "none";
         btn_menu.style.display = "flex";
         btn_dl.style.display = "none";
         sublist.style.display = "none";
-        logo.classList.remove("logofix");
-        navlinks.style.backgroundColor = "unset";
-        navlinks.style.right = "-100%";
-        navlinks.style.position = "unset";
-        navlinks.style.height = "40px";
         exitArea.style.display = "none";
       });
     });

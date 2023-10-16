@@ -160,40 +160,30 @@ section {
   font-family: "JetBrains V", Helvetica, Arial;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
 }
 section h1 {
   color: var(--secondary-color);
-  font-size: 8em;
+  font-size: 6em;
   font-weight: 800;
   margin: 0 auto;
 }
-.first {
-  margin: 15em auto 0 auto;
-  width: 92%;
-}
-.first li:first-child {
+.first p:first-child {
   font-size: 8em;
   font-weight: 800;
   color: white;
   transition: all 0.2s ease-in;
 }
-.about {
-  margin: 50vh auto 0 auto;
-  width: 80%;
-}
-.first li:last-child {
+.first p:last-child {
   margin-top: 3em;
   font-size: 1.5em;
   max-width: 30em;
   color: var(--grey);
 }
-.about div {
-  font-size: 1.5em;
-}
 .contact div,
 .about div {
-  font-size: 1.2em;
-  margin-top: 3em;
+  font-size: 1.5em;
   color: var(--grey);
 }
 .contact a,
@@ -212,10 +202,24 @@ section h1 {
   background: var(--secondary-color);
   transition: width 0.3s;
 }
+
+.about,
 .contact {
-  margin: 50vh auto 40px auto;
-  width: 70%;
+  margin: 0 auto;
 }
+.first .sectionCtn,
+.about .sectionCtn,
+.contact .sectionCtn {
+  width: 85%;
+}
+.first .sectionCtn,
+.about .sectionCtn,
+.contact .sectionCtn {
+  display: flex;
+  flex-direction: column;
+  margin: auto auto;
+}
+
 .contact a:hover::after,
 .about a:hover::after {
   width: 100%;
@@ -347,7 +351,9 @@ section h1 {
   #btn-dl a {
     top: unset;
     bottom: 20px;
+    width: unset;
     right: unset;
+    padding: none;
     transform: none;
   }
   .btn-menu {
@@ -417,20 +423,24 @@ section h1 {
     display: none;
     animation: sublist 0.25s ease-out forwards;
   }
-  .sublist li {
+
+  .sublist li:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 5px;
+  }
+  .sublist li a {
     display: flex;
-    align-items: center;
     border-radius: 12px;
-    height: 40px;
+    align-items: center;
     width: 270px;
-    margin: 5px 0;
-    padding-left: 10px;
+    padding: 0.5em 0 0.5em 10px;
   }
   .sublist li:first-child {
+    display: block;
+    border-radius: 12px;
     margin-top: 100px;
-    display: flex;
+    background-color: var(--light-grey);
   }
-  .sublist li:nth-child(n + 1):nth-child(-n + 5):hover {
+  .sublist li a:nth-child(n + 1):nth-child(-n + 5):hover {
     color: var(--white);
     background-color: #444444;
   }
@@ -448,29 +458,37 @@ section h1 {
   .first li:first-child {
     font-size: 4.5em;
   }
+
+  .first p:first-child {
+    font-size: 4em;
+  }
+  .first .sectionCtn,
+  .about .sectionCtn,
+  .contact .sectionCtn {
+    width: 90%;
+  }
   section h1 {
-    font-size: 5em;
+    color: var(--secondary-color);
+    font-size: 3em;
+    font-weight: 800;
+    margin: 0 auto;
   }
-  .first {
-    margin: 15em auto 0 auto;
-    width: 90%;
-  }
-  .contact {
-    margin: 10em auto 40px auto;
-    width: 90%;
-  }
-  .about {
-    margin: 55% auto 0 auto;
-    width: 90%;
-  }
-  .sublist li:first-child {
-    display: block;
+  .first .sectionCtn,
+  .about .sectionCtn,
+  .contact .sectionCtn {
     display: flex;
-    background-color: var(--light-grey);
+    flex-direction: column;
+    margin: auto auto;
   }
 }
 
 @media screen and (max-width: 330px) {
+  .sublist li {
+    width: 230px;
+  }
+  .navlinks {
+    width: 280px;
+  }
   @keyframes borderPadding {
     0% {
       padding-left: 0px;
@@ -495,9 +513,4 @@ section h1 {
       right: 30px;
     }
   }
-  .sublist li {
-    width: 230px;
-  }
-  .navlinks {
-    width: 280px;
-  }
+}
